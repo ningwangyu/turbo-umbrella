@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">基金收益预测助手 V1 功能地图</title>
+  <desc id="desc">以中心辐射方式展示 V1 的核心功能模块。</desc>
+  <defs>
+    <linearGradient id="center" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172033"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #172033; }
+      .title { font-size: 34px; font-weight: 700; }
+      .sub { font-size: 16px; fill: #64748b; }
+      .node-title { font-size: 22px; font-weight: 700; fill: #0f172a; }
+      .body { font-size: 15px; fill: #475569; }
+      .center-title { font-size: 28px; font-weight: 700; fill: #ffffff; }
+      .center-sub { font-size: 16px; fill: #dbe4ef; }
+      .node { fill: #ffffff; stroke: #dbe4ef; stroke-width: 1.2; }
+      .link { stroke: #cbd5e1; stroke-width: 3; }
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <text x="64" y="68" class="title">功能地图</text>
+  <text x="64" y="102" class="sub">V1 版本围绕“持仓、行情、信号、推荐、AI”形成本地分析闭环</text>
+
+  <line x1="640" y1="360" x2="262" y2="210" class="link"/>
+  <line x1="640" y1="360" x2="640" y2="180" class="link"/>
+  <line x1="640" y1="360" x2="1018" y2="210" class="link"/>
+  <line x1="640" y1="360" x2="258" y2="512" class="link"/>
+  <line x1="640" y1="360" x2="640" y2="550" class="link"/>
+  <line x1="640" y1="360" x2="1022" y2="512" class="link"/>
+
+  <circle cx="640" cy="360" r="116" fill="url(#center)"/>
+  <text x="552" y="350" class="center-title">基金收益</text>
+  <text x="552" y="386" class="center-title">预测助手 V1</text>
+  <text x="557" y="420" class="center-sub">本地基金分析平台</text>
+
+  <g transform="translate(92 144)">
+    <rect width="340" height="132" rx="20" class="node"/>
+    <circle cx="42" cy="42" r="18" fill="#2563eb"/>
+    <text x="76" y="48" class="node-title">持仓管理</text>
+    <text x="28" y="86" class="body">添加、删除、批量导入基金</text>
+    <text x="28" y="112" class="body">统计总资产、收益和收益率</text>
+  </g>
+
+  <g transform="translate(470 96)">
+    <rect width="340" height="132" rx="20" class="node"/>
+    <circle cx="42" cy="42" r="18" fill="#22a06b"/>
+    <text x="76" y="48" class="node-title">基金实时分析</text>
+    <text x="28" y="86" class="body">实时估值、历史净值、收益表现</text>
+    <text x="28" y="112" class="body">重仓股与图表联动查看</text>
+  </g>
+
+  <g transform="translate(848 144)">
+    <rect width="340" height="132" rx="20" class="node"/>
+    <circle cx="42" cy="42" r="18" fill="#ef4444"/>
+    <text x="76" y="48" class="node-title">量化买卖信号</text>
+    <text x="28" y="86" class="body">均线、RSI、动量、回撤、分位</text>
+    <text x="28" y="112" class="body">输出买入、观望或卖出倾向</text>
+  </g>
+
+  <g transform="translate(92 444)">
+    <rect width="340" height="132" rx="20" class="node"/>
+    <circle cx="42" cy="42" r="18" fill="#d6a23a"/>
+    <text x="76" y="48" class="node-title">智能推荐</text>
+    <text x="28" y="86" class="body">基金池筛选与综合评分</text>
+    <text x="28" y="112" class="body">辅助发现值得关注的候选基金</text>
+  </g>
+
+  <g transform="translate(470 492)">
+    <rect width="340" height="132" rx="20" class="node"/>
+    <circle cx="42" cy="42" r="18" fill="#14b8a6"/>
+    <text x="76" y="48" class="node-title">市场与贵金属</text>
+    <text x="28" y="86" class="body">指数、板块、黄金、白银行情</text>
+    <text x="28" y="112" class="body">作为基金波动判断的辅助背景</text>
+  </g>
+
+  <g transform="translate(848 444)">
+    <rect width="340" height="132" rx="20" class="node"/>
+    <circle cx="42" cy="42" r="18" fill="#8b5cf6"/>
+    <text x="76" y="48" class="node-title">AI 助手与 CLI</text>
+    <text x="28" y="86" class="body">流式问答、文本解析、图片识别</text>
+    <text x="28" y="112" class="body">命令行支持 list / add / signal</text>
+  </g>
+</svg>

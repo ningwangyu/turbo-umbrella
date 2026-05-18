@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+  <title id="title">基金收益预测助手 V1 使用流程图</title>
+  <desc id="desc">展示从安装配置到启动、导入持仓、查看分析、使用 AI 和 CLI 的流程。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7b8797"/>
+    </marker>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #172033; }
+      .title { font-size: 34px; font-weight: 700; }
+      .subtitle { font-size: 17px; fill: #64748b; }
+      .step-title { font-size: 22px; font-weight: 700; }
+      .body { font-size: 16px; fill: #475569; }
+      .num { font-size: 20px; font-weight: 700; fill: #ffffff; }
+      .card { fill: #ffffff; stroke: #d8e1ed; stroke-width: 1.2; }
+      .arrow { stroke: #7b8797; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1280" height="560" fill="url(#bg)"/>
+  <text x="64" y="72" class="title">V1 使用流程</text>
+  <text x="64" y="106" class="subtitle">从本地安装到持仓分析、AI 辅助和命令行操作的一条完整路径</text>
+
+  <g transform="translate(64 160)">
+    <rect width="176" height="230" rx="18" class="card"/>
+    <circle cx="36" cy="38" r="18" fill="#2563eb"/>
+    <text x="30" y="45" class="num">1</text>
+    <text x="24" y="86" class="step-title">安装依赖</text>
+    <text x="24" y="124" class="body">创建虚拟环境</text>
+    <text x="24" y="152" class="body">安装 requirements</text>
+    <text x="24" y="180" class="body">准备本地配置</text>
+  </g>
+
+  <path class="arrow" d="M252 275 L316 275"/>
+
+  <g transform="translate(328 160)">
+    <rect width="176" height="230" rx="18" class="card"/>
+    <circle cx="36" cy="38" r="18" fill="#d6a23a"/>
+    <text x="30" y="45" class="num">2</text>
+    <text x="24" y="86" class="step-title">配置 AI</text>
+    <text x="24" y="124" class="body">可选设置 Key</text>
+    <text x="24" y="152" class="body">配置模型地址</text>
+    <text x="24" y="180" class="body">基础功能不依赖 AI</text>
+  </g>
+
+  <path class="arrow" d="M516 275 L580 275"/>
+
+  <g transform="translate(592 160)">
+    <rect width="176" height="230" rx="18" class="card"/>
+    <circle cx="36" cy="38" r="18" fill="#22a06b"/>
+    <text x="30" y="45" class="num">3</text>
+    <text x="24" y="86" class="step-title">启动服务</text>
+    <text x="24" y="124" class="body">运行 python app.py</text>
+    <text x="24" y="152" class="body">访问 localhost:5000</text>
+    <text x="24" y="180" class="body">或使用 start.bat</text>
+  </g>
+
+  <path class="arrow" d="M780 275 L844 275"/>
+
+  <g transform="translate(856 160)">
+    <rect width="176" height="230" rx="18" class="card"/>
+    <circle cx="36" cy="38" r="18" fill="#ef4444"/>
+    <text x="30" y="45" class="num">4</text>
+    <text x="24" y="86" class="step-title">导入持仓</text>
+    <text x="24" y="124" class="body">手动添加基金</text>
+    <text x="24" y="152" class="body">文本批量导入</text>
+    <text x="24" y="180" class="body">图片识别导入</text>
+  </g>
+
+  <path class="arrow" d="M1044 275 L1108 275"/>
+
+  <g transform="translate(1120 160)">
+    <rect width="96" height="230" rx="18" class="card"/>
+    <circle cx="36" cy="38" r="18" fill="#0f172a"/>
+    <text x="30" y="45" class="num">5</text>
+    <text x="24" y="86" class="step-title">分析</text>
+    <text x="24" y="124" class="body">估值</text>
+    <text x="24" y="152" class="body">信号</text>
+    <text x="24" y="180" class="body">推荐</text>
+  </g>
+
+  <rect x="254" y="440" width="772" height="54" rx="14" fill="#f8fafc" stroke="#d8e1ed"/>
+  <text x="286" y="474" class="body">CLI 补充入口：python cli.py list / add / signal / recommend / metals</text>
+</svg>

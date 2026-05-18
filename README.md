@@ -228,7 +228,7 @@ Windows PowerShell：
 
 ```powershell
 $env:AI_BASE_URL="https://your-openai-compatible-endpoint"
-$env:AI_API_KEY="your-api-key"
+$env:AI_API_KEY="you_apikey"
 $env:AI_MODEL="gpt-5.5"
 ```
 
@@ -236,7 +236,7 @@ macOS / Linux：
 
 ```bash
 export AI_BASE_URL="https://your-openai-compatible-endpoint"
-export AI_API_KEY="your-api-key"
+export AI_API_KEY="you_apikey"
 export AI_MODEL="gpt-5.5"
 ```
 

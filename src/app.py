@@ -1,5 +1,5 @@
 """
-基金收益预测助手 V2 — Flask应用入口
+基金收益预测助手 V3 — Flask应用入口
 
 架构说明：
 - 5个Blueprint分别负责基金、行情、AI、提醒、组合统计
@@ -60,7 +60,7 @@ def index():
 
 if __name__ == "__main__":
     print("=" * 50)
-    print("基金收益预测助手 V2")
+    print("基金收益预测助手 V3")
     print("访问 http://localhost:5000")
     print("=" * 50)
     app.run(debug=True, host="0.0.0.0", port=5000)

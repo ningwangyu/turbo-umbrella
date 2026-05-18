@@ -1,13 +1,14 @@
-# 基金收益预测助手 V2
+# 基金收益预测助手 V3
 
-基金收益预测助手 V2 是一个面向个人投资者的基金分析平台，基于 Flask、原生 JavaScript 和多源金融数据 API 构建。项目提供基金持仓管理、实时估值、市场行情、量化买卖信号、智能基金推荐、AI 对话助手、数据导出和定投回测等功能。
+基金收益预测助手 V3 是一个面向个人投资者的基金分析平台，基于 Flask、原生 JavaScript 和多源金融数据 API 构建。项目提供基金持仓管理、实时估值、市场行情、量化买卖信号、智能基金推荐、AI 对话助手、数据导出和定投回测等功能。
 
 > 说明：本项目仅用于学习、研究和辅助分析，不构成任何投资建议。基金和市场数据来自第三方接口，实际交易前请以官方渠道为准。
 
 ## 项目定位
 
-- **版本**：V2
-- **推荐分支**：`umbrella-v2`
+- **版本**：V3
+- **主分支**：`main`
+- **上一版分支**：`umbrella-v2`
 - **后端**：Python Flask
 - **前端**：原生 HTML / CSS / JavaScript
 - **图表**：Chart.js
@@ -90,7 +91,7 @@ jijinv3/
 ### 1. 克隆项目
 
 ```bash
-git clone -b umbrella-v2 git@github.com:ningwangyu/turbo-umbrella.git
+git clone git@github.com:ningwangyu/turbo-umbrella.git
 cd turbo-umbrella
 ```
 

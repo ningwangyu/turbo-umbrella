@@ -1,10 +1,10 @@
 """
-基金收益预测助手 V2 — Flask应用入口
+基金收益预测助手 V4 — Flask 应用入口
 
 架构说明：
-- 5个Blueprint分别负责基金、行情、AI、提醒、组合统计
-- 静态页面通过模板渲染（单页应用，所有逻辑在app.js中）
-- 启动时初始化API限流器（东方财富5次/秒，新浪3次/秒）
+- Blueprint 按基金、行情、AI、提醒、组合、回测、情绪、导出、晨报、持仓分组
+- 静态页面通过模板渲染，前端按业务视图拆分模块
+- 启动时初始化 API 限流器，并启动市场情绪后台刷新任务
 """
 
 import logging
@@ -31,7 +31,7 @@ limiter.configure("sina", _sina_cfg.get("rate_limit_per_second", 3))
 app = Flask(__name__)
 CORS(app)
 
-# 注册5个功能模块的Blueprint
+# 注册 V4 功能模块的 Blueprint
 from routes.fund_routes import fund_bp          # 基金相关API（估值、信号、推荐、导入）
 from routes.market_routes import market_bp      # 行情API（指数、板块、贵金属）
 from routes.ai_routes import ai_bp              # AI对话与图片识别API
@@ -68,7 +68,7 @@ def index():
 
 if __name__ == "__main__":
     print("=" * 50)
-    print("基金收益预测助手 V2")
+    print("基金收益预测助手 V4")
     print("访问 http://localhost:5000")
     print("=" * 50)
     app.run(debug=True, host="0.0.0.0", port=5000)

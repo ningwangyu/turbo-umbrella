@@ -1,8 +1,8 @@
 @echo off
-title 基金收益预测助手 V2
-cd /d "%~dp0\src"
+title 基金收益预测助手 V4
+cd /d "%~dp0"
 echo ===================================================
-echo  基金收益预测助手 V2 - 模块化架构
+echo  基金收益预测助手 V4 - 模块化架构
 echo  访问 http://localhost:5000
 echo ===================================================
 echo.
@@ -13,8 +13,8 @@ echo      config.py          - 配置管理
 echo      cache.py           - 缓存系统
 echo      ratelimit.py       - 令牌桶限流器
 echo      cli.py             - CLI 命令行工具
-echo      services/          - 业务服务层 (AI/基金/市场/推荐)
-echo      routes/            - API 路由层 (5 个 Blueprint)
+echo      services/          - 业务服务层 (AI/基金/市场/推荐/情绪/持仓)
+echo      routes/            - API 路由层 (按业务域拆分 Blueprint)
 echo      quant/             - 量化计算层 (信号引擎)
 echo      templates/         - HTML 模板
 echo      static/            - 静态资源 (CSS/JS)

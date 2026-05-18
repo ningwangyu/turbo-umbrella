@@ -78,7 +78,7 @@ Windows PowerShell：
 
 ```powershell
 $env:AI_BASE_URL="http://127.0.0.1:7361"
-$env:AI_API_KEY="你的_API_Key"
+$env:AI_API_KEY="you_apikey"
 $env:AI_MODEL="gpt-5.5"
 ```
 
@@ -86,7 +86,7 @@ macOS / Linux：
 
 ```bash
 export AI_BASE_URL="http://127.0.0.1:7361"
-export AI_API_KEY="你的_API_Key"
+export AI_API_KEY="you_apikey"
 export AI_MODEL="gpt-5.5"
 ```
 

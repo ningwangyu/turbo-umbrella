@@ -208,13 +208,13 @@ Copy-Item config.example.json config.json
 AI API 的地址和密钥分别对应 `config.json` 中的 `ai.base_url`、`ai.api_key`，可以在该文件中修改。建议不要把真实密钥写进仓库，AI 密钥优先从环境变量读取：
 
 ```bash
-export AI_API_KEY="your-api-key"
+export AI_API_KEY="you_apikey"
 ```
 
 Windows PowerShell：
 
 ```powershell
-$env:AI_API_KEY="your-api-key"
+$env:AI_API_KEY="you_apikey"
 ```
 
 如果不使用 AI 对话、图片识别和晨报功能，可以保持 `AI_API_KEY` 为空，基金行情、组合统计、定投回测等非 AI 功能仍可使用。

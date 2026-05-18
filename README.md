@@ -233,7 +233,7 @@ Copy-Item config.example.json config.json
 
 ```bash
 export AI_BASE_URL="http://localhost:7361"
-export AI_API_KEY="your-api-key"
+export AI_API_KEY="you_apikey"
 export AI_MODEL="gpt-5.5"
 ```
 
@@ -241,7 +241,7 @@ Windows PowerShell：
 
 ```powershell
 $env:AI_BASE_URL="http://localhost:7361"
-$env:AI_API_KEY="your-api-key"
+$env:AI_API_KEY="you_apikey"
 $env:AI_MODEL="gpt-5.5"
 ```
 

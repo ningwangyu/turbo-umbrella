@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>基金收益预测助手</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+    <link rel="stylesheet" href="/static/css/fund-card.css">
+    <link rel="stylesheet" href="/static/css/modal.css">
+    <link rel="stylesheet" href="/static/css/ai-chat.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">基金助手</h1>
+            <div class="header-right">
+                <span class="market-dot" id="marketDot"></span>
+                <span class="market-text" id="marketText">加载中</span>
+                <button class="theme-toggle" id="themeToggle" title="切换深色模式">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 导航标签栏 -->
+    <nav class="nav-tabs" id="navTabs">
+        <button class="nav-tab active" data-view="home">首页</button>
+        <button class="nav-tab" data-view="analysis">组合分析</button>
+        <button class="nav-tab" data-view="compare">基金对比</button>
+        <button class="nav-tab" data-view="backtest">定投模拟</button>
+        <button class="nav-tab" data-view="sentiment">市场情绪</button>
+        <button class="nav-tab" data-view="report">AI晨报</button>
+        <button class="nav-tab" data-view="export">数据导出</button>
+    </nav>
+
+    <main class="main" id="mainContent">
+        <!-- 首页视图 -->
+        <div class="view-container active" id="view-home">
+        <!-- 资产总览 -->
+        <section class="asset-bar">
+            <div class="asset-main">
+                <div class="asset-label">预估总资产</div>
+                <div class="asset-value" id="totalAssets"><span class="skeleton skeleton-asset">&nbsp;</span></div>
+            </div>
+            <div class="asset-items">
+                <div class="asset-item"><div class="asset-item-label" id="todayLabel">今日预估</div><div class="asset-item-value" id="todayEarnings"><span class="skeleton skeleton-value">&nbsp;</span></div></div>
+                <div class="asset-divider"></div>
+                <div class="asset-item"><div class="asset-item-label">累计收益</div><div class="asset-item-value" id="totalProfit"><span class="skeleton skeleton-value">&nbsp;</span></div></div>
+                <div class="asset-divider"></div>
+                <div class="asset-item"><div class="asset-item-label">持仓基金</div><div class="asset-item-value" id="fundCount"><span class="skeleton skeleton-value" style="width:30px">&nbsp;</span></div></div>
+                <div class="asset-divider"></div>
+                <div class="asset-item"><div class="asset-item-label">收益率</div><div class="asset-item-value" id="profitRate"><span class="skeleton skeleton-value">&nbsp;</span></div></div>
+            </div>
+        </section>
+
+        <!-- 大盘指数 -->
+        <section class="index-bar" id="indexBar">
+            <div class="index-item" id="idx-sh" data-key="sh000001">
+                <span class="index-name">上证指数</span>
+                <span class="index-price">--</span>
+                <span class="index-change">--</span>
+            </div>
+            <div class="index-item" id="idx-sz" data-key="sz399001">
+                <span class="index-name">深证成指</span>
+                <span class="index-price">--</span>
+                <span class="index-change">--</span>
+            </div>
+            <div class="index-item" id="idx-cy" data-key="sz399006">
+                <span class="index-name">创业板指</span>
+                <span class="index-price">--</span>
+                <span class="index-change">--</span>
+            </div>
+        </section>
+
+        <!-- 热门板块横向滚动 -->
+        <section class="sector-bar" id="sectorBar">
+            <div class="sector-bar-title">热门板块</div>
+            <div class="sector-bar-scroll" id="sectorList">
+                <div class="panel-loading"><span class="spinner"></span>加载中...</div>
+            </div>
+        </section>
+
+        <!-- 主内容区：左中右 -->
+        <div class="main-layout">
+            <!-- 左栏：添加 + 热门板块 -->
+            <aside class="left-col">
+                <section class="add-bar">
+                    <div class="section-title">添加基金</div>
+                    <input type="text" id="fundCode" class="add-input" placeholder="基金代码" maxlength="6" inputmode="numeric" autocomplete="off">
+                    <input type="number" id="holdingValue" class="add-input" placeholder="持有金额" min="0" step="0.01" inputmode="decimal">
+                    <input type="number" id="holdingProfit" class="add-input" placeholder="持有收益" step="0.01" inputmode="decimal">
+                    <div class="add-bar-btns">
+                        <button class="btn btn-add" id="btnAdd">添加</button>
+                        <button class="btn btn-batch" id="btnImport">批量</button>
+                    </div>
+                    <div class="autocomplete-list" id="autocompleteList"></div>
+                </section>
+
+                <!-- 价格提醒 -->
+                <section class="alert-section">
+                    <div class="section-title alert-title">价格提醒</div>
+                    <div class="alert-form">
+                        <input type="text" id="alertCode" class="add-input" placeholder="基金代码" maxlength="6" inputmode="numeric" autocomplete="off">
+                        <select id="alertCondition" class="add-input"><option value="above">涨幅 ≥</option><option value="below">跌幅 ≤</option></select>
+                        <div class="alert-threshold-row">
+                            <input type="number" id="alertThreshold" class="add-input" placeholder="%" step="0.1" inputmode="decimal">
+                            <button class="btn btn-add" id="btnAddAlert">添加</button>
+                        </div>
+                    </div>
+                    <div class="alert-list" id="alertList"><div class="alert-empty">暂无提醒</div></div>
+                </section>
+            </aside>
+
+            <!-- 中栏：基金网格 -->
+            <section class="fund-grid" id="fundList">
+                <div class="empty-state" id="emptyState">
+                    <div class="empty-icon">📊</div>
+                    <p>还没有添加基金</p>
+                    <p class="empty-hint">在左侧输入基金代码开始</p>
+                </div>
+            </section>
+
+            <!-- 右栏：推荐 + 贵金属 + 热门板块 -->
+            <aside class="right-col">
+                <!-- 推荐基金 -->
+                <section class="info-card">
+                    <div class="section-title rec-title">推荐基金</div>
+                    <div class="rec-filter">
+                        <select id="recFilter" class="rec-filter-select">
+                            <option value="all">全部推荐</option>
+                            <option value="strong_buy">仅强烈推荐</option>
+                            <option value="buy">仅推荐买入</option>
+                            <option value="watch">仅值得关注</option>
+                        </select>
+                        <span class="rec-filter-count" id="recFilterCount"></span>
+                    </div>
+                    <div class="recommend-list" id="recommendList">
+                        <div class="panel-loading"><span class="spinner"></span>加载中...</div>
+                    </div>
+                </section>
+
+                <!-- 贵金属 -->
+                <section class="info-card">
+                    <div class="section-title metals-title">贵金属行情</div>
+                    <div class="metals-list" id="metalsList">
+                        <div class="panel-loading"><span class="spinner"></span>加载中...</div>
+                    </div>
+                </section>
+
+            </aside>
+        </div>
+
+        <div class="update-info"><span id="updateTime">--</span><span> · 数据来源：天天基金网/新浪财经/东方财富</span></div>
+        </div>
+
+        <!-- 组合分析视图 -->
+        <div class="view-container" id="view-analysis" style="display:none">
+            <div id="analysisContent"></div>
+        </div>
+
+        <!-- 基金对比视图 -->
+        <div class="view-container" id="view-compare" style="display:none">
+            <div id="compareContent"></div>
+        </div>
+
+        <!-- 定投模拟视图 -->
+        <div class="view-container" id="view-backtest" style="display:none">
+            <div id="backtestContent"></div>
+        </div>
+
+        <!-- 市场情绪视图 -->
+        <div class="view-container" id="view-sentiment" style="display:none">
+            <div id="sentimentContent"></div>
+        </div>
+
+        <!-- AI晨报视图 -->
+        <div class="view-container" id="view-report" style="display:none">
+            <div id="reportContent"></div>
+        </div>
+
+        <!-- 数据导出视图 -->
+        <div class="view-container" id="view-export" style="display:none">
+            <div id="exportContent"></div>
+        </div>
+    </main>
+
+    <!-- 指数详情弹窗 -->
+    <div class="modal-mask" id="indexModal">
+        <div class="modal" style="max-width:480px;">
+            <div class="modal-top"><h3 id="indexModalTitle">指数详情</h3><button class="modal-close" id="indexModalClose">&times;</button></div>
+            <div id="indexModalBody"></div>
+        </div>
+    </div>
+
+    <!-- 贵金属详情弹窗 -->
+    <div class="modal-mask" id="metalModal">
+        <div class="modal" style="max-width:520px;">
+            <div class="modal-top"><h3 id="metalModalTitle">贵金属详情</h3><button class="modal-close" id="metalModalClose">&times;</button></div>
+            <div id="metalModalBody"></div>
+        </div>
+    </div>
+
+    <!-- 批量导入弹窗 -->
+    <div class="modal-mask" id="importModal">
+        <div class="modal">
+            <div class="modal-top"><h3>批量导入</h3><button class="modal-close" id="modalClose">&times;</button></div>
+            <div class="modal-tabs">
+                <button class="mtab active" data-tab="textTab">文本粘贴</button>
+                <button class="mtab" data-tab="imageTab">图片识别</button>
+            </div>
+            <div class="tab-pane" id="textTab">
+                <p class="hint">从App复制持仓数据粘贴到下方（支持文本和JSON格式）</p>
+                <textarea id="importText" rows="5" placeholder="粘贴基金持仓数据..."></textarea>
+                <div class="import-examples">
+                    <details><summary>查看支持的格式示例</summary>
+                        <div class="example-content">
+                            <p>基金名称和代码可以只填一个，系统会自动补全。</p>
+                            <p><strong>普通文本</strong>（名称+代码+金额，灵活排列）</p>
+                            <pre>华夏成长混合 000001 持有金额10251.43 收益2160.58
+华夏中证500指数增强C 010855 持有金额52834.31 收益6497.06
+白银基金 持有金额8000 收益500
+010855 持有金额52834.31 收益6497.06</pre>
+                            <p><strong>JSON数组</strong>（名称、代码可二选一或全填）</p>
+                            <pre>[
+  {"code":"000001","value":10251.43,"profit":2160.58},
+  {"name":"白银基金","value":8000,"profit":500},
+  {"name":"华夏中证500指数增强C","code":"010855","value":52834.31,"profit":6497.06}
+]</pre>
+                        </div>
+                    </details>
+                </div>
+                <button class="btn btn-primary" id="btnParseText">解析文本</button>
+            </div>
+            <div class="tab-pane hidden" id="imageTab">
+                <p class="hint">上传持仓截图自动识别</p>
+                <label class="upload-zone" id="uploadZone">
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                    <span class="upload-icon">📷</span><span>点击上传或拖拽图片</span>
+                </label>
+                <img id="previewImage" class="preview-img hidden">
+                <button class="btn btn-primary" id="btnParseImage">识别图片</button>
+            </div>
+            <div class="import-results hidden" id="importResults">
+                <h4>识别结果</h4><div id="importList"></div>
+                <button class="btn btn-primary" id="btnConfirmImport">确认导入</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 加入持仓弹窗 -->
+    <div class="modal-mask" id="addHoldingModal">
+        <div class="modal" style="max-width:360px;border-radius:16px 16px 0 0;">
+            <div class="modal-top"><h3>加入持仓</h3><button class="modal-close" id="addHoldingClose">&times;</button></div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+                <input type="hidden" id="addHoldingCode">
+                <div class="hint" id="addHoldingName"></div>
+                <input type="number" id="addHoldingValue" class="add-input" placeholder="持有金额" min="0" step="0.01" inputmode="decimal">
+                <input type="number" id="addHoldingProfit" class="add-input" placeholder="持有收益（可选）" step="0.01" inputmode="decimal">
+                <button class="btn btn-primary" id="btnConfirmAddHolding">确认加入</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 基金详情弹窗 -->
+    <div class="modal-mask" id="fundDetailModal">
+        <div class="modal" style="max-width:720px;">
+            <div class="modal-top"><h3 id="fundDetailTitle">基金详情</h3><button class="modal-close" id="fundDetailClose">&times;</button></div>
+            <div id="fundDetailBody"></div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <!-- AI 悬浮聊天框 -->
+    <button class="ai-float-btn" id="aiFloatBtn" title="AI 助手">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M18 14h.01"/><path d="M6 14h.01"/><path d="M12 17v4"/><path d="M8 21h8"/><path d="M20 10c0 6-3.5 9-8 9s-8-3-8-9"/></svg>
+    </button>
+    <div class="ai-chat-panel" id="aiChatPanel">
+        <div class="ai-chat-header">
+            <span class="ai-chat-header-title">AI 基金助手</span>
+            <div class="ai-chat-header-btns">
+                <button class="ai-chat-clear" id="aiChatClear">清空</button>
+                <button class="ai-chat-close" id="aiChatClose">&times;</button>
+            </div>
+        </div>
+        <div class="ai-chat-messages" id="aiChatMessages">
+            <div class="ai-chat-welcome">
+                <div class="ai-chat-welcome-icon">🤖</div>
+                <div>你好！我是AI基金助手</div>
+                <div style="margin-top:4px;">可以问我任何基金投资相关的问题</div>
+            </div>
+        </div>
+        <div class="ai-chat-input-area">
+            <label class="ai-chat-img-btn" id="aiChatImgBtn" title="发送图片">
+                <input type="file" id="aiChatImgInput" accept="image/*" hidden>
+                📷
+            </label>
+            <textarea class="ai-chat-input" id="aiChatInput" placeholder="输入你的问题..." rows="1"></textarea>
+            <button class="ai-chat-send" id="aiChatSend">➤</button>
+        </div>
+    </div>
+
+    <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

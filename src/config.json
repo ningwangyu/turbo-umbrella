@@ -1,0 +1,46 @@
+{
+    "ai": {
+        "base_url": "",
+        "api_key": "",
+        "model": "gpt-5.5",
+        "timeout_seconds": 60
+    },
+    "api": {
+        "eastmoney": {
+            "base_url": "http://fund.eastmoney.com",
+            "estimation_url": "https://fundgz.1234567.com.cn/js/",
+            "performance_url": "https://fund.eastmoney.com/pingzhongdata/",
+            "holdings_url": "https://fundf10.eastmoney.com/FundArchivesDatas.aspx",
+            "rate_limit_per_second": 5,
+            "timeout_seconds": 10
+        },
+        "sina": {
+            "base_url": "https://hq.sinajs.cn",
+            "rate_limit_per_second": 3,
+            "timeout_seconds": 5
+        }
+    },
+    "cache": {
+        "estimation_ttl_seconds": 30,
+        "performance_ttl_seconds": 300,
+        "holdings_ttl_seconds": 300,
+        "metals_ttl_seconds": 60,
+        "recommend_ttl_seconds": 600
+    },
+    "recommend": {
+        "pool_dimensions": 6,
+        "pool_per_dimension": 50,
+        "max_workers": 10,
+        "fetch_timeout_seconds": 45
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": 5000,
+        "debug": true
+    },
+    "ui": {
+        "auto_refresh_interval_seconds": 60,
+        "market_status_check_interval_seconds": 60,
+        "metals_refresh_interval_seconds": 60
+    }
+}

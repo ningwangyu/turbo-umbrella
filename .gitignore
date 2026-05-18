@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local runtime data
+src/holdings.json
+*.log
+
+# Local secrets
+.env
+.env.*
+!/.env.example
+
+# IDE and agent-local workspace state
+.idea/
+.vscode/
+.tabnine/
+.claude/
+.agents/
+agent-placeholder-dirs/
+skills/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/

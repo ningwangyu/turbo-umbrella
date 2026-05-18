@@ -227,7 +227,7 @@ Windows PowerShell：
 Copy-Item config.example.json config.json
 ```
 
-然后按需修改 `config.json` 中的 AI 接口、数据库和服务端口。`config.json` 已被 `.gitignore` 忽略，不会进入公开提交。
+然后按需修改 `config.json` 中的 AI 接口、数据库和服务端口。AI API 的地址和密钥分别对应 `ai.base_url`、`ai.api_key`，可在该文件中修改。`config.json` 已被 `.gitignore` 忽略，不会进入公开提交。
 
 也可以用环境变量覆盖 AI 配置：
 
@@ -265,7 +265,7 @@ Windows 用户也可以运行：
 
 ## 配置说明
 
-`src/config.example.json` 是可提交的配置模板，`src/config.json` 是本地私密配置。
+`src/config.example.json` 是可提交的配置模板，`src/config.json` 是本地私密配置。需要更换 AI API URL 或 Key 时，修改本地 `src/config.json` 中的 `ai.base_url` 和 `ai.api_key`；部署环境也可以通过 `AI_BASE_URL`、`AI_API_KEY` 覆盖。
 
 | 配置路径 | 说明 |
 | --- | --- |

@@ -1,0 +1,142 @@
+/* ===== Header ===== */
+.header {
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    color: #fff; padding: 12px 16px;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+.header-inner {
+    margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.logo { font-size: 17px; font-weight: 700; letter-spacing: 1px; }
+.header-right { display: flex; align-items: center; gap: 6px; font-size: 12px; opacity: .9; }
+.market-dot { width: 8px; height: 8px; border-radius: 50%; background: #aaa; display: inline-block; }
+.market-dot.open { background: #4caf50; animation: pulse 2s infinite; }
+.market-dot.closed { background: #ff9800; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+/* ===== Main ===== */
+.main { width: 100%; margin: 0; padding: 10px 12px 24px; }
+
+/* ===== Navigation Tabs ===== */
+.nav-tabs {
+    display: flex; gap: 4px; padding: 8px 12px 0;
+    background: var(--bg); position: sticky; top: 48px; z-index: 90;
+    border-bottom: 1px solid var(--border);
+}
+.nav-tab {
+    padding: 6px 14px; border: none; background: none;
+    font-size: 12px; font-weight: 500; color: var(--text3);
+    cursor: pointer; border-bottom: 2px solid transparent;
+    transition: all .15s; font-family: inherit;
+    white-space: nowrap;
+}
+.nav-tab:hover { color: var(--text2); }
+.nav-tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 600; }
+.view-container { display: none; }
+.view-container.active { display: block; }
+
+/* ===== Asset Bar ===== */
+.asset-bar {
+    background: linear-gradient(135deg, #1a73e8, #1565c0);
+    border-radius: var(--radius); color: #fff;
+    padding: 14px 16px; margin-bottom: 10px;
+    box-shadow: 0 4px 14px rgba(26,115,232,.25);
+}
+.asset-main { margin-bottom: 10px; }
+.asset-label { font-size: 11px; opacity: .75; margin-bottom: 2px; }
+.asset-value { font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.5px; }
+.asset-items { display: flex; align-items: center; border-top: 1px solid rgba(255,255,255,.2); padding-top: 10px; }
+.asset-item { flex: 1; text-align: center; }
+.asset-item-label { font-size: 10px; opacity: .7; margin-bottom: 2px; }
+.asset-item-value { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.asset-divider { width: 1px; height: 24px; background: rgba(255,255,255,.2); }
+
+/* ===== Index Bar ===== */
+.index-bar { display: flex; gap: 8px; margin-bottom: 8px; }
+.index-item {
+    flex: 1; background: var(--card); border-radius: var(--radius);
+    padding: 8px 10px; box-shadow: var(--shadow);
+    display: flex; flex-direction: column; gap: 3px;
+    text-align: center; cursor: pointer; transition: all .15s;
+}
+.index-item:hover { box-shadow: 0 2px 12px rgba(0,0,0,.1); transform: translateY(-1px); }
+.index-name { font-size: 10px; color: var(--text3); }
+.index-price { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.index-change { font-size: 10px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ===== Sector Bar (below index, horizontal scroll) ===== */
+.sector-bar {
+    background: var(--card); border-radius: var(--radius);
+    padding: 8px 12px; margin-bottom: 8px;
+    box-shadow: var(--shadow);
+}
+.sector-bar-title {
+    font-size: 11px; font-weight: 600; color: var(--text);
+    white-space: nowrap; flex-shrink: 0;
+    display: flex; align-items: center; gap: 4px;
+    margin-bottom: 6px;
+}
+.sector-bar-title::before {
+    content: ""; display: inline-block;
+    width: 3px; height: 12px; background: #e91e63; border-radius: 2px;
+}
+.sector-bar-scroll {
+    display: flex; flex-direction: column; gap: 6px;
+}
+
+/* ===== Main Layout: Left / Center / Right ===== */
+.main-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr 300px;
+    gap: 12px;
+    align-items: start;
+}
+
+/* Left Column */
+.left-col {
+    display: flex; flex-direction: column; gap: 8px;
+    position: sticky; top: 60px;
+}
+
+/* Center: Fund Grid */
+.fund-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    align-items: start;
+}
+
+/* Right Column */
+.right-col {
+    display: flex; flex-direction: column; gap: 8px;
+    position: sticky; top: 60px;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+}
+.right-col::-webkit-scrollbar { width: 4px; }
+.right-col::-webkit-scrollbar-thumb { background: #ddd; border-radius: 2px; }
+
+/* ===== Section Titles ===== */
+.section-title {
+    font-size: 13px; font-weight: 600; color: var(--text);
+    margin-bottom: 8px; display: flex; align-items: center; gap: 6px;
+}
+.section-title::before {
+    content: ""; display: inline-block;
+    width: 3px; height: 13px; border-radius: 2px;
+}
+.rec-title::before { background: var(--primary); }
+.metals-title::before { background: #f5a623; }
+.sector-title::before { background: #e91e63; }
+.alert-title::before { background: #ff9800; }
+
+/* ===== Info Card (Right Column) ===== */
+.info-card {
+    background: var(--card); border-radius: var(--radius);
+    padding: 10px; box-shadow: var(--shadow);
+}
+
+/* ===== Update Info ===== */
+.update-info { text-align: center; font-size: 10px; color: #bbb; padding: 6px 0 4px; }

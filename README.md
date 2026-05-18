@@ -8,7 +8,95 @@
 
 当前发布版本：V4
 
-V4 在既有基金估值和持仓功能基础上，强化了组合分析、板块集中度、市场情绪、AI 晨报、数据导出和配置安全。公开仓库只提交 `src/config.example.json`，真实密钥、数据库密码和本地持仓数据通过本地 `src/config.json` 或环境变量维护，避免把敏感信息写入 Git 历史。
+V4 是在 V3 主分支基础上的工程化升级版本。V3 已经完成了项目图文文档、组合分析、市场情绪、定投回测、基金对比和测试补齐；V4 的重点不是简单增加页面，而是继续拆细模块边界、增强持仓持久化能力、重构高复杂度前端模块、沉淀市场情绪子服务，并把公开仓库配置调整为更安全的发布形态。
+
+## V4 相对 V3 的核心更新
+
+| 维度 | V3 状态 | V4 更新 |
+| --- | --- | --- |
+| 版本定位 | V3 是主分支展示版，强调图文文档、项目结构和功能完整度 | V4 作为当前 `main` 主分支，强调模块化落地、持久化能力、服务拆分和安全发布 |
+| 模块化拆分 | 已有 `routes / services / quant / static/js` 分层，但部分 service 和前端文件仍偏大 | 拆出 `services/recommend/`、`services/sentiment/`、`static/js/portfolio/`、`static/js/fund-compare/`、`static/js/backtest/`、`static/js/sentiment/` 等子模块 |
+| 持仓能力 | 以浏览器本地持仓和组合分析为主 | 新增 `holding_routes.py`、`holding_store.py`，为后端持仓持久化和 MySQL 存储打基础 |
+| 导入能力 | 已支持文本/图片导入思路，逻辑较集中 | 新增 `import_service.py`，把导入解析从路由中下沉到服务层 |
+| 推荐引擎 | 推荐逻辑主要集中在 `recommend_service.py` | 新增 `recommend/pool.py` 和 `recommend/scoring.py`，拆分候选池获取、快速评分和综合评分 |
+| 市场情绪 | `sentiment_service.py` 承担较多职责 | 拆分为 `sentiment/market.py`、`limits.py`、`limit_store.py`、`etf.py`、`etf_store.py`、`volume.py`、`scheduler.py` 等模块 |
+| 前端结构 | 基金对比、组合分析、定投回测、市场情绪的主文件体积较大 | 按功能拆成 API、状态、图表、样式、事件、详情、结果等模块，入口文件变薄 |
+| 代码注释 | V3 已补充模块级说明和关键流程注释 | V4 保留关键注释，同时让文件职责更单一，减少“靠注释解释大文件”的维护压力 |
+| 测试覆盖 | V3 有组合分析和板块服务测试 | V4 新增市场情绪字段解析、北向资金汇总、fallback 行为测试，当前基础测试 88 个通过 |
+| 配置安全 | V3 已开始使用 `.env.example` 和非敏感配置 | V4 从 Git 跟踪中移除 `src/config.json`，新增 `src/config.example.json`，真实密钥只留在本地或环境变量 |
+
+## 模块化拆分升级
+
+V4 的主要工程变化是把 V3 中“已经分层但仍然偏集中”的模块继续拆细。拆分目标不是为了增加目录数量，而是让每个文件有更清楚的职责边界，便于测试、维护和继续扩展。
+
+### 后端服务拆分
+
+- `src/services/recommend_service.py` 不再承载完整推荐流程细节，候选池和评分逻辑拆入 `src/services/recommend/`。
+- `src/services/sentiment_service.py` 从单一大服务拆成市场概览、涨跌停、ETF、成交量、后台刷新和通用缓存等子模块。
+- `src/services/import_service.py` 独立处理持仓导入解析，路由层只负责请求校验和响应封装。
+- `src/services/holding_store.py` 独立处理持仓存储，为 Web 持仓、本地持仓和 MySQL 持久化提供统一入口。
+- `src/routes/holding_routes.py` 新增持仓 API，避免持仓逻辑继续散落在基金路由或前端本地状态中。
+
+### 前端模块拆分
+
+V3 的几个前端核心文件已经能完成业务功能，但文件较大。V4 将它们拆成可读性更高的子模块：
+
+| V3 大文件 | V4 拆分方向 |
+| --- | --- |
+| `portfolio-analysis.js` | `portfolio/api.js`、`allocation.js`、`charts.js`、`details.js`、`events.js`、`risk.js`、`state.js`、`styles.js` |
+| `fund-compare.js` | `fund-compare/api.js`、`chart.js`、`events.js`、`signal-modal.js`、`state.js`、`styles.js`、`view.js` |
+| `backtest.js` | `backtest/api.js`、`charts.js`、`config.js`、`form.js`、`results.js`、`styles.js` |
+| `sentiment.js` | `sentiment/api.js`、`charts.js`、`details.js`、`etf.js`、`limit-stocks.js`、`overview.js`、`state.js`、`styles.js` |
+
+拆分后，入口文件更像“装配层”，具体 UI 渲染、API 调用、图表绘制、事件绑定和状态管理分别放在对应模块中，后续改某个子功能时不需要反复穿梭于一个超长文件。
+
+## 代码注释与可读性变化
+
+V3 的注释重点是“解释项目是什么、模块负责什么”。V4 的可读性提升更多来自结构本身：
+
+- 保留核心模块 docstring 和关键算法注释，例如推荐评分、市场情绪解析、组合风险评估。
+- 对复杂业务采用“拆模块 + 命名表达意图”的方式，减少在大文件中堆叠长注释。
+- 路由层更薄，接口文件主要体现 API 输入输出；业务细节放入 service，便于单独阅读和测试。
+- 前端模块按视图和职责命名，例如 `risk.js` 负责风险指标，`allocation.js` 负责资产与板块配置，`signal-modal.js` 负责基金信号弹窗。
+- 配置文件注释更新为真实优先级：环境变量、本地 `config.json`、公开模板、代码默认值。
+
+## 功能变化与创新点
+
+V4 在功能层面延续 V3 的基金分析平台定位，但新增和强化了几个更适合实际使用的能力：
+
+1. **后端持仓持久化能力**
+   - V3 更偏浏览器本地持仓和前端组合分析。
+   - V4 新增持仓路由和存储服务，为跨设备、服务端保存、MySQL 落库打基础。
+
+2. **市场情绪服务细化**
+   - V3 已有市场情绪入口。
+   - V4 将涨跌停、ETF 情绪、成交量、市场概览、缓存和后台刷新拆成独立模块，后续可以单独扩展每类情绪指标。
+
+3. **ETF 与涨跌停数据增强**
+   - 新增 ETF 相关数据存储与连续状态分析模块。
+   - 新增涨跌停数据存储和 fallback 测试，让市场情绪不只依赖单一实时接口。
+
+4. **推荐引擎结构升级**
+   - 候选池获取、快速评分、综合评分拆开后，推荐逻辑更容易调整。
+   - 后续可以独立替换基金池来源、评分权重或风控指标。
+
+5. **前端分析体验增强**
+   - 组合分析、基金对比、定投回测、市场情绪都从“大文件实现”升级为模块化功能组。
+   - 图表、详情、样式、事件和 API 分离后，更适合继续增加新指标和新交互。
+
+6. **安全发布**
+   - V4 删除被 Git 跟踪的 `src/config.json`。
+   - 公开仓库只保留 `src/config.example.json`，真实 AI Key、数据库密码和本地持仓数据不进入提交。
+
+7. **测试补强**
+   - 新增 `tests/test_sentiment_market.py`。
+   - 覆盖北向资金解析、成交额汇总和主备数据 fallback，降低外部接口字段变化带来的维护风险。
+
+## V4 当前项目介绍
+
+基金收益预测助手 V4 是一个面向个人投资者的本地化基金分析平台，提供基金持仓管理、实时估值、组合分析、基金对比、定投回测、市场情绪、AI 晨报、数据导出和 AI 投资助手等功能。项目采用 Flask 后端、原生 JavaScript 前端和多源金融数据接口，重点放在可本地运行、可扩展、可解释的基金投资辅助分析。
+
+公开仓库只提交 `src/config.example.json`，真实密钥、数据库密码和本地持仓数据通过本地 `src/config.json` 或环境变量维护，避免把敏感信息写入 Git 历史。
 
 ## 核心能力
 

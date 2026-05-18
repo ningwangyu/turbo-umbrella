@@ -90,7 +90,7 @@ export AI_API_KEY="你的_API_Key"
 export AI_MODEL="gpt-5.5"
 ```
 
-也可以复制 `config.example.json` 为 `config.json` 后调整配置。`config.json` 是本地配置文件，已被 Git 忽略；不要把真实 API Key 提交到 Git 仓库。
+也可以复制 `config.example.json` 为 `config.json` 后调整配置。AI API 的地址和密钥分别对应 `ai.base_url`、`ai.api_key`，可在该文件中修改；`AI_BASE_URL`、`AI_API_KEY` 环境变量会覆盖本地配置。`config.json` 是本地配置文件，已被 Git 忽略；不要把真实 API Key 提交到 Git 仓库。
 
 ### 4. 启动 Web 服务
 
@@ -168,6 +168,8 @@ jijinv1/
 | `/api/portfolio/stats` | POST | 计算组合统计数据 |
 
 ## 配置说明
+
+需要更换 AI API URL 或 Key 时，修改本地 `config.json` 中的 `ai.base_url` 和 `ai.api_key`；部署环境也可以通过 `AI_BASE_URL`、`AI_API_KEY` 覆盖。
 
 | 字段 | 说明 |
 | --- | --- |

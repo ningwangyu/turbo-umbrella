@@ -1,7 +1,7 @@
 /**
  * 数据导出模块 — 导出持仓为JSON/CSV
  */
-import { holdings } from './state.js';
+import { holdings, replaceHoldingsOnServer } from './state.js';
 import { showToast } from './utils.js';
 
 /**
@@ -89,8 +89,10 @@ function restoreFromBackup(event) {
                 .filter(h => /^\d{6}$/.test(h.code))
                 .map(h => ({
                     code: h.code,
+                    name: h.name,
                     value: parseFloat(h.holding_value || h.value) || 0,
                     profit: parseFloat(h.holding_profit || h.profit) || 0,
+                    source: "backup",
                 }));
 
             if (newHoldings.length === 0) {
@@ -99,12 +101,11 @@ function restoreFromBackup(event) {
             }
 
             if (confirm(`即将恢复 ${newHoldings.length} 只基金的持仓数据，当前持仓将被覆盖。是否继续？`)) {
-                // 动态导入state以修改holdings
-                import('./state.js').then(state => {
-                    state.setHoldings(newHoldings);
-                    state.saveHoldings();
+                replaceHoldingsOnServer(newHoldings).then(() => {
                     showToast(`已恢复 ${newHoldings.length} 只基金，页面将刷新`);
                     setTimeout(() => location.reload(), 1000);
+                }).catch(err => {
+                    showToast(err.message || "恢复失败");
                 });
             }
         } catch (err) {

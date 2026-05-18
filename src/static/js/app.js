@@ -1,12 +1,12 @@
 /**
- * 基金收益预测助手 V3 — 入口模块
+ * 基金收益预测助手 V2 — 入口模块
  *
  * 导入所有功能模块，绑定全局事件，启动初始化流程
  */
 import {
     holdings, searchDebounce, refreshTimer, signalCache,
     $fundCode, $holdingValue, $holdingProfit, $btnAdd, $autocomplete,
-    saveHoldings, fundDataCache, setHoldings, setSearchDebounce
+    saveHoldingToServer, loadHoldingsFromServer, fundDataCache, setSearchDebounce
 } from './state.js';
 import { showToast } from './utils.js';
 import { renderFundList, renderSummary, fetchFundData, fetchAllFundData, fetchAllSignals, initFundDetailModal, updateMarketStatus } from './fund-card.js';
@@ -50,13 +50,19 @@ async function addFund() {
     if (!value || +value <= 0) { showToast("请输入持有金额"); return; }
     if (holdings.some(h => h.code === code)) { showToast("该基金已存在"); return; }
     $btnAdd.disabled = true; $btnAdd.textContent = "...";
-    const fd = await fetchFundData(code);
-    if (!fd) { showToast("无法获取基金数据"); $btnAdd.disabled = false; $btnAdd.textContent = "添加"; return; }
-    holdings.push({ code, value: +value || 0, profit: +profit || 0 }); fundDataCache[code] = fd; saveHoldings();
-    $fundCode.value = ""; $holdingValue.value = ""; $holdingProfit.value = "";
-    $btnAdd.disabled = false; $btnAdd.textContent = "添加";
-    renderFundList(); renderSummary(); showToast(`已添加 ${fd.name}`);
-    fetchSignal(code);
+    try {
+        const fd = await fetchFundData(code);
+        if (!fd) { showToast("无法获取基金数据"); return; }
+        await saveHoldingToServer({ code, value: +value || 0, profit: +profit || 0 });
+        fundDataCache[code] = fd;
+        $fundCode.value = ""; $holdingValue.value = ""; $holdingProfit.value = "";
+        renderFundList(); renderSummary(); showToast(`已添加 ${fd.name}`);
+        fetchSignal(code);
+    } catch (e) {
+        showToast(e.message || "保存持仓失败");
+    } finally {
+        $btnAdd.disabled = false; $btnAdd.textContent = "添加";
+    }
 }
 
 async function fetchSignal(code) {
@@ -132,7 +138,13 @@ function initNavTabs() {
                 }
             } else if (view === "sentiment") {
                 const container = document.getElementById("sentimentContent");
-                if (container && !container.hasChildNodes()) {
+                const firstChild = container?.firstElementChild;
+                const shouldLoad = container && (
+                    !container.hasChildNodes()
+                    || firstChild?.classList.contains('sentiment-load-error')
+                    || (firstChild?.classList.contains('panel-loading') && !container.querySelector('.sentiment-page'))
+                );
+                if (shouldLoad) {
                     renderSentiment(container);
                 }
             } else if (view === "report") {
@@ -191,7 +203,12 @@ async function init() {
     initFundDetailModal();
     bindEvents();
 
-    // 初始状态
+    // 初始状态：先从 MySQL 读取持仓；若数据库为空且浏览器有旧数据，会自动迁移。
+    try {
+        await loadHoldingsFromServer();
+    } catch (e) {
+        showToast(e.message || "加载持仓失败");
+    }
     updateMarketStatus();
     setInterval(updateMarketStatus, 60000);
     renderFundList();

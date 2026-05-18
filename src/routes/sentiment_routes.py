@@ -4,7 +4,15 @@
 
 from flask import Blueprint, jsonify, request
 
-from services.sentiment_service import get_market_sentiment, get_limit_stocks, get_volume_trend, get_etf_consecutive_flow
+from services.sentiment_service import (
+    get_etf_consecutive_flow,
+    get_limit_refresh_state,
+    get_limit_stocks,
+    get_market_sentiment,
+    get_volume_trend,
+    refresh_etf_flow_data,
+    refresh_limit_stocks,
+)
 from services.fund_service import search_funds_by_stock
 
 sentiment_bp = Blueprint("sentiment", __name__)
@@ -19,12 +27,31 @@ def market_sentiment():
 
 @sentiment_bp.route("/api/market/sentiment/limits")
 def limit_stocks():
-    """获取涨停/跌停个股列表"""
+    """获取涨停/跌停个股列表（读取本地数据库）"""
     direction = request.args.get("direction", "up")
     if direction not in ("up", "down"):
         return jsonify({"error": "direction 参数必须为 up 或 down"}), 400
     stocks = get_limit_stocks(direction)
     return jsonify(stocks)
+
+
+@sentiment_bp.route("/api/market/sentiment/limits/state")
+def limit_stocks_state():
+    """获取涨跌停数据库刷新状态"""
+    return jsonify(get_limit_refresh_state())
+
+
+@sentiment_bp.route("/api/market/sentiment/limits/refresh", methods=["POST"])
+def refresh_limit_stocks_route():
+    """手动刷新涨跌停数据到本地数据库"""
+    import traceback
+    try:
+        result = refresh_limit_stocks()
+        return jsonify(result)
+    except Exception as e:
+        print(f"LIMIT STOCKS REFRESH ERROR: {e}")
+        traceback.print_exc()
+        return jsonify({"error": str(e)}), 500
 
 
 @sentiment_bp.route("/api/market/sentiment/stock-funds")
@@ -58,3 +85,18 @@ def etf_consecutive():
         print(f"ETF CONSECUTIVE ERROR: {e}")
         traceback.print_exc()
         return jsonify({"inflow": [], "outflow": [], "error": str(e)}), 500
+
+
+@sentiment_bp.route("/api/market/sentiment/etf-consecutive/refresh", methods=["POST"])
+def refresh_etf_consecutive():
+    """刷新ETF持续流入/流出统计到本地数据库"""
+    import traceback
+    try:
+        days = request.args.get("days", 30, type=int)
+        backfill = request.args.get("backfill", "0") in ("1", "true", "True", "yes")
+        result = refresh_etf_flow_data(days, backfill=backfill)
+        return jsonify(result)
+    except Exception as e:
+        print(f"ETF CONSECUTIVE REFRESH ERROR: {e}")
+        traceback.print_exc()
+        return jsonify({"error": str(e)}), 500

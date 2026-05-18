@@ -17,6 +17,7 @@ import re
 import time
 
 import requests
+from requests import RequestException
 
 from config import (
     HEADERS, PRICE_CACHE_TTL, INDEX_CACHE_TTL, SECTORS_CACHE_TTL,
@@ -24,6 +25,77 @@ from config import (
 )
 from cache import price_cache, index_cache, sectors_cache, metal_trend_cache
 from ratelimit import limiter
+
+
+_EASTMONEY_HEADERS = {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Connection": "close",
+    "Referer": "https://quote.eastmoney.com/",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+}
+
+_FALLBACK_SECTOR_SECIDS = (
+    "90.BK0475", "90.BK0428", "90.BK0437", "90.BK0478", "90.BK0481",
+    "90.BK0482", "90.BK0484", "90.BK0485", "90.BK0486", "90.BK0487",
+    "90.BK0488", "90.BK0489", "90.BK0490", "90.BK0491", "90.BK0492",
+    "90.BK0493", "90.BK0494", "90.BK0495", "90.BK0496", "90.BK0497",
+    "90.BK0498", "90.BK0499", "90.BK0500", "90.BK0501", "90.BK0502",
+    "90.BK0503", "90.BK0504", "90.BK0505", "90.BK0506", "90.BK0507",
+)
+
+
+def _request_eastmoney_json(url: str, timeout: int = 10) -> dict:
+    last_error = None
+    candidate_urls = [url]
+    if url.startswith("https://push2.eastmoney.com/"):
+        candidate_urls.append(url.replace("https://push2.eastmoney.com/", "http://push2.eastmoney.com/", 1))
+    for candidate_url in candidate_urls:
+        for attempt in range(2):
+            try:
+                resp = requests.get(candidate_url, timeout=timeout, headers=_EASTMONEY_HEADERS)
+                resp.raise_for_status()
+                resp.encoding = "utf-8"
+                return resp.json()
+            except (RequestException, ValueError) as exc:
+                last_error = exc
+                if attempt == 0:
+                    time.sleep(0.5)
+    raise RuntimeError(f"东方财富数据请求失败：{last_error}")
+
+
+
+def _parse_sector_rows(rows: list[dict]) -> list[dict]:
+    sectors = []
+    for item in rows[:30]:
+        name = item.get("f14", "")
+        change_pct = item.get("f3", 0)
+        leader_name = item.get("f128") or item.get("f140", "")
+        leader_code = item.get("f140") if item.get("f128") else item.get("f136", "")
+        up_count = item.get("f104", 0)
+        down_count = item.get("f105", 0)
+        sectors.append({
+            "name": name,
+            "change_pct": round(change_pct, 2) if change_pct else 0,
+            "leader_name": leader_name,
+            "leader_code": str(leader_code) if leader_code else "",
+            "up_count": up_count,
+            "down_count": down_count,
+        })
+    return sectors
+
+
+def _fetch_fallback_sectors() -> list[dict]:
+    url = (
+        "https://push2.eastmoney.com/api/qt/ulist.np/get?"
+        f"secids={','.join(_FALLBACK_SECTOR_SECIDS)}&fltt=2&invt=2&"
+        "fields=f12,f14,f3,f104,f105,f128,f136,f140"
+    )
+    data = _request_eastmoney_json(url)
+    rows = data.get("data", {}).get("diff") if data.get("data") else []
+    sectors = _parse_sector_rows(rows or [])
+    return sorted(sectors, key=lambda item: item["change_pct"], reverse=True)
 
 
 def get_market_indices():
@@ -111,33 +183,20 @@ def get_hot_sectors():
             "fs=m:90+t:2&"
             "fields=f2,f3,f4,f12,f14,f104,f105,f128,f136,f140"
         )
-        resp = requests.get(url, timeout=10, headers={
-            "Referer": "https://quote.eastmoney.com/",
-            "User-Agent": "Mozilla/5.0",
-        })
-        data = resp.json()
-        sectors = []
-        if data.get("data") and data["data"].get("diff"):
-            for item in data["data"]["diff"][:30]:
-                name = item.get("f14", "")           # 板块名称
-                change_pct = item.get("f3", 0)        # 涨跌幅%
-                leader_name = item.get("f140", "")    # 领涨股名称
-                leader_code = item.get("f136", "")    # 领涨股代码
-                up_count = item.get("f104", 0)        # 上涨家数
-                down_count = item.get("f105", 0)      # 下跌家数
-                sectors.append({
-                    "name": name,
-                    "change_pct": round(change_pct, 2) if change_pct else 0,
-                    "leader_name": leader_name,
-                    "leader_code": str(leader_code) if leader_code else "",
-                    "up_count": up_count,
-                    "down_count": down_count,
-                })
-        sectors_cache.set("sectors", sectors)
-        return sectors
+        data = _request_eastmoney_json(url)
+        rows = data.get("data", {}).get("diff") if data.get("data") else []
+        sectors = _parse_sector_rows(rows or [])
     except Exception as e:
-        print(f"Failed to fetch hot sectors: {e}")
-        return []
+        print(f"Failed to fetch hot sectors primary, fallback to fixed sectors: {e}")
+        try:
+            limiter.acquire("eastmoney")
+            sectors = _fetch_fallback_sectors()
+        except Exception as fallback_error:
+            print(f"Failed to fetch hot sectors fallback: {fallback_error}")
+            sectors = []
+    if sectors:
+        sectors_cache.set("sectors", sectors)
+    return sectors
 
 
 def get_metal_prices():

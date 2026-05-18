@@ -5,7 +5,7 @@ import {
     holdings, fundDataCache, signalCache, chartInstances, $fundList, $emptyState,
     $totalAssets, $totalProfit, $todayEarnings, $todayLabel, $fundCount, $profitRate, $updateTime,
     $fundDetailModal, $fundDetailTitle, $fundDetailBody, $fundDetailClose,
-    saveHoldings, deleteFundCache, setHoldings, setDetailChartInstance, getDetailChartInstance
+    deleteFundCache, deleteHoldingFromServer, setDetailChartInstance, getDetailChartInstance
 } from './state.js';
 import { fmtMoney, fmtPlain, colorCls, fmtTime, showToast } from './utils.js';
 import { renderChart, renderDetailChart } from './chart-config.js';
@@ -128,12 +128,18 @@ function drawGauge(code, score) {
 // ===== 卡片事件绑定 =====
 function bindCardEvents() {
     $fundList.querySelectorAll(".card-delete").forEach(btn => {
-        btn.addEventListener("click", function (e) {
+        btn.addEventListener("click", async function (e) {
             e.stopPropagation();
             const code = this.dataset.code;
-            setHoldings(holdings.filter(h => h.code !== code));
-            deleteFundCache(code);
-            saveHoldings(); renderFundList(); renderSummary(); showToast("已删除");
+            this.disabled = true;
+            try {
+                await deleteHoldingFromServer(code);
+                deleteFundCache(code);
+                renderFundList(); renderSummary(); showToast("已删除");
+            } catch (err) {
+                showToast(err.message || "删除失败");
+                this.disabled = false;
+            }
         });
     });
     $fundList.querySelectorAll(".fund-card").forEach(card => {

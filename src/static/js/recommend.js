@@ -1,7 +1,7 @@
 /**
  * 推荐系统模块 — 获取/筛选/渲染推荐列表 + 加入持仓弹窗
  */
-import { holdings, $recommendList, $addHoldingModal, $addHoldingClose, $addHoldingCode, $addHoldingName, $addHoldingValue, $addHoldingProfit, $btnConfirmAddHolding, $recFilter, allRecommendData, recMeta, setAllRecommendData, setRecMeta, fundDataCache, signalCache, setHoldings, saveHoldings } from './state.js';
+import { holdings, $recommendList, $addHoldingModal, $addHoldingClose, $addHoldingCode, $addHoldingName, $addHoldingValue, $addHoldingProfit, $btnConfirmAddHolding, $recFilter, allRecommendData, recMeta, setAllRecommendData, setRecMeta, fundDataCache, signalCache, saveHoldingToServer } from './state.js';
 import { colorCls, fmtMoney, fmtPlain, showToast } from './utils.js';
 import { fetchFundData, renderFundList, renderSummary } from './fund-card.js';
 
@@ -66,7 +66,7 @@ export function initRecommendModule() {
         this.disabled = true; this.textContent = "添加中...";
         const fd = await fetchFundData(code);
         if (!fd) { showToast("获取基金数据失败"); this.disabled = false; this.textContent = "确认加入"; return; }
-        holdings.push({ code, value: +value || 0, profit: +profit || 0 }); fundDataCache[code] = fd; saveHoldings();
+        await saveHoldingToServer({ code, value: +value || 0, profit: +profit || 0 }); fundDataCache[code] = fd;
         renderFundList(); renderSummary(); fetchRecommendations(); closeAddHoldingModal();
         this.disabled = false; this.textContent = "确认加入"; showToast(`已添加 ${fd.name}`); fetchSignal(code);
     });

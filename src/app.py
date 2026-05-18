@@ -1,5 +1,5 @@
 """
-基金收益预测助手 V3 — Flask应用入口
+基金收益预测助手 V2 — Flask应用入口
 
 架构说明：
 - 5个Blueprint分别负责基金、行情、AI、提醒、组合统计
@@ -8,6 +8,7 @@
 """
 
 import logging
+import os
 from flask import Flask, render_template
 from flask_cors import CORS
 
@@ -40,6 +41,7 @@ from routes.backtest_routes import backtest_bp  # 定投回测API
 from routes.sentiment_routes import sentiment_bp # 市场情绪API
 from routes.export_routes import export_bp      # 数据导出API
 from routes.morning_report_routes import report_bp # AI晨报API
+from routes.holding_routes import holding_bp    # MySQL持仓持久化API
 
 app.register_blueprint(fund_bp)
 app.register_blueprint(market_bp)
@@ -50,6 +52,12 @@ app.register_blueprint(backtest_bp)
 app.register_blueprint(sentiment_bp)
 app.register_blueprint(export_bp)
 app.register_blueprint(report_bp)
+app.register_blueprint(holding_bp)
+
+
+if __name__ != "__main__" or os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+    from services.sentiment.scheduler import start_sentiment_background_jobs
+    start_sentiment_background_jobs()
 
 
 @app.route("/")
@@ -60,7 +68,7 @@ def index():
 
 if __name__ == "__main__":
     print("=" * 50)
-    print("基金收益预测助手 V3")
+    print("基金收益预测助手 V2")
     print("访问 http://localhost:5000")
     print("=" * 50)
     app.run(debug=True, host="0.0.0.0", port=5000)

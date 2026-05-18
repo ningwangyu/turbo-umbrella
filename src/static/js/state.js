@@ -1,11 +1,11 @@
 /**
- * 共享状态管理模块 — 所有模块共享的可变状态 + localStorage + DOM缓存
+ * 共享状态管理模块 — 所有模块共享的可变状态 + MySQL持仓同步 + DOM缓存
  */
 
 export const STORAGE_KEY = "fund_holdings";
 
 // ===== 可变共享状态 =====
-export let holdings = loadHoldings();
+export let holdings = loadLegacyHoldings();
 export let fundDataCache = {};
 export let signalCache = {};
 export let refreshTimer = null;
@@ -48,14 +48,91 @@ export function setAiChatHistory(val) { aiChatHistory = val; }
 export function setAiChatStreaming(val) { aiChatStreaming = val; }
 export function setAiPendingImage(val) { aiPendingImage = val; }
 
-// ===== localStorage =====
-function loadHoldings() {
+// ===== MySQL持仓同步 =====
+function loadLegacyHoldings() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
     catch { return []; }
 }
-export function saveHoldings() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(holdings));
+
+async function requestHoldings(url, options = {}) {
+    const r = await fetch(url, {
+        ...options,
+        headers: { "Content-Type": "application/json", ...(options.headers || {}) },
+    });
+    let data = null;
+    try { data = await r.json(); } catch { data = null; }
+    if (!r.ok || (data && data.error)) {
+        throw new Error(data?.error || `持仓请求失败(${r.status})`);
+    }
+    return data;
 }
+
+function normalizeHoldings(items) {
+    return (items || [])
+        .filter(h => /^\d{6}$/.test(String(h.code || "")))
+        .map(h => {
+            const item = {
+                code: String(h.code),
+                value: parseFloat(h.value) || 0,
+                profit: parseFloat(h.profit) || 0,
+            };
+            if (h.name) item.name = h.name;
+            if (h.fund_type || h.type) item.fund_type = h.fund_type || h.type;
+            if (h.source) item.source = h.source;
+            if (h.metadata) item.metadata = h.metadata;
+            return item;
+        });
+}
+
+export async function loadHoldingsFromServer() {
+    const serverHoldings = normalizeHoldings(await requestHoldings("/api/holdings"));
+    const legacyHoldings = normalizeHoldings(loadLegacyHoldings());
+
+    // 只要当前浏览器还有旧 localStorage 持仓，就合并迁移到 MySQL。
+    // 同代码以浏览器旧数据为准，避免用户最近在该浏览器里添加的数据被忽略。
+    if (legacyHoldings.length) {
+        const mergedMap = new Map();
+        serverHoldings.forEach(item => mergedMap.set(item.code, item));
+        legacyHoldings.forEach(item => mergedMap.set(item.code, { ...item, source: item.source || "browser_migration" }));
+        const migrated = await replaceHoldingsOnServer([...mergedMap.values()]);
+        localStorage.removeItem(STORAGE_KEY);
+        return migrated;
+    }
+
+    setHoldings(serverHoldings);
+    return holdings;
+}
+
+export async function saveHoldingToServer(item) {
+    const saved = await requestHoldings("/api/holdings", {
+        method: "POST",
+        body: JSON.stringify(item),
+    });
+    const next = holdings.filter(h => h.code !== saved.code);
+    next.push(saved);
+    setHoldings(next);
+    localStorage.removeItem(STORAGE_KEY);
+    return saved;
+}
+
+export async function replaceHoldingsOnServer(items) {
+    const saved = normalizeHoldings(await requestHoldings("/api/holdings", {
+        method: "PUT",
+        body: JSON.stringify({ holdings: normalizeHoldings(items) }),
+    }));
+    setHoldings(saved);
+    localStorage.removeItem(STORAGE_KEY);
+    return holdings;
+}
+
+export async function deleteHoldingFromServer(code) {
+    await requestHoldings(`/api/holdings/${encodeURIComponent(code)}`, { method: "DELETE" });
+    setHoldings(holdings.filter(h => h.code !== code));
+    localStorage.removeItem(STORAGE_KEY);
+}
+
+// 兼容旧调用：后端保存失败时不再写浏览器存储，避免产生双数据源。
+export function saveHoldings() {}
 
 // ===== DOM缓存 =====
 export const $ = (sel) => document.getElementById(sel);

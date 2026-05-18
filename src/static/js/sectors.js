@@ -6,7 +6,16 @@ import { colorCls } from './utils.js';
 
 export async function fetchSectors() {
     if (!$sectorList) return;
-    try { const r = await fetch("/api/market/sectors"); const data = await r.json(); renderSectors(data); } catch (e) { console.error("Sectors:", e); $sectorList.innerHTML = '<div class="panel-loading" style="color:#999">加载失败</div>'; }
+    try {
+        const r = await fetch("/api/market/sectors");
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        const data = await r.json();
+        renderSectors(data);
+    } catch (e) {
+        if ($sectorList.querySelector('.panel-loading')) {
+            $sectorList.innerHTML = '<span style="color:#999;font-size:10px;">暂无数据</span>';
+        }
+    }
 }
 
 function renderSectors(sectors) {

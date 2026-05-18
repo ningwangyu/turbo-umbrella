@@ -1,7 +1,7 @@
 /**
  * 批量导入模块 — 文本/图片/JSON解析与导入
  */
-import { holdings, pendingImport, uploadedImageBase64, $importModal, $btnImport, $modalClose, $importText, $btnParseText, $btnParseImage, $imageInput, $previewImage, $importResults, $importList, $btnConfirmImport, $uploadZone, setPendingImport, setUploadedImageBase64, saveHoldings } from './state.js';
+import { holdings, pendingImport, uploadedImageBase64, $importModal, $btnImport, $modalClose, $importText, $btnParseText, $btnParseImage, $imageInput, $previewImage, $importResults, $importList, $btnConfirmImport, $uploadZone, setPendingImport, setUploadedImageBase64, replaceHoldingsOnServer } from './state.js';
 import { fmtPlain, showToast } from './utils.js';
 import { fetchAllFundData } from './fund-card.js';
 
@@ -27,10 +27,21 @@ async function parseImage() {
     try { const r = await fetch("/api/import/image", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image: uploadedImageBase64 }) }); const data = await r.json(); if (data.error) { showToast(data.error); return; } if (!data.length) { showToast("未识别到基金数据"); return; } showImportResults(data); showToast(`识别到 ${data.length} 只基金`); } catch (e) { showToast("识别失败"); } finally { $btnParseImage.disabled = false; $btnParseImage.textContent = "识别图片"; }
 }
 
-function confirmImport() {
+async function confirmImport() {
+    const merged = [...holdings];
     let added = 0;
-    pendingImport.forEach(item => { if (!holdings.some(h => h.code === item.code)) { holdings.push({ code: item.code, value: item.value || 0, profit: item.profit || 0 }); added++; } });
-    saveHoldings(); fetchAllFundData(); closeImportModal(); showToast(`成功导入 ${added} 只基金`);
+    pendingImport.forEach(item => {
+        if (!merged.some(h => h.code === item.code)) {
+            merged.push({ code: item.code, name: item.name, value: item.value || 0, profit: item.profit || 0, source: "import" });
+            added++;
+        }
+    });
+    try {
+        await replaceHoldingsOnServer(merged);
+        fetchAllFundData(); closeImportModal(); showToast(`成功导入 ${added} 只基金`);
+    } catch (e) {
+        showToast(e.message || "导入保存失败");
+    }
 }
 
 function handleImageUpload(file) {

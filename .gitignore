@@ -13,17 +13,19 @@ htmlcov/
 .venv/
 venv/
 env/
+ENV/
 
-# Local runtime data
+# Local runtime data and secrets
+src/config.json
 src/holdings.json
-*.log
-
-# Local secrets
+*.db
+*.sqlite
+*.sqlite3
 .env
 .env.*
-!/.env.example
+!.env.example
 
-# IDE and agent-local workspace state
+# Editor and local workspace metadata
 .idea/
 .vscode/
 .tabnine/
@@ -36,6 +38,7 @@ skills/
 .DS_Store
 Thumbs.db
 
-# Build outputs
-dist/
-build/
+# Backup and temporary files
+*.bak
+*.tmp
+*.log

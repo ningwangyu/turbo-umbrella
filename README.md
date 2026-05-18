@@ -240,7 +240,7 @@ export AI_API_KEY="your-api-key"
 export AI_MODEL="gpt-5.5"
 ```
 
-也可以参考 `.env.example` 管理本地环境变量。请不要把真实 API Key 提交到仓库。
+也可以参考 `.env.example` 管理本地环境变量。AI API 的 URL 和 Key 分别对应 `AI_BASE_URL`、`AI_API_KEY`，可在 `.env` 或运行环境中修改。请不要把真实 API Key 提交到仓库。
 
 ### 4. 启动 Web 服务
 
@@ -318,7 +318,7 @@ python cli.py config
 
 ## 配置说明
 
-`src/config.json` 保存非敏感默认配置。敏感配置请通过环境变量注入。
+`src/config.json` 保存非敏感默认配置。敏感配置请通过环境变量注入。需要更换 AI API URL 或 Key 时，修改 `.env` / 运行环境中的 `AI_BASE_URL` 和 `AI_API_KEY`；如只做本地占位，也可以同步调整 `src/config.json` 中的 `ai.base_url` 和 `ai.api_key`。
 
 | 配置项 | 说明 | 默认值 |
 | --- | --- | --- |

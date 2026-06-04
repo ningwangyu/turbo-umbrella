@@ -1,10 +1,10 @@
 """
-基金收益预测助手 V4 — Flask 应用入口
+基金收益预测助手 V2 — Flask应用入口
 
 架构说明：
-- Blueprint 按基金、行情、AI、提醒、组合、回测、情绪、导出、晨报、持仓分组
-- 静态页面通过模板渲染，前端按业务视图拆分模块
-- 启动时初始化 API 限流器，并启动市场情绪后台刷新任务
+- 5个Blueprint分别负责基金、行情、AI、提醒、组合统计
+- 静态页面通过模板渲染（单页应用，所有逻辑在app.js中）
+- 启动时初始化API限流器（东方财富5次/秒，新浪3次/秒）
 """
 
 import logging
@@ -31,7 +31,7 @@ limiter.configure("sina", _sina_cfg.get("rate_limit_per_second", 3))
 app = Flask(__name__)
 CORS(app)
 
-# 注册 V4 功能模块的 Blueprint
+# 注册5个功能模块的Blueprint
 from routes.fund_routes import fund_bp          # 基金相关API（估值、信号、推荐、导入）
 from routes.market_routes import market_bp      # 行情API（指数、板块、贵金属）
 from routes.ai_routes import ai_bp              # AI对话与图片识别API
@@ -42,6 +42,8 @@ from routes.sentiment_routes import sentiment_bp # 市场情绪API
 from routes.export_routes import export_bp      # 数据导出API
 from routes.morning_report_routes import report_bp # AI晨报API
 from routes.holding_routes import holding_bp    # MySQL持仓持久化API
+from routes.dashboard_routes import dashboard_bp      # 驾驶舱API
+from routes.risk_analysis_routes import risk_analysis_bp  # 风险分析API
 
 app.register_blueprint(fund_bp)
 app.register_blueprint(market_bp)
@@ -53,16 +55,22 @@ app.register_blueprint(sentiment_bp)
 app.register_blueprint(export_bp)
 app.register_blueprint(report_bp)
 app.register_blueprint(holding_bp)
-
-from routes.dashboard_routes import dashboard_bp      # 驾驶舱API
-from routes.risk_analysis_routes import risk_analysis_bp  # 风险分析API
 app.register_blueprint(dashboard_bp)
 app.register_blueprint(risk_analysis_bp)
 
 
 if __name__ != "__main__" or os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+    import threading
     from services.sentiment.scheduler import start_sentiment_background_jobs
     start_sentiment_background_jobs()
+
+    def _warmup_caches():
+        from services.market_service import _fetch_hot_sectors_sync, _fetch_metal_prices_sync
+        try: _fetch_hot_sectors_sync()
+        except Exception: pass
+        try: _fetch_metal_prices_sync()
+        except Exception: pass
+    threading.Thread(target=_warmup_caches, daemon=True).start()
 
 
 @app.route("/")
@@ -73,7 +81,7 @@ def index():
 
 if __name__ == "__main__":
     print("=" * 50)
-    print("基金收益预测助手 V4")
+    print("基金收益预测助手 V2")
     print("访问 http://localhost:5000")
     print("=" * 50)
     app.run(debug=True, host="0.0.0.0", port=5000)

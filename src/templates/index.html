@@ -1,3 +1,7 @@
+<!--
+  基金收益预测助手单页应用模板。
+  后端仅渲染基础容器，业务视图由 static/js/app.js 按 Tab 懒加载挂载。
+-->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -15,31 +19,47 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="header-inner">
-            <h1 class="logo">基金助手</h1>
-            <div class="header-right">
-                <span class="market-dot" id="marketDot"></span>
-                <span class="market-text" id="marketText">加载中</span>
-                <button class="theme-toggle" id="themeToggle" title="切换深色模式">🌙</button>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-mark">基</div>
+                <div>
+                    <h1 class="logo">基金收益预测助手 V4</h1>
+                    <p class="brand-subtitle">智能金融驾驶舱</p>
+                </div>
             </div>
-        </div>
-    </header>
 
-    <!-- 导航标签栏 -->
-    <nav class="nav-tabs" id="navTabs">
-        <button class="nav-tab active" data-view="home">首页</button>
-        <button class="nav-tab" data-view="analysis">组合分析</button>
-        <button class="nav-tab" data-view="compare">基金对比</button>
-        <button class="nav-tab" data-view="backtest">定投模拟</button>
-        <button class="nav-tab" data-view="sentiment">市场情绪</button>
-        <button class="nav-tab" data-view="report">AI晨报</button>
-        <button class="nav-tab" data-view="dashboard">驾驶舱</button>
-        <button class="nav-tab" data-view="risk">风险分析</button>
-        <button class="nav-tab" data-view="export">数据导出</button>
-    </nav>
+            <!-- 导航标签栏 -->
+            <nav class="nav-tabs" id="navTabs">
+                <button class="nav-tab active" data-view="home"><span class="nav-icon">▣</span><span>基金持仓</span></button>
+                <button class="nav-tab" data-view="analysis"><span class="nav-icon">◈</span><span>组合分析</span></button>
+                <button class="nav-tab" data-view="compare"><span class="nav-icon">◇</span><span>收益预测</span></button>
+                <button class="nav-tab" data-view="backtest"><span class="nav-icon">▥</span><span>策略回测</span></button>
+                <button class="nav-tab" data-view="sentiment"><span class="nav-icon">▦</span><span>市场情绪</span></button>
+                <button class="nav-tab" data-view="report"><span class="nav-icon">✦</span><span>数据分析</span></button>
+                <button class="nav-tab" data-view="dashboard"><span class="nav-icon">◉</span><span>驾驶舱</span></button>
+                <button class="nav-tab" data-view="risk"><span class="nav-icon">⬡</span><span>风险分析</span></button>
+                <button class="nav-tab" data-view="export"><span class="nav-icon">⚙</span><span>系统设置</span></button>
+            </nav>
+        </aside>
 
-    <main class="main" id="mainContent">
+        <div class="content-shell">
+            <header class="header">
+                <div class="header-inner">
+                    <div class="page-title-block">
+                        <span class="page-kicker">基金持仓</span>
+                        <h2 class="page-title">基金收益预测驾驶舱</h2>
+                    </div>
+                    <div class="header-right">
+                        <span>数据状态</span>
+                        <span class="market-dot" id="marketDot"></span>
+                        <span class="market-text" id="marketText">加载中</span>
+                        <button class="theme-toggle" id="themeToggle" title="切换主题">◐</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main" id="mainContent">
         <!-- 首页视图 -->
         <div class="view-container active" id="view-home">
         <!-- 资产总览 -->
@@ -107,6 +127,7 @@
                     <div class="section-title alert-title">价格提醒</div>
                     <div class="alert-form">
                         <input type="text" id="alertCode" class="add-input" placeholder="基金代码" maxlength="6" inputmode="numeric" autocomplete="off">
+                        <div class="autocomplete-list" id="alertAutocompleteList"></div>
                         <select id="alertCondition" class="add-input"><option value="above">涨幅 ≥</option><option value="below">跌幅 ≤</option></select>
                         <div class="alert-threshold-row">
                             <input type="number" id="alertThreshold" class="add-input" placeholder="%" step="0.1" inputmode="decimal">
@@ -198,7 +219,9 @@
         <div class="view-container" id="view-risk" style="display:none">
             <div id="riskContent"></div>
         </div>
-    </main>
+            </main>
+        </div>
+    </div>
 
     <!-- 指数详情弹窗 -->
     <div class="modal-mask" id="indexModal">

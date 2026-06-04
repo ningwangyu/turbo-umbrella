@@ -1,0 +1,6130 @@
+# 架构图文件覆盖校验
+
+项目根目录：`F:\Run_Project\clade\jijin`
+
+扫描文件总数：**5838**
+
+说明：`docs/generated-architecture*` 生成目录未纳入扫描，避免图片生成后递归增加自身文件。
+
+## 生成图片
+
+- `00-overall-architecture.png`：总体分层架构图
+- `01-backend-source-01.png`：80 个文件
+- `01-backend-source-02.png`：22 个文件
+- `02-frontend-source-01.png`：57 个文件
+- `03-docs-01.png`：9 个文件
+- `04-agent-skills-01.png`：90 个文件
+- `04-agent-skills-02.png`：90 个文件
+- `04-agent-skills-03.png`：90 个文件
+- `04-agent-skills-04.png`：21 个文件
+- `05-dev-config-01.png`：90 个文件
+- `05-dev-config-02.png`：90 个文件
+- `05-dev-config-03.png`：90 个文件
+- `05-dev-config-04.png`：90 个文件
+- `05-dev-config-05.png`：90 个文件
+- `05-dev-config-06.png`：90 个文件
+- `05-dev-config-07.png`：90 个文件
+- `05-dev-config-08.png`：90 个文件
+- `05-dev-config-09.png`：90 个文件
+- `05-dev-config-10.png`：90 个文件
+- `05-dev-config-11.png`：90 个文件
+- `05-dev-config-12.png`：90 个文件
+- `05-dev-config-13.png`：90 个文件
+- `05-dev-config-14.png`：90 个文件
+- `05-dev-config-15.png`：90 个文件
+- `05-dev-config-16.png`：90 个文件
+- `05-dev-config-17.png`：90 个文件
+- `05-dev-config-18.png`：90 个文件
+- `05-dev-config-19.png`：90 个文件
+- `05-dev-config-20.png`：90 个文件
+- `05-dev-config-21.png`：90 个文件
+- `05-dev-config-22.png`：90 个文件
+- `05-dev-config-23.png`：90 个文件
+- `05-dev-config-24.png`：90 个文件
+- `05-dev-config-25.png`：90 个文件
+- `05-dev-config-26.png`：90 个文件
+- `05-dev-config-27.png`：90 个文件
+- `05-dev-config-28.png`：90 个文件
+- `05-dev-config-29.png`：90 个文件
+- `05-dev-config-30.png`：90 个文件
+- `05-dev-config-31.png`：90 个文件
+- `05-dev-config-32.png`：90 个文件
+- `05-dev-config-33.png`：90 个文件
+- `05-dev-config-34.png`：90 个文件
+- `05-dev-config-35.png`：90 个文件
+- `05-dev-config-36.png`：90 个文件
+- `05-dev-config-37.png`：90 个文件
+- `05-dev-config-38.png`：90 个文件
+- `05-dev-config-39.png`：90 个文件
+- `05-dev-config-40.png`：90 个文件
+- `05-dev-config-41.png`：90 个文件
+- `05-dev-config-42.png`：90 个文件
+- `05-dev-config-43.png`：90 个文件
+- `05-dev-config-44.png`：90 个文件
+- `05-dev-config-45.png`：90 个文件
+- `05-dev-config-46.png`：90 个文件
+- `05-dev-config-47.png`：90 个文件
+- `05-dev-config-48.png`：90 个文件
+- `05-dev-config-49.png`：90 个文件
+- `05-dev-config-50.png`：90 个文件
+- `05-dev-config-51.png`：90 个文件
+- `05-dev-config-52.png`：90 个文件
+- `05-dev-config-53.png`：90 个文件
+- `05-dev-config-54.png`：90 个文件
+- `05-dev-config-55.png`：90 个文件
+- `05-dev-config-56.png`：90 个文件
+- `05-dev-config-57.png`：90 个文件
+- `05-dev-config-58.png`：90 个文件
+- `05-dev-config-59.png`：90 个文件
+- `05-dev-config-60.png`：69 个文件
+
+## 覆盖校验
+
+- 图片清单覆盖数：5838
+- 重复数：0
+- 未覆盖数：0
+
+## 覆盖明细
+
+### 01-backend-source-01.png (80)
+
+- `src/.pytest_cache/.gitignore` — 应用入口/基础设施 — pytest 运行缓存和历史测试节点
+- `src/.pytest_cache/CACHEDIR.TAG` — 应用入口/基础设施 — pytest 运行缓存和历史测试节点
+- `src/.pytest_cache/README.md` — 应用入口/基础设施 — pytest 运行缓存和历史测试节点
+- `src/.pytest_cache/v/cache/lastfailed` — 应用入口/基础设施 — pytest 运行缓存和历史测试节点
+- `src/.pytest_cache/v/cache/nodeids` — 应用入口/基础设施 — pytest 运行缓存和历史测试节点
+- `src/.pytest_cache/v/cache/stepwise` — 应用入口/基础设施 — pytest 运行缓存和历史测试节点
+- `src/__pycache__/app.cpython-311.pyc` — Python 运行缓存 — Python 自动编译缓存，可由源码重新生成
+- `src/__pycache__/cache.cpython-311.pyc` — Python 运行缓存 — Python 自动编译缓存，可由源码重新生成
+- `src/__pycache__/cli.cpython-311.pyc` — Python 运行缓存 — Python 自动编译缓存，可由源码重新生成
+- `src/__pycache__/config.cpython-311.pyc` — Python 运行缓存 — Python 自动编译缓存，可由源码重新生成
+- `src/__pycache__/ratelimit.cpython-311.pyc` — Python 运行缓存 — Python 自动编译缓存，可由源码重新生成
+- `src/app.py` — 应用入口/基础设施 — Flask 应用入口：创建 app、注册 Blueprint、启动后台情绪任务、渲染首页
+- `src/cache.py` — 应用入口/基础设施 — TTL 内存缓存：估值、业绩、重仓股、指数、板块、推荐、信号等缓存实例
+- `src/cli.py` — 应用入口/基础设施 — 命令行入口：复用 services 完成持仓、信号、推荐、贵金属和配置查询
+- `src/config.json` — 应用入口/基础设施 — 运行配置：AI、外部 API、缓存、MySQL、推荐和服务端参数
+- `src/config.py` — 应用入口/基础设施 — 配置读取模块：加载 config.json 并导出 AI、TTL、限流等全局常量
+- `src/quant/__init__.py` — 量化算法层 — Python 包初始化文件
+- `src/quant/__pycache__/__init__.cpython-311.pyc` — 量化算法层 — Python 自动编译缓存，可由源码重新生成
+- `src/quant/__pycache__/signals.cpython-311.pyc` — 量化算法层 — Python 自动编译缓存，可由源码重新生成
+- `src/quant/signals.py` — 量化算法层 — 量化信号算法：多因子评分与买卖建议
+- `src/ratelimit.py` — 应用入口/基础设施 — 令牌桶限流器：保护东方财富、新浪等外部接口
+- `requirements.txt` — 应用入口/基础设施 — Python 依赖清单
+- `src/routes/__init__.py` — Flask API 路由层 — Python 包初始化文件
+- `src/routes/__pycache__/__init__.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/ai_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/alert_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/backtest_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/export_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/fund_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/holding_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/market_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/morning_report_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/portfolio_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/__pycache__/sentiment_routes.cpython-311.pyc` — Flask API 路由层 — Python 自动编译缓存，可由源码重新生成
+- `src/routes/ai_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/alert_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/backtest_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/export_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/fund_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/holding_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/market_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/morning_report_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/portfolio_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/routes/sentiment_routes.py` — Flask API 路由层 — Flask Blueprint 接口文件：解析请求、调用服务层并返回 JSON
+- `src/services/__init__.py` — 业务服务层 — Python 包初始化文件
+- `src/services/__pycache__/__init__.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/ai_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/backtest_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/fund_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/holding_store.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/import_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/market_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/morning_report_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/recommend_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/sector_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/__pycache__/sentiment_service.cpython-311.pyc` — 业务服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/ai_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/backtest_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/fund_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/holding_store.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/import_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/market_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/morning_report_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/recommend/__init__.py` — 推荐算法服务层 — Python 包初始化文件
+- `src/services/recommend/__pycache__/__init__.cpython-311.pyc` — 推荐算法服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/recommend/__pycache__/pool.cpython-311.pyc` — 推荐算法服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/recommend/__pycache__/scoring.cpython-311.pyc` — 推荐算法服务层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/recommend/pool.py` — 推荐算法服务层 — 基金推荐子模块：候选池构建或评分计算
+- `src/services/recommend/scoring.py` — 推荐算法服务层 — 基金推荐子模块：候选池构建或评分计算
+- `src/services/recommend_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/sector_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `src/services/sentiment/__init__.py` — 市场情绪服务/存储层 — Python 包初始化文件
+- `src/services/sentiment/__pycache__/__init__.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/sentiment/__pycache__/common.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/sentiment/__pycache__/etf.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/sentiment/__pycache__/etf_store.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/sentiment/__pycache__/limit_store.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/sentiment/__pycache__/limits.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/sentiment/__pycache__/market.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/sentiment/__pycache__/scheduler.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+
+### 01-backend-source-02.png (22)
+
+- `src/services/sentiment/__pycache__/volume.cpython-311.pyc` — 市场情绪服务/存储层 — Python 自动编译缓存，可由源码重新生成
+- `src/services/sentiment/common.py` — 市场情绪服务/存储层 — 市场情绪子模块：抓取、存储、统计或后台刷新行情情绪数据
+- `src/services/sentiment/etf.py` — 市场情绪服务/存储层 — 市场情绪子模块：抓取、存储、统计或后台刷新行情情绪数据
+- `src/services/sentiment/etf_store.py` — 市场情绪服务/存储层 — 市场情绪子模块：抓取、存储、统计或后台刷新行情情绪数据
+- `src/services/sentiment/limit_store.py` — 市场情绪服务/存储层 — 市场情绪子模块：抓取、存储、统计或后台刷新行情情绪数据
+- `src/services/sentiment/limits.py` — 市场情绪服务/存储层 — 市场情绪子模块：抓取、存储、统计或后台刷新行情情绪数据
+- `src/services/sentiment/market.py` — 市场情绪服务/存储层 — 市场情绪子模块：抓取、存储、统计或后台刷新行情情绪数据
+- `src/services/sentiment/scheduler.py` — 市场情绪服务/存储层 — 市场情绪子模块：抓取、存储、统计或后台刷新行情情绪数据
+- `src/services/sentiment/volume.py` — 市场情绪服务/存储层 — 市场情绪子模块：抓取、存储、统计或后台刷新行情情绪数据
+- `src/services/sentiment_service.py` — 业务服务层 — 后端业务服务：封装外部数据、持久化、AI 或计算逻辑
+- `start.bat` — 应用入口/基础设施 — Windows 一键启动脚本
+- `src/tests/__init__.py` — 测试层 — Python 包初始化文件
+- `src/tests/__pycache__/__init__.cpython-311.pyc` — 测试层 — Python 自动编译缓存，可由源码重新生成
+- `src/tests/__pycache__/test_portfolio_routes.cpython-311-pytest-7.4.0.pyc` — 测试层 — Python 自动编译缓存，可由源码重新生成
+- `src/tests/__pycache__/test_portfolio_routes.cpython-311.pyc` — 测试层 — Python 自动编译缓存，可由源码重新生成
+- `src/tests/__pycache__/test_sector_service.cpython-311-pytest-7.4.0.pyc` — 测试层 — Python 自动编译缓存，可由源码重新生成
+- `src/tests/__pycache__/test_sector_service.cpython-311.pyc` — 测试层 — Python 自动编译缓存，可由源码重新生成
+- `src/tests/__pycache__/test_sentiment_market.cpython-311-pytest-7.4.0.pyc` — 测试层 — Python 自动编译缓存，可由源码重新生成
+- `src/tests/__pycache__/test_sentiment_market.cpython-311.pyc` — 测试层 — Python 自动编译缓存，可由源码重新生成
+- `src/tests/test_portfolio_routes.py` — 测试层 — pytest 测试文件或测试包初始化
+- `src/tests/test_sector_service.py` — 测试层 — pytest 测试文件或测试包初始化
+- `src/tests/test_sentiment_market.py` — 测试层 — pytest 测试文件或测试包初始化
+
+### 02-frontend-source-01.png (57)
+
+- `src/static/css/ai-chat.css` — 前端 CSS 样式层 — 样式文件：布局、组件、弹窗、卡片或响应式规则
+- `src/static/css/base.css` — 前端 CSS 样式层 — 样式文件：布局、组件、弹窗、卡片或响应式规则
+- `src/static/css/components.css` — 前端 CSS 样式层 — 样式文件：布局、组件、弹窗、卡片或响应式规则
+- `src/static/css/fund-card.css` — 前端 CSS 样式层 — 样式文件：布局、组件、弹窗、卡片或响应式规则
+- `src/static/css/layout.css` — 前端 CSS 样式层 — 样式文件：布局、组件、弹窗、卡片或响应式规则
+- `src/static/css/modal.css` — 前端 CSS 样式层 — 样式文件：布局、组件、弹窗、卡片或响应式规则
+- `src/static/css/responsive.css` — 前端 CSS 样式层 — 样式文件：布局、组件、弹窗、卡片或响应式规则
+- `src/static/css/style.css.bak` — 前端 CSS 样式层 — 样式文件：布局、组件、弹窗、卡片或响应式规则
+- `src/static/js/ai-chat.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/alerts.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/app.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/backtest.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/backtest/api.js` — 前端 JS 交互层 — 定投回测前端子模块
+- `src/static/js/backtest/charts.js` — 前端 JS 交互层 — 定投回测前端子模块
+- `src/static/js/backtest/config.js` — 前端 JS 交互层 — 定投回测前端子模块
+- `src/static/js/backtest/form.js` — 前端 JS 交互层 — 定投回测前端子模块
+- `src/static/js/backtest/results.js` — 前端 JS 交互层 — 定投回测前端子模块
+- `src/static/js/backtest/styles.js` — 前端 JS 交互层 — 定投回测前端子模块
+- `src/static/js/chart-config.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/data-export.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/fund-card.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/fund-compare.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/fund-compare/api.js` — 前端 JS 交互层 — 基金对比前端子模块
+- `src/static/js/fund-compare/chart.js` — 前端 JS 交互层 — 基金对比前端子模块
+- `src/static/js/fund-compare/events.js` — 前端 JS 交互层 — 基金对比前端子模块
+- `src/static/js/fund-compare/signal-modal.js` — 前端 JS 交互层 — 基金对比前端子模块
+- `src/static/js/fund-compare/state.js` — 前端 JS 交互层 — 基金对比前端子模块
+- `src/static/js/fund-compare/styles.js` — 前端 JS 交互层 — 基金对比前端子模块
+- `src/static/js/fund-compare/view.js` — 前端 JS 交互层 — 基金对比前端子模块
+- `src/static/js/import-modal.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/market.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/metals.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/morning-report.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/portfolio-analysis.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/portfolio/allocation.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/portfolio/api.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/portfolio/charts.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/portfolio/details.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/portfolio/events.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/portfolio/helpers.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/portfolio/risk.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/portfolio/state.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/portfolio/styles.js` — 前端 JS 交互层 — 组合分析前端子模块
+- `src/static/js/recommend.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/sectors.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/sentiment.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/sentiment/api.js` — 前端 JS 交互层 — 市场情绪前端子模块
+- `src/static/js/sentiment/charts.js` — 前端 JS 交互层 — 市场情绪前端子模块
+- `src/static/js/sentiment/details.js` — 前端 JS 交互层 — 市场情绪前端子模块
+- `src/static/js/sentiment/etf.js` — 前端 JS 交互层 — 市场情绪前端子模块
+- `src/static/js/sentiment/limit-stocks.js` — 前端 JS 交互层 — 市场情绪前端子模块
+- `src/static/js/sentiment/overview.js` — 前端 JS 交互层 — 市场情绪前端子模块
+- `src/static/js/sentiment/state.js` — 前端 JS 交互层 — 市场情绪前端子模块
+- `src/static/js/sentiment/styles.js` — 前端 JS 交互层 — 市场情绪前端子模块
+- `src/static/js/state.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/static/js/utils.js` — 前端 JS 交互层 — 前端 ES 模块：页面交互、API 调用、状态或图表渲染
+- `src/templates/index.html` — 前端 HTML 模板层 — 单页应用 HTML 骨架：导航、首页容器、弹窗与 Chart.js 引入
+
+### 03-docs-01.png (9)
+
+- `docs/ARCHITECTURE_AND_INNOVATION.md` — 项目文档 — 项目产品、架构或图示说明文档
+- `docs/images/architecture.png` — 文档图片资源 — 项目文档引用的架构图、功能图或技术亮点图片
+- `docs/images/core_functions.png` — 文档图片资源 — 项目文档引用的架构图、功能图或技术亮点图片
+- `docs/images/overall-architecture.png` — 文档图片资源 — 项目文档引用的架构图、功能图或技术亮点图片
+- `docs/images/overall-architecture.svg` — 文档图片资源 — 项目文档引用的架构图、功能图或技术亮点图片
+- `docs/images/technical_highlights.png` — 文档图片资源 — 项目文档引用的架构图、功能图或技术亮点图片
+- `docs/PRODUCT.md` — 项目文档 — 项目产品、架构或图示说明文档
+- `docs/PROJECT_DIAGRAMS.drawio` — 项目文档 — 项目产品、架构或图示说明文档
+- `docs/PROJECT_DIAGRAMS.md` — 项目文档 — 项目产品、架构或图示说明文档
+
+### 04-agent-skills-01.png (90)
+
+- `.agents/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 技能/部署配置 — Agent 技能 deploy-to-vercel 的说明、规则或资源文件
+- `.agents/skills/deploy-to-vercel/resources/deploy.sh` — Agent 技能/部署配置 — Agent 技能 deploy-to-vercel 的说明、规则或资源文件
+- `.agents/skills/deploy-to-vercel/SKILL.md` — Agent 技能/部署配置 — Agent 技能 deploy-to-vercel 的说明、规则或资源文件
+- `.agents/skills/vercel-cli-with-tokens/SKILL.md` — Agent 技能/部署配置 — Agent 技能 vercel-cli-with-tokens 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/AGENTS.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/metadata.json` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/README.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/_sections.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/_template.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-composition-patterns/SKILL.md` — Agent 技能/部署配置 — Agent 技能 vercel-composition-patterns 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/AGENTS.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/metadata.json` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/README.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/_sections.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/_template.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+
+### 04-agent-skills-02.png (90)
+
+- `.agents/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-best-practices/SKILL.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-best-practices 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/AGENTS.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/metadata.json` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/README.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/_sections.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/_template.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-native-skills/SKILL.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-native-skills 的说明、规则或资源文件
+- `.agents/skills/vercel-react-view-transitions/AGENTS.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `.agents/skills/vercel-react-view-transitions/metadata.json` — Agent 技能/部署配置 — Agent 技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `.agents/skills/vercel-react-view-transitions/README.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `.agents/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `.agents/skills/vercel-react-view-transitions/references/implementation.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `.agents/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `.agents/skills/vercel-react-view-transitions/references/patterns.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `.agents/skills/vercel-react-view-transitions/SKILL.md` — Agent 技能/部署配置 — Agent 技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `.agents/skills/web-design-guidelines/SKILL.md` — Agent 技能/部署配置 — Agent 技能 web-design-guidelines 的说明、规则或资源文件
+- `skills-lock.json` — 技能锁/技能配置 — Agent/技能版本锁定文件
+- `skills/deploy-to-vercel/resources/deploy-codex.sh` — 技能锁/技能配置 — 本地技能 deploy-to-vercel 的说明、规则或资源文件
+- `skills/deploy-to-vercel/resources/deploy.sh` — 技能锁/技能配置 — 本地技能 deploy-to-vercel 的说明、规则或资源文件
+- `skills/deploy-to-vercel/SKILL.md` — 技能锁/技能配置 — 本地技能 deploy-to-vercel 的说明、规则或资源文件
+- `skills/vercel-cli-with-tokens/SKILL.md` — 技能锁/技能配置 — 本地技能 vercel-cli-with-tokens 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/AGENTS.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/metadata.json` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/README.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/_sections.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/_template.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/architecture-compound-components.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/state-context-interface.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/rules/state-lift-state.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-composition-patterns/SKILL.md` — 技能锁/技能配置 — 本地技能 vercel-composition-patterns 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/AGENTS.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/metadata.json` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/README.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/_sections.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/_template.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/advanced-init-once.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/advanced-use-latest.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/async-api-routes.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/async-defer-await.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/async-dependencies.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/async-parallel.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+
+### 04-agent-skills-03.png (90)
+
+- `skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/bundle-conditional.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/bundle-preload.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/client-event-listeners.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/client-swr-dedup.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-cache-function-results.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-cache-property-access.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-cache-storage.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-combine-iterations.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-early-exit.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-index-maps.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-length-check-first.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-min-max-loop.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-activity.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-dependencies.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-derived-state.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-memo.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-transitions.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-auth-actions.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-cache-lru.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-cache-react.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-dedup-props.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/rules/server-serialization.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-best-practices/SKILL.md` — 技能锁/技能配置 — 本地技能 vercel-react-best-practices 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/AGENTS.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/metadata.json` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/README.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/_sections.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/_template.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/animation-derived-value.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/design-system-compound-components.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/js-hoist-intl.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/list-performance-function-references.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/list-performance-images.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/list-performance-item-types.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/react-state-fallback.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/react-state-minimize.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+
+### 04-agent-skills-04.png (21)
+
+- `skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/state-ground-truth.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-expo-image.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-image-gallery.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-measure-views.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-menus.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-native-modals.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-pressable.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/rules/ui-styling.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-native-skills/SKILL.md` — 技能锁/技能配置 — 本地技能 vercel-react-native-skills 的说明、规则或资源文件
+- `skills/vercel-react-view-transitions/AGENTS.md` — 技能锁/技能配置 — 本地技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `skills/vercel-react-view-transitions/metadata.json` — 技能锁/技能配置 — 本地技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `skills/vercel-react-view-transitions/README.md` — 技能锁/技能配置 — 本地技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `skills/vercel-react-view-transitions/references/css-recipes.md` — 技能锁/技能配置 — 本地技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `skills/vercel-react-view-transitions/references/implementation.md` — 技能锁/技能配置 — 本地技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `skills/vercel-react-view-transitions/references/nextjs.md` — 技能锁/技能配置 — 本地技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `skills/vercel-react-view-transitions/references/patterns.md` — 技能锁/技能配置 — 本地技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `skills/vercel-react-view-transitions/SKILL.md` — 技能锁/技能配置 — 本地技能 vercel-react-view-transitions 的说明、规则或资源文件
+- `skills/web-design-guidelines/SKILL.md` — 技能锁/技能配置 — 本地技能 web-design-guidelines 的说明、规则或资源文件
+
+### 05-dev-config-01.png (90)
+
+- `.claude/launch.json` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/settings.local.json` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/deploy-to-vercel/resources/deploy-codex.sh` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/deploy-to-vercel/resources/deploy.sh` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/deploy-to-vercel/SKILL.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-cli-with-tokens/SKILL.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/AGENTS.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/metadata.json` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/README.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/_sections.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/_template.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/state-context-interface.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/rules/state-lift-state.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-composition-patterns/SKILL.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/AGENTS.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/metadata.json` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/README.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/_sections.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/_template.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/async-api-routes.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/async-defer-await.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/async-dependencies.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/async-parallel.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/bundle-preload.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-early-exit.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-index-maps.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-activity.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-memo.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-cache-react.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+
+### 05-dev-config-02.png (90)
+
+- `.claude/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/rules/server-serialization.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-best-practices/SKILL.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/AGENTS.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/metadata.json` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/README.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/_sections.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/_template.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/list-performance-images.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-menus.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-pressable.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/rules/ui-styling.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-native-skills/SKILL.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-view-transitions/AGENTS.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-view-transitions/metadata.json` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-view-transitions/README.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-view-transitions/references/css-recipes.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-view-transitions/references/implementation.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-view-transitions/references/nextjs.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-view-transitions/references/patterns.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/vercel-react-view-transitions/SKILL.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.claude/skills/web-design-guidelines/SKILL.md` — Claude/Codex 本地配置 — Claude/Codex 本地运行配置
+- `.idea/.gitignore` — IDE 工程配置 — JetBrains IDE 工程元数据
+- `.idea/inspectionProfiles/profiles_settings.xml` — IDE 工程配置 — JetBrains IDE 工程元数据
+- `.idea/inspectionProfiles/Project_Default.xml` — IDE 工程配置 — JetBrains IDE 工程元数据
+- `.idea/jijin.iml` — IDE 工程配置 — JetBrains IDE 工程元数据
+- `.idea/misc.xml` — IDE 工程配置 — JetBrains IDE 工程元数据
+- `.idea/modules.xml` — IDE 工程配置 — JetBrains IDE 工程元数据
+- `.idea/workspace.xml` — IDE 工程配置 — JetBrains IDE 工程元数据
+- `.pytest_cache/.gitignore` — pytest 测试缓存 — pytest 运行缓存和历史测试节点
+- `.pytest_cache/CACHEDIR.TAG` — pytest 测试缓存 — pytest 运行缓存和历史测试节点
+- `.pytest_cache/README.md` — pytest 测试缓存 — pytest 运行缓存和历史测试节点
+- `.pytest_cache/v/cache/nodeids` — pytest 测试缓存 — pytest 运行缓存和历史测试节点
+- `.pytest_cache/v/cache/stepwise` — pytest 测试缓存 — pytest 运行缓存和历史测试节点
+- `.tabnine/agent/skills/deploy-to-vercel/resources/deploy-codex.sh` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/deploy-to-vercel/resources/deploy.sh` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/deploy-to-vercel/SKILL.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-cli-with-tokens/SKILL.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/AGENTS.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/metadata.json` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/README.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/_sections.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/_template.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/state-context-interface.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/rules/state-lift-state.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-composition-patterns/SKILL.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/AGENTS.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/metadata.json` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/README.md` — Tabnine 辅助配置 — 项目辅助文件
+
+### 05-dev-config-03.png (90)
+
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/_sections.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/_template.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/async-api-routes.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/async-defer-await.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/async-dependencies.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/async-parallel.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/bundle-preload.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-early-exit.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-index-maps.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-activity.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-memo.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-cache-react.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/rules/server-serialization.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-best-practices/SKILL.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/AGENTS.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/metadata.json` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/README.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/_sections.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/_template.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/list-performance-images.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Tabnine 辅助配置 — 项目辅助文件
+
+### 05-dev-config-04.png (90)
+
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-menus.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-pressable.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/rules/ui-styling.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-native-skills/SKILL.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-view-transitions/AGENTS.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-view-transitions/metadata.json` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-view-transitions/README.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-view-transitions/references/css-recipes.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-view-transitions/references/implementation.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-view-transitions/references/nextjs.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-view-transitions/references/patterns.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/vercel-react-view-transitions/SKILL.md` — Tabnine 辅助配置 — 项目辅助文件
+- `.tabnine/agent/skills/web-design-guidelines/SKILL.md` — Tabnine 辅助配置 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-05.png (90)
+
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.adal/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-06.png (90)
+
+- `agent-placeholder-dirs/.aider-desk/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-07.png (90)
+
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.aider-desk/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-08.png (90)
+
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-09.png (90)
+
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.augment/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-10.png (90)
+
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.bob/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-11.png (90)
+
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-12.png (90)
+
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codeartsdoer/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-13.png (90)
+
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-14.png (90)
+
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codebuddy/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-15.png (90)
+
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codemaker/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-16.png (90)
+
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-17.png (90)
+
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.codestudio/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-18.png (90)
+
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.commandcode/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-19.png (90)
+
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-20.png (90)
+
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.continue/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-21.png (90)
+
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-22.png (90)
+
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.cortex/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-23.png (90)
+
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.crush/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-24.png (90)
+
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-25.png (90)
+
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.devin/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-26.png (90)
+
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.factory/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-27.png (90)
+
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-28.png (90)
+
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.forge/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-29.png (90)
+
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-30.png (90)
+
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.goose/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-31.png (90)
+
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.iflow/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-32.png (90)
+
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-33.png (90)
+
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.junie/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-34.png (90)
+
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kilocode/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-35.png (90)
+
+- `agent-placeholder-dirs/.kiro/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-36.png (90)
+
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kiro/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-37.png (90)
+
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-38.png (90)
+
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.kode/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-39.png (90)
+
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mcpjam/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-40.png (90)
+
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-41.png (90)
+
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.mux/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-42.png (90)
+
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-43.png (90)
+
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.neovate/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-44.png (90)
+
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.openhands/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-45.png (90)
+
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-46.png (90)
+
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pi/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-47.png (90)
+
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.pochi/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-48.png (90)
+
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-49.png (90)
+
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qoder/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-50.png (90)
+
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-51.png (90)
+
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.qwen/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-52.png (90)
+
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.roo/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-53.png (90)
+
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-54.png (90)
+
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.rovodev/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-55.png (90)
+
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.trae/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-56.png (90)
+
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-57.png (90)
+
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.vibe/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-58.png (90)
+
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-59.png (90)
+
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.windsurf/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/deploy-to-vercel/resources/deploy-codex.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/deploy-to-vercel/resources/deploy.sh` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/deploy-to-vercel/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-cli-with-tokens/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/architecture-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/react19-no-forwardref.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/state-context-interface.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/state-decouple-implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/rules/state-lift-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-composition-patterns/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/advanced-init-once.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/advanced-use-latest.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/async-api-routes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/async-defer-await.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/async-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/async-parallel.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/bundle-conditional.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/bundle-preload.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/client-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/client-localstorage-schema.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/client-swr-dedup.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-batch-dom-css.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-cache-function-results.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-cache-property-access.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-cache-storage.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-combine-iterations.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-early-exit.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-flatmap-filter.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-hoist-regexp.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-index-maps.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-length-check-first.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-min-max-loop.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-request-idle-callback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-set-map-lookups.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-activity.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-conditional-render.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-content-visibility.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-resource-hints.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-svg-precision.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-defer-reads.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-dependencies.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-derived-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-memo.md` — Agent 占位目录 — 项目辅助文件
+
+### 05-dev-config-60.png (69)
+
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-transitions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-after-nonblocking.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-auth-actions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-cache-lru.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-cache-react.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-dedup-props.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-hoist-static-io.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-parallel-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/rules/server-serialization.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-best-practices/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/_sections.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/_template.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/animation-derived-value.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/animation-gpu-properties.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/design-system-compound-components.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/fonts-config-plugin.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/imports-design-system-folder.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/js-hoist-intl.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/list-performance-callbacks.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/list-performance-function-references.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/list-performance-images.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/list-performance-item-memo.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/list-performance-item-types.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/list-performance-virtualize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/navigation-native-navigators.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/react-state-dispatcher.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/react-state-fallback.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/react-state-minimize.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/scroll-position-no-state.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/state-ground-truth.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-expo-image.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-image-gallery.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-measure-views.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-menus.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-native-modals.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-pressable.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/rules/ui-styling.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-native-skills/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-view-transitions/AGENTS.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-view-transitions/metadata.json` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-view-transitions/README.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-view-transitions/references/css-recipes.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-view-transitions/references/implementation.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-view-transitions/references/nextjs.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-view-transitions/references/patterns.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/vercel-react-view-transitions/SKILL.md` — Agent 占位目录 — 项目辅助文件
+- `agent-placeholder-dirs/.zencoder/skills/web-design-guidelines/SKILL.md` — Agent 占位目录 — 项目辅助文件
+

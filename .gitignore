@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local runtime data and secrets
+src/config.json
+src/holdings.json
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+
+# Editor and local workspace metadata
+.idea/
+.vscode/
+.tabnine/
+.claude/
+.agents/
+agent-placeholder-dirs/
+skills/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.log
+
+# Agent tooling artifacts
+skills-lock.json
+
+# Generated architecture images (large binary assets)
+docs/generated-architecture/
+docs/generated-architecture-v2/*.png

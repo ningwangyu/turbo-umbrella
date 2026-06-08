@@ -1,26 +1,43 @@
-# 基金收益预测助手 V4
+# 基金收益预测助手 V5
 
-![基金收益预测助手 V4 封面](docs/images/v4-hero-cover.png)
+![基金收益预测助手 V5 封面](docs/images/v4-hero-cover.png)
 
-基金收益预测助手 V4 是一个面向个人投资者的本地化基金分析与投资辅助平台。系统围绕基金持仓、实时估值、组合分析、基金对比、定投回测、市场情绪、AI 晨报、数据导出和 AI 投资助手构建，适合在本地或个人服务器中运行。
+基金收益预测助手 V5 是一个面向个人投资者的本地化基金分析与投资辅助平台。系统围绕基金持仓、实时估值、组合分析、基金对比、定投回测、市场情绪、AI 晨报、数据导出、**投资仪表盘**、**风险分析**和 AI 投资助手构建，适合在本地或个人服务器中运行。
 
-项目采用 Python Flask 后端、原生 JavaScript 前端、Chart.js 图表、多源金融数据接口和 OpenAI 兼容 AI 接口。V4 的核心目标是：功能完整、结构清晰、配置安全、便于二次开发。
+项目采用 Python Flask 后端、原生 JavaScript 前端、Chart.js 图表、多源金融数据接口和 OpenAI 兼容 AI 接口。V5 在 V4 基础上新增了完整的 Dashboard 仪表盘和 Risk Analysis 风险分析模块，提供更全面的投资洞察。
 
 > 免责声明：本项目仅用于学习、研究和个人投资辅助分析，不构成任何投资建议。基金、股票、贵金属等金融资产存在风险，实际投资决策请自行判断并承担风险。
 
-## V4 版本定位
+## V5 版本定位
 
-V4 是当前主版本，重点围绕三个方向建设：
+V5 是当前主版本，在 V4 基础上新增两个核心模块，重点围绕四个方向建设：
 
-- **投资分析完整性**：覆盖持仓、估值、组合、对比、回测、市场情绪和 AI 辅助。
+- **投资分析完整性**：覆盖持仓、估值、组合、对比、回测、市场情绪、**仪表盘**、**风险分析**和 AI 辅助。
 - **工程结构清晰性**：后端按路由、服务、量化、缓存、限流拆分；前端按业务视图拆分。
+- **用户界面现代化**：新增交互式仪表盘，提供一目了然的投资概览和实时监控。
 - **公开发布安全性**：仓库只保留配置模板，真实密钥、数据库密码和本地持仓数据不进入 Git。
 
-## V4 模块化架构
+## V5 新增模块
 
-![V4 模块化架构总览](docs/images/v4-modular-architecture.png)
+### Dashboard 投资仪表盘
+- 市场行情栏：实时展示大盘指数、热门板块、涨跌家数
+- 组合摘要：总资产、总收益、收益率、持仓数量
+- 资产配置分析：饼图展示基金类型分布、行业分布
+- 持仓明细：按收益排序的持仓基金列表
+- 时间线：展示投资关键事件和收益变化
 
-V4 按访问层、路由层、服务层、前端模块、基础设施和外部数据源组织代码。
+### Risk Analysis 风险分析
+- 尾部风险评估：基于历史数据的尾部风险量化
+- 风险指标计算：最大回撤、波动率、夏普比率、VaR
+- 压力测试：模拟极端市场情景
+- 相关性分析：持仓基金间的相关性矩阵
+- 风险预警：自动识别潜在风险并生成预警
+
+## V5 模块化架构
+
+![V5 模块化架构总览](docs/images/v4-modular-architecture.png)
+
+V5 按访问层、路由层、服务层、前端模块、基础设施和外部数据源组织代码。
 
 ```text
 Web / CLI / AI 助手
@@ -34,7 +51,10 @@ Flask 路由层
     |-- sentiment_routes.py
     |-- export_routes.py
     |-- ai_routes.py
-    `-- morning_report_routes.py
+    |-- morning_report_routes.py
+    |-- dashboard_routes.py          (NEW)
+    |-- risk_analysis_routes.py      (NEW)
+    `-- alert_routes.py
     |
     v
 业务服务层
@@ -46,7 +66,9 @@ Flask 路由层
     |-- sentiment/
     |-- backtest_service.py
     |-- ai_service.py
-    `-- morning_report_service.py
+    |-- morning_report_service.py
+    |-- dashboard_service.py         (NEW)
+    `-- risk_analysis_service.py     (NEW)
     |
     v
 基础能力
@@ -57,9 +79,9 @@ Flask 路由层
     `-- tests/
 ```
 
-## V4 功能总览
+## V5 功能总览
 
-![V4 功能总览](docs/images/v4-feature-overview.png)
+![V5 功能总览](docs/images/v4-feature-overview.png)
 
 ### 1. 持仓管理
 
@@ -117,12 +139,34 @@ Flask 路由层
 - 支持 AI 聊天、持仓分析、图片识别和晨报生成。
 - 可通过环境变量覆盖 AI 地址、密钥和模型。
 
-### 9. 数据导出
+### 9. 投资仪表盘（Dashboard）
+
+![V5 投资仪表盘](docs/images/v4-portfolio-analysis.png)
+
+- **市场行情栏**：实时展示沪深300、创业板指、上证指数等大盘数据
+- **组合摘要卡片**：显示总资产、总收益、收益率、今日收益和持仓数量
+- **资产配置分析**：饼图可视化基金类型分布和行业分布
+- **持仓明细表**：按收益排序的持仓列表，支持点击查看基金详情
+- **时间线事件**：展示投资关键节点、收益变化和市场事件
+- **快速操作区**：一键访问常用的分析和操作功能
+
+### 10. 风险分析（Risk Analysis）
+
+![V5 风险分析](docs/images/v4-sentiment-ai.png)
+
+- **尾部风险评估**：基于历史收益分布，计算尾部风险概率和损失
+- **核心风险指标**：最大回撤、年化波动率、夏普比率、VaR、CVaR
+- **压力测试**：模拟极端市场情景（如2008金融危机、2020疫情）对组合的影响
+- **相关性分析**：计算持仓基金间的相关系数矩阵，识别集中度风险
+- **风险预警系统**：自动检测高风险指标并生成预警报告
+- **投资建议**：基于风险评估结果提供资产配置优化建议
+
+### 11. 数据导出
 
 - 支持将持仓、分析结果或业务数据导出。
 - 便于在表格、报告或其他分析工具中继续处理。
 
-### 10. CLI 命令行
+### 13. CLI 命令行
 
 除 Web 页面外，项目提供 `src/cli.py`，可在终端中管理持仓和查看分析结果。
 
@@ -136,16 +180,18 @@ python cli.py metals
 python cli.py config
 ```
 
-## V4 工程亮点
+## V5 工程亮点
 
-![V4 数据流与缓存策略](docs/images/v4-data-flow.png)
+![V5 数据流与缓存策略](docs/images/v4-data-flow.png)
 
 - **服务层拆分**：推荐、情绪、导入、持仓存储均独立成模块。
-- **前端模块化**：组合分析、基金对比、定投回测、市场情绪按视图拆分。
+- **前端模块化**：组合分析、基金对比、定投回测、市场情绪、**仪表盘**、**风险分析**按视图拆分。
 - **缓存与限流**：通过 TTL 缓存和令牌桶限流保护外部行情接口。
 - **配置模板化**：公开仓库只提交 `config.example.json`，真实配置本地维护。
-- **测试覆盖**：包含组合分析、板块分类、市场情绪解析和 fallback 行为测试。
+- **测试覆盖**：包含组合分析、板块分类、市场情绪解析、仪表盘和风险分析测试。
 - **双入口使用**：支持 Web 应用和 CLI 命令行。
+- **仪表盘模块**：提供完整的投资概览和实时监控界面。
+- **风险分析模块**：2843行专业风险分析代码，覆盖尾部风险、压力测试和预警。
 
 ## 目录结构
 
@@ -172,9 +218,45 @@ python cli.py config
 |   |-- ratelimit.py
 |   |-- requirements.txt
 |   |-- routes/
+|   |   |-- fund_routes.py
+|   |   |-- holding_routes.py
+|   |   |-- portfolio_routes.py
+|   |   |-- backtest_routes.py
+|   |   |-- sentiment_routes.py
+|   |   |-- export_routes.py
+|   |   |-- ai_routes.py
+|   |   |-- morning_report_routes.py
+|   |   |-- dashboard_routes.py          (NEW)
+|   |   |-- risk_analysis_routes.py      (NEW)
+|   |   `-- alert_routes.py
 |   |-- services/
+|   |   |-- fund_service.py
+|   |   |-- market_service.py
+|   |   |-- holding_store.py
+|   |   |-- import_service.py
+|   |   |-- recommend/
+|   |   |-- sentiment/
+|   |   |-- backtest_service.py
+|   |   |-- ai_service.py
+|   |   |-- morning_report_service.py
+|   |   |-- dashboard_service.py         (NEW)
+|   |   `-- risk_analysis_service.py     (NEW)
 |   |-- quant/
 |   |-- static/
+|   |   `-- js/
+|   |       |-- dashboard/               (NEW)
+|   |       |   |-- api.js
+|   |       |   |-- market-bar.js
+|   |       |   |-- holdings-detail.js
+|   |       |   |-- render.js
+|   |       |   |-- state.js
+|   |       |   |-- styles.js
+|   |       |   `-- timeline.js
+|   |       |-- risk-analysis/           (NEW)
+|   |       |   `-- tail-risk.js
+|   |       |-- fund-compare/
+|   |       |-- portfolio/
+|   |       `-- backtest/
 |   |-- templates/
 |   `-- tests/
 `-- skills-lock.json
@@ -297,6 +379,8 @@ Windows 用户也可以运行：
 | `/api/market/sectors` | GET | 获取热门板块 |
 | `/api/sentiment/*` | GET | 获取市场情绪相关数据 |
 | `/api/backtest/*` | GET/POST | 定投回测 |
+| `/api/dashboard/*` | GET | 获取仪表盘数据（NEW） |
+| `/api/risk/*` | GET | 获取风险分析数据（NEW） |
 | `/api/ai/chat` | POST | AI 对话 |
 | `/api/ai/recognize-image` | POST | 图片识别 |
 | `/api/export/*` | GET/POST | 数据导出 |
@@ -347,3 +431,5 @@ python app.py
 - 复杂计算放在 `quant/` 或独立 service 中，便于测试。
 - 前端大型功能继续按 `src/static/js/<feature>/` 模块化拆分。
 - 涉及金融数据的逻辑必须保留异常兜底，避免单个数据源失败导致页面整体不可用。
+- Dashboard 和 Risk Analysis 模块代码量大（分别 2100+ 和 2843 行），建议定期重构优化。
+- 风险分析涉及复杂计算逻辑，建议添加单元测试确保准确性。

@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.pyc
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -42,6 +43,8 @@ Thumbs.db
 *.bak
 *.tmp
 *.log
+* - 副本/
+* - 副本
 
 # Agent tooling artifacts
 skills-lock.json

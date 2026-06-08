@@ -98,6 +98,7 @@ function buildSkeleton() {
                 <div id="raStressTest" class="ra-card-body"></div>
             </div>
             <div class="ra-card">
+                <div class="ra-card-header"><h3>再平衡建议</h3><span class="ra-card-subtitle">现金利用率 · 集中度 · 操作建议</span></div>
                 <div id="raRebalancing" class="ra-card-body"></div>
             </div>
         </div>

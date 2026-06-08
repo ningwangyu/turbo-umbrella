@@ -17,6 +17,14 @@
 export function renderRebalancing(container, data) {
     if (!container || !data) return;
 
+    // 注入再平衡建议专用样式（幂等，仅首次执行）
+    if (!document.getElementById('raRebalancingCSS')) {
+        const style = document.createElement('style');
+        style.id = 'raRebalancingCSS';
+        style.textContent = REBALANCING_CSS;
+        document.head.appendChild(style);
+    }
+
     const {
         cash_utilization,
         concentration,

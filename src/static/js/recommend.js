@@ -1,13 +1,58 @@
 /**
- * 推荐系统模块 — 获取/筛选/渲染推荐列表 + 加入持仓弹窗
+ * 推荐系统模块 — 获取、筛选、渲染推荐列表，并支持一键加入持仓。
+ *
+ * 创新点：前端不重新计算推荐结论，只展示后端推荐引擎给出的评分、因子和分层标签，
+ * 保证“推荐依据”与后端算法一致，同时通过筛选器降低高分候选过多时的阅读成本。
  */
 import { holdings, $recommendList, $addHoldingModal, $addHoldingClose, $addHoldingCode, $addHoldingName, $addHoldingValue, $addHoldingProfit, $btnConfirmAddHolding, $recFilter, allRecommendData, recMeta, setAllRecommendData, setRecMeta, fundDataCache, signalCache, saveHoldingToServer } from './state.js';
 import { colorCls, fmtMoney, fmtPlain, showToast } from './utils.js';
 import { fetchFundData, renderFundList, renderSummary } from './fund-card.js';
 
+function _renderRecError(type, retryFn) {
+    const retryBtn = retryFn ? '<button class="btn-retry" onclick="this.parentElement._retry()">重试</button>' : '';
+    const configs = {
+        network: { icon: '📡', title: '网络连接失败', desc: '无法连接到服务器，请检查网络后重试', color: '#e74c3c' },
+        server:  { icon: '⚠️', title: '服务暂时不可用', desc: '推荐引擎计算异常，请稍后重试', color: '#e67e22' },
+        empty:   { icon: '📭', title: '暂无推荐数据', desc: '候选基金池为空，可能是数据源暂不可用', color: '#999' },
+    };
+    const c = configs[type] || configs.server;
+    $recommendList.innerHTML = `<div class="panel-loading" style="color:${c.color};text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:8px">${c.icon}</div>
+        <div style="font-weight:600;margin-bottom:4px">${c.title}</div>
+        <div style="font-size:12px;color:#999;margin-bottom:12px">${c.desc}</div>
+        ${retryBtn}
+    </div>`;
+    if (retryFn) $recommendList.querySelector('.btn-retry').onclick = retryFn;
+}
+
 export async function fetchRecommendations() {
     if (!$recommendList) return;
-    try { const r = await fetch("/api/fund/recommend"); const resp = await r.json(); setAllRecommendData(resp.items || resp); setRecMeta(resp.meta || null); applyRecFilter(); } catch (e) { console.error("Recommend:", e); $recommendList.innerHTML = '<div class="panel-loading" style="color:#999">加载失败</div>'; }
+    $recommendList.innerHTML = '<div class="panel-loading">加载中...</div>';
+    try {
+        const r = await fetch("/api/fund/recommend");
+        if (!r.ok) {
+            console.error("Recommend HTTP error:", r.status);
+            _renderRecError('server', fetchRecommendations);
+            return;
+        }
+        const resp = await r.json();
+        if (resp.error) {
+            console.error("Recommend API error:", resp.error);
+            _renderRecError('server', fetchRecommendations);
+            return;
+        }
+        const items = resp.items || resp;
+        setAllRecommendData(items);
+        setRecMeta(resp.meta || null);
+        if (!items || !items.length) {
+            _renderRecError('empty', fetchRecommendations);
+            return;
+        }
+        applyRecFilter();
+    } catch (e) {
+        console.error("Recommend:", e);
+        _renderRecError('network', fetchRecommendations);
+    }
 }
 
 export function applyRecFilter() {

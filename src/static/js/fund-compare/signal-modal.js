@@ -1,3 +1,4 @@
+/** 信号解读弹窗模块 — 将量化因子评分翻译成用户可理解的买卖依据。 */
 import { fundDataCache, signalCache } from '../state.js';
 
 export function openSignalModal(code) {
@@ -69,3 +70,4 @@ export function generateSignalConclusion(sig) {
     }
     return text;
 }
+

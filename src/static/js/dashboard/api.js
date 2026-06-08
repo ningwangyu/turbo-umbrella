@@ -1,24 +1,31 @@
 /** 仪表盘 API 模块 — 封装仪表盘后端接口的请求与错误处理。 */
 
 /**
- * 统一 JSON 请求封装。
+ * 统一 JSON 请求封装，支持超时。
  */
-async function fetchJson(url, body) {
-    const response = await fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-    });
-    let data;
+async function fetchJson(url, body, timeoutMs = 30000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
     try {
-        data = await response.json();
-    } catch (e) {
-        throw new Error(`HTTP ${response.status}`);
+        const response = await fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+            signal: controller.signal,
+        });
+        let data;
+        try {
+            data = await response.json();
+        } catch (e) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+        if (!response.ok || data?.error) {
+            throw new Error(data?.error || `HTTP ${response.status}`);
+        }
+        return data;
+    } finally {
+        clearTimeout(timer);
     }
-    if (!response.ok || data?.error) {
-        throw new Error(data?.error || `HTTP ${response.status}`);
-    }
-    return data;
 }
 
 /**

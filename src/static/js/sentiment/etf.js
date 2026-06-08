@@ -1,3 +1,4 @@
+/** ETF 情绪模块 — 展示连续流入/流出 ETF，突出资金行为的持续性。 */
 import { ETF_CONSECUTIVE_DAY_OPTIONS, sentimentState } from './state.js';
 import { fetchEtfConsecutive } from './api.js';
 
@@ -113,3 +114,4 @@ export function formatConsecutiveDays(days) {
 
 
 // ==================== Canvas仪表盘 ====================
+

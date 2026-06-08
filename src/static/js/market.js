@@ -9,6 +9,11 @@ export async function fetchMarketIndex() {
     try { const r = await fetch("/api/market/index"); const data = await r.json(); renderMarketIndex(data); } catch (e) { console.error("Index:", e); }
 }
 
+export function applyMarketIndex(data) {
+    if (!data || data.error) return;
+    renderMarketIndex(data);
+}
+
 function renderMarketIndex(data) {
     const mapping = { "sh000001": "idx-sh", "sz399001": "idx-sz", "sz399006": "idx-cy" };
     for (const [key, domId] of Object.entries(mapping)) {

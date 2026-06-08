@@ -1,3 +1,4 @@
+/** 组合分析样式模块 — 以功能级 CSS 字符串支持分析页按需注入。 */
 export const PORTFOLIO_CSS = `
 /* ===== 组合分析基础 ===== */
 .portfolio-analysis { display: flex; flex-direction: column; gap: 12px; padding: 2px 0; }

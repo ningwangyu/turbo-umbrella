@@ -1,3 +1,4 @@
+/** 情绪总览模块 — 汇总恐慌贪婪指数和关键市场指标，提供首屏判断。 */
 import { fmtMoney, colorCls } from '../utils.js';
 import { ETF_CONSECUTIVE_DAY_OPTIONS, sentimentState } from './state.js';
 import { drawSentimentGauge, drawEtfChart } from './charts.js';

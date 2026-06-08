@@ -22,20 +22,60 @@ ai_bp = Blueprint("ai", __name__)
 
 @ai_bp.route("/api/ai/chat", methods=["POST"])
 def ai_chat():
-    """
-    AI流式对话接口 — 通过SSE协议逐步推送AI回复。
+    """AI流式对话接口
+    ---
+    tags:
+      - AI
+    summary: AI流式对话
+    description: |
+      通过SSE(Server-Sent Events)协议逐步推送AI回复。
 
-    流程：
-    1. 接收前端发来的对话历史（含用户消息和AI回复）
-    2. 注入系统提示词（基金投资助手角色设定）
-    3. 调用AI API获取流式响应
-    4. 通过SSE协议逐步推送给前端（每个token一条data消息）
-
-    SSE协议格式：
-        data: {"content": "你"}\n\n
-        data: {"content": "好"}\n\n
-        ...
-        data: [DONE]\n\n
+      **SSE协议格式：**
+      ```
+      data: {"content": "你"}\\n\\n
+      data: {"content": "好"}\\n\\n
+      ...
+      data: [DONE]\\n\\n
+      ```
+    consumes:
+      - application/json
+    produces:
+      - text/event-stream
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - messages
+          properties:
+            messages:
+              type: array
+              description: 对话历史（含用户消息和AI回复）
+              items:
+                type: object
+                properties:
+                  role:
+                    type: string
+                    enum: [user, assistant]
+                    description: 消息角色
+                  content:
+                    type: string
+                    description: 消息内容
+    responses:
+      200:
+        description: SSE流式响应
+        schema:
+          type: string
+      400:
+        description: 消息为空
+        schema:
+          $ref: '#/definitions/Error'
+      504:
+        description: AI服务超时
+        schema:
+          $ref: '#/definitions/Error'
     """
     data = request.get_json(force=True)
     messages = data.get("messages", [])
@@ -107,14 +147,42 @@ def ai_chat():
 
 @ai_bp.route("/api/ai/recognize-image", methods=["POST"])
 def ai_recognize_image():
-    """
-    AI图片识别接口 — 识别截图中的基金持仓信息。
-
-    流程：
-    1. 将Base64图片发送给AI多模态API
-    2. 尝试从AI回复中提取JSON格式的基金列表
-    3. 校验基金代码有效性（AI可能幻觉出不存在的代码）
-    4. 返回识别到的基金列表和AI原始回复文本
+    """AI图片识别接口
+    ---
+    tags:
+      - AI
+    summary: AI图片识别
+    description: 识别截图中的基金持仓信息，返回识别到的基金列表和AI原始回复
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - image
+          properties:
+            image:
+              type: string
+              description: "Base64编码的图片数据（可带data:image前缀或纯Base64）"
+            prompt:
+              type: string
+              description: 自定义识别提示词（可选）
+    responses:
+      200:
+        description: 识别结果
+      400:
+        description: 未上传图片
+        schema:
+          $ref: '#/definitions/Error'
+      504:
+        description: AI服务超时
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: 图片识别失败
+        schema:
+          $ref: '#/definitions/Error'
     """
     data = request.get_json(force=True)
     img_data = data.get("image", "")

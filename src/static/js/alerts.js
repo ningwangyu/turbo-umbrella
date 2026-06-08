@@ -1,12 +1,31 @@
 /**
  * 价格提醒模块 — CRUD + 定时检查
  */
-import { holdings, alertList, $alertCode, $alertCondition, $alertThreshold, $btnAddAlert, $alertListEl, setAlertList } from './state.js';
+import { holdings, alertList, $alertCode, $alertAutocomplete, $alertCondition, $alertThreshold, $btnAddAlert, $alertListEl, setAlertList } from './state.js';
 import { fmtMoney, showToast } from './utils.js';
 
 async function fetchFundData(code) {
     try { const r = await fetch(`/api/fund/${code}`); if (!r.ok) { const e = await r.json(); throw new Error(e.error); } return await r.json(); }
     catch (e) { console.error(`Fetch ${code}:`, e); return null; }
+}
+
+async function searchAlertFunds(q) {
+    if (!$alertAutocomplete) return;
+    if (!q || q.length < 1) { $alertAutocomplete.classList.remove("show"); return; }
+    try {
+        const r = await fetch(`/api/fund/search?q=${encodeURIComponent(q)}`);
+        const data = await r.json();
+        if (!data.length) { $alertAutocomplete.classList.remove("show"); return; }
+        $alertAutocomplete.innerHTML = data.map(f => `<div class="ac-item" data-code="${f.code}"><span class="ac-code">${f.code}</span><span class="ac-name">${f.name}</span><span class="ac-type">${f.type}</span></div>`).join("");
+        $alertAutocomplete.classList.add("show");
+        $alertAutocomplete.querySelectorAll(".ac-item").forEach(item => {
+            item.addEventListener("click", function () {
+                $alertCode.value = this.dataset.code;
+                $alertAutocomplete.classList.remove("show");
+                $alertThreshold.focus();
+            });
+        });
+    } catch (e) { console.error("Alert search:", e); }
 }
 
 export async function fetchAlerts() { try { const r = await fetch("/api/alerts"); setAlertList(await r.json()); renderAlerts(); } catch (e) { console.error("Alerts:", e); } }
@@ -24,11 +43,18 @@ function renderAlerts() {
 export async function checkAlerts() { try { const r = await fetch("/api/alerts/check"); const data = await r.json(); if (data.triggered && data.triggered.length) { data.triggered.forEach(a => showToast(`提醒触发：${a.name || a.code} ${fmtMoney(a.trigger_value)}%`)); fetchAlerts(); } } catch (e) { /* */ } }
 
 export function initAlerts() {
+    let alertSearchDebounce;
+    $alertCode.addEventListener("input", function () {
+        clearTimeout(alertSearchDebounce);
+        alertSearchDebounce = setTimeout(() => searchAlertFunds(this.value.trim()), 300);
+    });
+    $alertCode.addEventListener("blur", () => setTimeout(() => $alertAutocomplete?.classList.remove("show"), 200));
+    $alertCode.addEventListener("keydown", e => { if (e.key === "Enter") $alertThreshold.focus(); });
     $btnAddAlert.addEventListener("click", async function () {
         const code = $alertCode.value.trim(), condition = $alertCondition.value, threshold = $alertThreshold.value.trim();
         if (!code || !/^\d{6}$/.test(code)) { showToast("请输入6位基金代码"); return; }
         if (!threshold) { showToast("请输入阈值百分比"); return; }
         const fd = await fetchFundData(code), name = fd ? fd.name : code;
-        try { const r = await fetch("/api/alerts", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ code, name, condition, threshold: +threshold }) }); const alert = await r.json(); if (alert.error) { showToast(alert.error); return; } alertList.push(alert); setAlertList(alertList); renderAlerts(); $alertCode.value = ""; $alertThreshold.value = ""; showToast(`已添加提醒：${name}`); } catch (e) { showToast("添加失败"); }
+        try { const r = await fetch("/api/alerts", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ code, name, condition, threshold: +threshold }) }); const alert = await r.json(); if (alert.error) { showToast(alert.error); return; } alertList.push(alert); setAlertList(alertList); renderAlerts(); $alertCode.value = ""; $alertThreshold.value = ""; $alertAutocomplete?.classList.remove("show"); showToast(`已添加提醒：${name}`); } catch (e) { showToast("添加失败"); }
     });
 }

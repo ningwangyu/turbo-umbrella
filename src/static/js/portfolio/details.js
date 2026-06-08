@@ -1,3 +1,4 @@
+/** 组合明细模块 — 展示重叠持仓、单基金回撤和风险贡献详情。 */
 import { analysisData } from './state.js';
 
 export function showSectorDetail(sector) {
@@ -131,3 +132,4 @@ export function showTypeDetail(typeItem, color) {
     panel.dataset.type = typeItem.name;
     panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
+

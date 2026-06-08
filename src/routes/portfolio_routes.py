@@ -25,13 +25,25 @@ portfolio_bp = Blueprint("portfolio", __name__)
 
 @portfolio_bp.route("/api/portfolio/stats", methods=["POST"])
 def portfolio_stats():
-    """
-    计算持仓组合统计数据。
-
-    对每只基金实时获取估值，计算：
-    - 今日预估收益 = 持有金额 × 今日估值涨跌幅%
-    - 当前总市值 = 持有金额 + 今日预估收益
-    - 持仓权重 = 当前市值 / 组合总市值
+    """计算持仓组合统计数据
+    ---
+    tags:
+      - 组合
+    summary: 组合统计
+    description: 对每只基金实时获取估值，计算总市值、总成本、收益率、持仓权重等统计数据
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 组合统计数据
+      400:
+        description: 无持仓数据
+        schema:
+          $ref: '#/definitions/Error'
     """
     data = request.get_json(force=True)
     holdings = data.get("holdings", [])
@@ -91,13 +103,25 @@ def portfolio_stats():
 
 @portfolio_bp.route("/api/portfolio/analysis", methods=["POST"])
 def portfolio_analysis():
-    """
-    组合深度分析 — 持仓分布、重叠持仓、行业集中度、风险指标。
-
-    创新点：
-    1. 重叠持仓分析：扫描所有基金的重仓股，找出重复暴露的股票
-    2. 行业分布热力图：统计持仓中各行业的权重占比
-    3. 组合风险指标：基于各基金净值走势计算组合层面的波动率、最大回撤、Sharpe
+    """组合深度分析
+    ---
+    tags:
+      - 组合
+    summary: 组合深度分析
+    description: 持仓分布、重叠持仓、行业集中度、风险指标、最大回撤等深度分析
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 深度分析结果
+      400:
+        description: 无持仓数据
+        schema:
+          $ref: '#/definitions/Error'
     """
     data = request.get_json(force=True)
     holdings = data.get("holdings", [])

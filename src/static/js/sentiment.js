@@ -1,3 +1,4 @@
+/** 市场情绪入口模块 — 聚合情绪页渲染、图表和样式，支持 Tab 懒加载。 */
 import { fetchMarketSentiment } from './sentiment/api.js';
 import { resetSentimentState } from './sentiment/state.js';
 import { renderSentimentPage } from './sentiment/overview.js';
@@ -16,6 +17,7 @@ export async function renderSentiment(container) {
 }
 
 function normalizeSentimentData(data) {
+    // 后端情绪指标来自多个外部接口，任一指标缺失时前端用中性默认值保证页面可渲染。
     const safeData = data && typeof data === 'object' ? data : {};
     const indicators = safeData.indicators && typeof safeData.indicators === 'object' ? safeData.indicators : {};
     return {

@@ -1,3 +1,4 @@
+/** 组合分析入口模块 — 组合深度分析页面的兼容导出层，保持历史 import 路径稳定。 */
 import { fetchPortfolioAnalysis } from './portfolio/api.js';
 import { setAnalysisData } from './portfolio/state.js';
 import { renderRiskSection } from './portfolio/risk.js';

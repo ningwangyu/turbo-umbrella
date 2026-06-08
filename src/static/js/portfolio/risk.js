@@ -1,3 +1,4 @@
+/** 组合风险模块 — 将波动率、最大回撤、夏普比率等风险指标转换为解释性视图。 */
 import { analysisData } from './state.js';
 import { HELP_TEXTS, formatFullDate } from './helpers.js';
 import { showToast } from '../utils.js';
@@ -357,3 +358,4 @@ export function drawDDChart(dd) {
         ctx.fillText(`${d.getMonth()+1}/${d.getDate()}`, toX(i), H - 6);
     }
 }
+

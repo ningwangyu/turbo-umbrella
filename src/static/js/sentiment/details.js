@@ -1,3 +1,4 @@
+/** 情绪详情模块 — 展示指标拆解、行业热度和资金流向的解释性内容。 */
 import { colorCls, fmtMoney } from '../utils.js';
 import { fetchMarketSectors } from './api.js';
 import { sentimentState } from './state.js';
@@ -262,7 +263,7 @@ async function renderSectorDetail(panel, data) {
         return;
     }
 
-    if (!sectors || !sectors.length) { panel.innerHTML = '<div class="detail-empty">暂无数据</div>'; return; }
+    if (!sectors || !sectors.length) { panel.innerHTML = '<div class="detail-empty">板块数据加载较慢，稍后重试</div>'; return; }
 
     const upSectors = sectors.filter(s => s.change_pct > 0);
     const downSectors = sectors.filter(s => s.change_pct < 0);

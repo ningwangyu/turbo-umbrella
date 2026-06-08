@@ -16,7 +16,30 @@ export_bp = Blueprint("export", __name__)
 
 @export_bp.route("/api/export/json", methods=["POST"])
 def export_json():
-    """导出持仓数据为JSON格式（含实时估值快照）"""
+    """导出持仓数据为JSON格式
+    ---
+    tags:
+      - 导出
+    summary: 导出JSON
+    description: 导出持仓数据为JSON文件（含实时估值快照）
+    produces:
+      - application/json
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: JSON文件下载
+        schema:
+          type: file
+      400:
+        description: 无持仓数据
+        schema:
+          $ref: '#/definitions/Error'
+    """
     data = request.get_json(force=True)
     holdings = data.get("holdings", [])
     if not holdings:
@@ -55,7 +78,30 @@ def export_json():
 
 @export_bp.route("/api/export/csv", methods=["POST"])
 def export_csv():
-    """导出持仓数据为CSV格式"""
+    """导出持仓数据为CSV格式
+    ---
+    tags:
+      - 导出
+    summary: 导出CSV
+    description: 导出持仓数据为CSV文件
+    produces:
+      - text/csv
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: CSV文件下载
+        schema:
+          type: file
+      400:
+        description: 无持仓数据
+        schema:
+          $ref: '#/definitions/Error'
+    """
     data = request.get_json(force=True)
     holdings = data.get("holdings", [])
     if not holdings:

@@ -1,3 +1,4 @@
+/** 回测样式模块 — 以 JS 字符串随功能懒加载，减少首屏静态 CSS 体积。 */
 export const BACKTEST_CSS = `
 .backtest-page { display: flex; flex-direction: column; gap: 10px; }
 .backtest-form { background: var(--card); border-radius: var(--radius); padding: 12px; box-shadow: var(--shadow); }
@@ -75,33 +76,44 @@ export const BACKTEST_CSS = `
 }
 
 /* 汇总对比表格 */
-.bt-summary-table-wrap { overflow-x: auto; margin-top: 10px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.bt-summary-table-wrap {
+    overflow-x: auto;
+    margin-top: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: rgba(3, 18, 37, .42);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+}
 .bt-summary-table {
     width: 100%; border-collapse: collapse; font-size: 13px;
-    background: var(--card);
+    background: transparent;
+    color: var(--text);
 }
 .bt-summary-table th, .bt-summary-table td {
     padding: 8px 14px; text-align: center;
+    border-bottom: 1px solid rgba(82, 150, 255, .14);
 }
 .bt-summary-table th {
-    background: #f0f4f8; font-weight: 600; color: var(--text2); border-bottom: 2px solid var(--border, #e0e0e0);
+    background: rgba(56, 189, 248, .1);
+    font-weight: 600;
+    color: var(--accent-2);
 }
 .bt-summary-table td {
-    border-bottom: 1px solid #f0f0f0;
     font-variant-numeric: tabular-nums;
+    color: var(--text2);
 }
-.bt-summary-table tbody tr:nth-child(even) { background: #fafbfc; }
-.bt-summary-table tbody tr:hover { background: var(--primary-bg, #e8f0fe); }
-.bt-tbl-label { text-align: left; font-weight: 600; color: var(--text2); white-space: nowrap; }
-.bt-row-highlight { background: #fff8e1 !important; }
-.bt-row-highlight td { font-weight: 600; }
+.bt-summary-table tbody tr:nth-child(even) { background: rgba(125, 211, 252, .035); }
+.bt-summary-table tbody tr:hover { background: rgba(56, 189, 248, .09); }
+.bt-tbl-label { text-align: left; font-weight: 600; color: var(--text); white-space: nowrap; }
+.bt-row-highlight { background: rgba(56, 189, 248, .08) !important; }
+.bt-row-highlight td { font-weight: 600; color: var(--text); }
 .bt-best {
-    font-weight: 700; color: var(--primary);
+    font-weight: 700; color: var(--accent);
 }
-.bt-diff-header { color: #888 !important; font-size: 11px; }
-.bt-diff-cell { font-size: 11px; color: #888; }
-.bt-diff-pos { color: #e74c3c !important; font-weight: 600; }
-.bt-diff-neg { color: #27ae60 !important; font-weight: 600; }
+.bt-diff-header { color: var(--text3) !important; font-size: 11px; }
+.bt-diff-cell { font-size: 11px; color: var(--text3); }
+.bt-diff-pos { color: var(--up) !important; font-weight: 600; }
+.bt-diff-neg { color: var(--down) !important; font-weight: 600; }
 
 @media (max-width: 700px) {
     .backtest-form-grid { grid-template-columns: 1fr 1fr; }

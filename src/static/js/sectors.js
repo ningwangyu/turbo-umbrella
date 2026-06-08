@@ -1,26 +1,101 @@
 /**
- * 热门板块模块 — 行情获取与渲染
+ * 热门板块模块 — 行情获取与渲染（带 localStorage 持久化 + ETag 条件请求）
  */
 import { $sectorList } from './state.js';
 import { colorCls } from './utils.js';
 
+const LS_KEY = "dashboard_sectors";
+const LS_TTL = 3 * 60 * 1000; // localStorage 缓存 3 分钟（1.5x 后端 TTL）
+
+let sectorsCache = [];
+let lastEtag = "";
+
+// ---- localStorage 读写 ----
+function loadPersistedSectors() {
+    try {
+        const raw = localStorage.getItem(LS_KEY);
+        if (!raw) return null;
+        const entry = JSON.parse(raw);
+        if (Date.now() - entry.ts > LS_TTL) return null;
+        lastEtag = entry.etag || "";
+        return entry.data;
+    } catch { return null; }
+}
+
+function persistSectors(data, etag) {
+    try {
+        localStorage.setItem(LS_KEY, JSON.stringify({ data, etag: etag || "", ts: Date.now() }));
+    } catch { /* quota exceeded, ignore */ }
+}
+
+// ---- 首屏快速渲染（从 localStorage） ----
+export function restoreSectorsFromCache() {
+    const cached = loadPersistedSectors();
+    if (cached && cached.length) {
+        sectorsCache = cached;
+        renderSectors(cached);
+        return true;
+    }
+    return false;
+}
+
+export function applySectors(data) {
+    if (!data || !data.length) return;
+    sectorsCache = data;
+    renderSectors(data);
+}
+
 export async function fetchSectors() {
     if (!$sectorList) return;
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 4500);
     try {
-        const r = await fetch("/api/market/sectors");
+        const headers = {};
+        if (lastEtag) headers["If-None-Match"] = lastEtag;
+        const r = await fetch("/api/market/sectors", { signal: controller.signal, headers });
+        if (r.status === 304) {
+            if (sectorsCache.length) persistSectors(sectorsCache, lastEtag);
+            return;
+        }
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        const etag = r.headers.get("ETag") || "";
         const data = await r.json();
+        lastEtag = etag;
+        persistSectors(data, etag);
         renderSectors(data);
     } catch (e) {
-        if ($sectorList.querySelector('.panel-loading')) {
-            $sectorList.innerHTML = '<span style="color:#999;font-size:10px;">暂无数据</span>';
+        console.debug("Sectors:", e);
+        if (sectorsCache.length) {
+            renderSectors(sectorsCache);
+        } else if ($sectorList.querySelector('.panel-loading')) {
+            $sectorList.innerHTML = '<div class="panel-loading" style="color:#999">热门板块行情暂不可用，稍后自动刷新</div>';
         }
+    } finally {
+        clearTimeout(timer);
     }
+}
+
+function isStaticSectorFallback(sectors) {
+    return sectors.length > 0 && sectors.every(s =>
+        Number(s.change_pct) === 0 && !s.leader_name && !Number(s.up_count) && !Number(s.down_count)
+    );
 }
 
 function renderSectors(sectors) {
     if (!$sectorList) return;
-    if (!sectors || !sectors.length) { $sectorList.innerHTML = '<span style="color:#999;font-size:10px;">暂无数据</span>'; return; }
+    if (!sectors || !sectors.length) {
+        if (sectorsCache.length) {
+            sectors = sectorsCache;
+        } else {
+            $sectorList.innerHTML = '<div class="panel-loading" style="color:#999">热门板块行情暂不可用，稍后自动刷新</div>';
+            return;
+        }
+    }
+    if (isStaticSectorFallback(sectors)) {
+        $sectorList.innerHTML = '<div class="panel-loading" style="color:#999">热门板块行情暂不可用，稍后自动刷新</div>';
+        return;
+    }
+    sectorsCache = sectors;
     const top17 = sectors.slice(0, 17);
     const rest = sectors.slice(17);
     const chipHTML = (s) => {

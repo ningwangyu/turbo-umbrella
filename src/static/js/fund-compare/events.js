@@ -1,3 +1,4 @@
+/** 基金对比事件模块 — 集中绑定添加、删除、切换周期等交互，避免视图层膨胀。 */
 import { holdings, fundDataCache, signalCache, setFundDataCache, setSignalCache } from '../state.js';
 import { showToast } from '../utils.js';
 import { fetchCompareData } from './api.js';

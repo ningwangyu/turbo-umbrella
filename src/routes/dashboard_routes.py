@@ -36,24 +36,29 @@ dashboard_bp = Blueprint("dashboard", __name__)
 
 @dashboard_bp.route("/api/dashboard/overview", methods=["POST"])
 def dashboard_overview():
-    """
-    聚合仪表盘数据（指数、情绪、持仓、信号）
-
-    请求体:
-        {
-            "holdings": [
-                {"code": "000001", "value": 10000, "profit": 500},
-                {"code": "000002", "value": 20000, "profit": 1000}
-            ]
-        }
-
-    返回:
-        {
-            "market": {"indices": {...}, "volume": {...}, "sentiment": {...}},
-            "portfolio": {"total_value": ..., "total_cost": ..., ...},
-            "signal_summary": {"portfolio_buy_score": ..., "healthy_count": ..., ...},
-            "updated_at": "2026-05-20 14:30:00"
-        }
+    """聚合仪表盘数据（指数、情绪、持仓、信号）
+    ---
+    tags:
+      - 仪表盘
+    summary: 仪表盘概览
+    description: 聚合仪表盘数据，包含市场指数、情绪指标、持仓统计、信号汇总
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 聚合仪表盘数据
+      400:
+        description: 缺少持仓数据
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: 服务异常
+        schema:
+          $ref: '#/definitions/Error'
     """
     try:
         data = request.get_json()
@@ -75,37 +80,29 @@ def dashboard_overview():
 
 @dashboard_bp.route("/api/dashboard/holdings-detail", methods=["POST"])
 def holdings_detail():
-    """
-    持仓收益详情（每只基金的市值、权重、今日收益、累计收益）
-
-    请求体:
-        {
-            "holdings": [
-                {"code": "000001", "value": 10000, "profit": 500}
-            ]
-        }
-
-    返回:
-        {
-            "total_value": 100000,
-            "total_cost": 95000,
-            "total_profit": 5000,
-            "total_profit_pct": 5.26,
-            "today_return": 320.50,
-            "fund_details": [
-                {
-                    "code": "000001",
-                    "name": "基金名称",
-                    "current_value": 20000,
-                    "weight": 20.0,
-                    "today": 64.10,
-                    "today_pct": 0.32,
-                    "profit": 1000,
-                    "profit_pct": 5.26,
-                    "nav": "1.2345"
-                }
-            ]
-        }
+    """持仓收益详情
+    ---
+    tags:
+      - 仪表盘
+    summary: 持仓收益详情
+    description: 获取每只基金的市值、权重、今日收益、累计收益等详细数据
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 持仓收益详情
+      400:
+        description: 缺少持仓数据
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: 服务异常
+        schema:
+          $ref: '#/definitions/Error'
     """
     try:
         data = request.get_json()
@@ -127,7 +124,16 @@ def holdings_detail():
 
 @dashboard_bp.route("/api/dashboard/health", methods=["GET"])
 def health_check():
-    """健康检查端点（用于监控）"""
+    """健康检查端点
+    ---
+    tags:
+      - 仪表盘
+    summary: 健康检查
+    description: 仪表盘模块健康检查端点，用于监控
+    responses:
+      200:
+        description: 健康状态
+    """
     return jsonify({
         "status": "ok",
         "module": "dashboard",
@@ -137,39 +143,29 @@ def health_check():
 
 @dashboard_bp.route("/api/dashboard/timeline", methods=["POST"])
 def timeline():
-    """
-    智能事件时间线（检测持仓相关的重要市场事件）
-
-    请求体:
-        {
-            "holdings": [
-                {"code": "000001", "value": 10000, "profit": 500}
-            ]
-        }
-
-    返回:
-        {
-            "events": [
-                {
-                    "type": "price_surge",
-                    "date": "2026-05-19",
-                    "title": "XXX基金单日大涨3.5%",
-                    "description": "...",
-                    "funds": [...],
-                    "severity": "high",
-                    "icon": "📈"
-                }
-            ],
-            "event_count": 5,
-            "summary": {
-                "price_events": 2,
-                "signal_events": 1,
-                "sentiment_events": 0,
-                "drift_events": 1,
-                "milestone_events": 1
-            },
-            "updated_at": "2026-05-20 15:00:00"
-        }
+    """智能事件时间线
+    ---
+    tags:
+      - 仪表盘
+    summary: 事件时间线
+    description: 检测持仓相关的重要市场事件，生成智能事件时间线
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 事件时间线数据
+      400:
+        description: 缺少持仓数据
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: 服务异常
+        schema:
+          $ref: '#/definitions/Error'
     """
     try:
         data = request.get_json()
@@ -195,16 +191,19 @@ def timeline():
 
 @dashboard_bp.route("/api/dashboard/prefetch-status", methods=["GET"])
 def prefetch_status():
-    """
-    获取仪表盘数据预热状态
-
-    返回:
-        {
-            "is_prefetching": false,
-            "last_prefetch": "2026-05-20T15:30:00",
-            "prefetch_count": 42,
-            "recent_errors": []
-        }
+    """获取仪表盘数据预热状态
+    ---
+    tags:
+      - 仪表盘
+    summary: 预热状态
+    description: 获取仪表盘数据缓存的预热状态和统计信息
+    responses:
+      200:
+        description: 预热状态信息
+      500:
+        description: 服务异常
+        schema:
+          $ref: '#/definitions/Error'
     """
     try:
         status = get_prefetch_status()
@@ -216,21 +215,19 @@ def prefetch_status():
 
 @dashboard_bp.route("/api/dashboard/optimize", methods=["GET"])
 def optimize_info():
-    """
-    获取API优化信息和建议
-
-    返回:
-        {
-            "cache_stats": {"index": 3, "estimation": 5, "performance": 5},
-            "suggestions": [
-                {
-                    "type": "prefetch",
-                    "priority": "high",
-                    "message": "基金估值缓存仅5条，建议增加启动预热"
-                }
-            ],
-            "timestamp": "2026-05-20T15:30:00"
-        }
+    """获取API优化信息和建议
+    ---
+    tags:
+      - 仪表盘
+    summary: 优化建议
+    description: 获取API缓存统计和优化建议
+    responses:
+      200:
+        description: 优化信息和建议
+      500:
+        description: 服务异常
+        schema:
+          $ref: '#/definitions/Error'
     """
     try:
         info = optimize_api_calls()
@@ -242,24 +239,29 @@ def optimize_info():
 
 @dashboard_bp.route("/api/dashboard/warmup", methods=["POST"])
 def warmup_cache():
-    """
-    手动触发缓存预热 — 用于测试和调试
-
-    请求体:
-        {
-            "holdings": [
-                {"code": "000001", "value": 10000, "profit": 500}
-            ]
-        }
-
-    返回:
-        {
-            "status": "ok",
-            "timestamp": "2026-05-20T15:30:00",
-            "fund_count": 1,
-            "elapsed": 1.5,
-            "failed_funds": []
-        }
+    """手动触发缓存预热
+    ---
+    tags:
+      - 仪表盘
+    summary: 手动预热缓存
+    description: 手动触发仪表盘缓存预热，用于测试和调试
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 预热结果
+      400:
+        description: 缺少持仓数据
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: 服务异常
+        schema:
+          $ref: '#/definitions/Error'
     """
     try:
         data = request.get_json()
@@ -281,18 +283,29 @@ def warmup_cache():
 
 @dashboard_bp.route("/api/dashboard/overview-fast", methods=["POST"])
 def dashboard_overview_fast():
-    """
-    快速获取仪表盘概览（优化版）— 优先读缓存
-
-    请求体:
-        {
-            "holdings": [
-                {"code": "000001", "value": 10000, "profit": 500}
-            ]
-        }
-
-    返回:
-        同 /api/dashboard/overview，但性能更好（缓存命中时<1ms）
+    """快速获取仪表盘概览（优化版）
+    ---
+    tags:
+      - 仪表盘
+    summary: 快速仪表盘概览
+    description: 优化版仪表盘概览，优先读缓存，缓存命中时性能极佳（<1ms）
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 仪表盘概览数据
+      400:
+        description: 缺少持仓数据
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: 服务异常
+        schema:
+          $ref: '#/definitions/Error'
     """
     try:
         data = request.get_json()

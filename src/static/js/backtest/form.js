@@ -1,3 +1,4 @@
+/** 回测表单模块 — 负责参数采集、接口调用和结果区渲染的流程编排。 */
 import { holdings, fundDataCache } from '../state.js';
 import { showToast } from '../utils.js';
 import { STRATEGIES, TIME_RANGES } from './config.js';

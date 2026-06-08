@@ -1,3 +1,4 @@
+/** 回测配置模块 — 集中维护策略、频率和时间范围选项，避免表单与结果页重复定义。 */
 export const STRATEGIES = {
     fixed: { key: "fixed", label: "普通定投", icon: "📌", color: "#1a73e8",
         desc: "最简单的定投方式，每期投入固定金额。不择时、不择额，利用「微笑曲线」摊平成本，适合新手入门。" },
@@ -16,3 +17,4 @@ export const TIME_RANGES = [
     { key: "3y", label: "3年" },
     { key: "all", label: "全部" },
 ];
+

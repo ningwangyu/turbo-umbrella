@@ -1,3 +1,4 @@
+/** 涨跌停模块 — 展示涨停/跌停列表及行业分布，用于观察市场赚钱效应。 */
 import { holdings } from '../state.js';
 import { colorCls, fmtMoney, showToast } from '../utils.js';
 import { fetchLimitStocks, fetchStockFunds } from './api.js';
@@ -145,3 +146,4 @@ async function showStockFundsModal(stockCode, stockName) {
 
 
 // ==================== ETF图表 ====================
+

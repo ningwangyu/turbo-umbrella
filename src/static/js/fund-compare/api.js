@@ -1,3 +1,4 @@
+/** 基金对比 API 模块 — 批量拉取估值、走势和信号数据，供对比页统一消费。 */
 import { compareState } from './state.js';
 import { fundDataCache, setFundDataCache, setSignalCache } from '../state.js';
 

@@ -8,6 +8,7 @@
 import { chartInstances, setDetailChartInstance, getDetailChartInstance } from './state.js';
 
 // ===== 自定义十字准线插件 =====
+// Chart.js 插件在 afterDraw 阶段绘制覆盖层，不污染原始数据集，鼠标移出后可直接清空。
 const crosshairPlugin = {
     id: "crosshair",
     afterDraw(chart) {
@@ -17,17 +18,17 @@ const crosshairPlugin = {
             ctx.save();
             ctx.setLineDash([6, 3]);
             ctx.lineWidth = 1.2;
-            ctx.strokeStyle = "rgba(26,115,232,0.7)";
+            ctx.strokeStyle = "rgba(56,189,248,0.75)";
             ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bottom); ctx.stroke();
             ctx.beginPath(); ctx.moveTo(left, y); ctx.lineTo(right, y); ctx.stroke();
-            ctx.fillStyle = "rgba(26,115,232,0.9)";
+            ctx.fillStyle = "rgba(56,189,248,0.9)";
             ctx.beginPath(); ctx.arc(x, y, 3, 0, Math.PI * 2); ctx.fill();
             const yAxis = chart.scales.y;
             if (yAxis) {
                 const value = yAxis.getValueForPixel(y);
                 ctx.setLineDash([]);
                 ctx.font = "10px sans-serif";
-                ctx.fillStyle = "#1a73e8";
+                ctx.fillStyle = "#38bdf8";
                 ctx.textAlign = "left";
                 ctx.fillText(value.toFixed(4), right + 4, y + 3);
             }
@@ -46,9 +47,13 @@ export function renderChart(code, trend, period) {
     const lastDate = trend[trend.length - 1].date;
     if (period === "ytd") { const yearStart = new Date(new Date(lastDate).getFullYear(), 0, 1).getTime(); filtered = trend.filter(p => p.date >= yearStart); }
     else { const periods = { "7d": 7, "15d": 15, "3m": 90, "6m": 180, "1y": 365, "2y": 730, "all": 99999 }; filtered = trend.filter(p => p.date >= lastDate - (periods[period] || 180) * 86400000); }
-    if (filtered.length > 300) { const step = Math.ceil(filtered.length / 300); filtered = filtered.filter((_, i) => i % step === 0); }
+    if (filtered.length > 300) {
+        // 大数据量净值曲线只做等距降采样，保留走势形态同时避免移动端 Canvas 绘制卡顿。
+        const step = Math.ceil(filtered.length / 300);
+        filtered = filtered.filter((_, i) => i % step === 0);
+    }
     const labels = filtered.map(p => new Date(p.date)), navs = filtered.map(p => p.nav);
-    const lineColor = (navs[navs.length - 1] || 0) >= (navs[0] || 0) ? "#e74c3c" : "#27ae60";
+    const lineColor = (navs[navs.length - 1] || 0) >= (navs[0] || 0) ? "#ff6b7a" : "#35e89b";
     let timeUnit = "month", displayFormat = "M月d日";
     if (period === "7d" || period === "15d") { timeUnit = "day"; } else if (period === "3m") { timeUnit = "week"; } else if (period === "6m" || period === "ytd") { displayFormat = "M月"; } else { displayFormat = "yyyy年M月"; }
 
@@ -57,7 +62,7 @@ export function renderChart(code, trend, period) {
         options: {
             responsive: true, maintainAspectRatio: false,
             plugins: { legend: { display: false }, tooltip: { mode: "index", intersect: false, callbacks: { title: items => { if (items.length) { const d = new Date(items[0].parsed.x); return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`; } return ""; }, label: item => item.parsed.y.toFixed(4) } } },
-            scales: { x: { type: "time", time: { unit: timeUnit, displayFormats: { day: displayFormat, week: displayFormat, month: displayFormat } }, ticks: { maxTicksLimit: 5, font: { size: 9 } }, grid: { display: false } }, y: { ticks: { maxTicksLimit: 4, font: { size: 9 }, callback: v => v.toFixed(4) }, grid: { color: "#f0f0f0" } } },
+            scales: { x: { type: "time", time: { unit: timeUnit, displayFormats: { day: displayFormat, week: displayFormat, month: displayFormat } }, ticks: { maxTicksLimit: 5, font: { size: 9 }, color: "#8fb6d8" }, grid: { display: false } }, y: { ticks: { maxTicksLimit: 4, font: { size: 9 }, color: "#8fb6d8", callback: v => v.toFixed(4) }, grid: { color: "rgba(125,211,252,.12)" } } },
             interaction: { mode: "nearest", axis: "x" },
             onHover(event, elements, chart) { const { x, y } = event.native ? { x: event.native.offsetX, y: event.native.offsetY } : { x: 0, y: 0 }; chart._crosshair = { x, y }; chart.draw(); },
         }
@@ -74,9 +79,13 @@ export function renderDetailChart(code, trend, period) {
     const lastDate = trend[trend.length - 1].date;
     if (period === "ytd") { filtered = trend.filter(p => p.date >= new Date(new Date(lastDate).getFullYear(), 0, 1).getTime()); }
     else { const periods = { "7d": 7, "15d": 15, "3m": 90, "6m": 180, "1y": 365, "2y": 730, "all": 99999 }; filtered = trend.filter(p => p.date >= lastDate - (periods[period] || 180) * 86400000); }
-    if (filtered.length > 300) { const step = Math.ceil(filtered.length / 300); filtered = filtered.filter((_, i) => i % step === 0); }
+    if (filtered.length > 300) {
+        // 大数据量净值曲线只做等距降采样，保留走势形态同时避免移动端 Canvas 绘制卡顿。
+        const step = Math.ceil(filtered.length / 300);
+        filtered = filtered.filter((_, i) => i % step === 0);
+    }
     const labels = filtered.map(p => new Date(p.date)), navs = filtered.map(p => p.nav);
-    const lineColor = (navs[navs.length - 1] || 0) >= (navs[0] || 0) ? "#e74c3c" : "#27ae60";
+    const lineColor = (navs[navs.length - 1] || 0) >= (navs[0] || 0) ? "#ff6b7a" : "#35e89b";
     let timeUnit = "month", displayFormat = "M月d日";
     if (period === "7d" || period === "15d") { timeUnit = "day"; } else if (period === "3m") { timeUnit = "week"; } else if (period === "6m" || period === "ytd") { displayFormat = "M月"; } else { displayFormat = "yyyy年M月"; }
 
@@ -85,7 +94,7 @@ export function renderDetailChart(code, trend, period) {
         options: {
             responsive: true, maintainAspectRatio: false,
             plugins: { legend: { display: false }, tooltip: { mode: "index", intersect: false, callbacks: { title: items => { if (items.length) { const d = new Date(items[0].parsed.x); return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`; } return ""; }, label: item => item.parsed.y.toFixed(4) } } },
-            scales: { x: { type: "time", time: { unit: timeUnit, displayFormats: { day: displayFormat, week: displayFormat, month: displayFormat } }, ticks: { maxTicksLimit: 8, font: { size: 11 } }, grid: { display: false } }, y: { ticks: { maxTicksLimit: 6, font: { size: 11 }, callback: v => v.toFixed(4) }, grid: { color: "#f0f0f0" } } },
+            scales: { x: { type: "time", time: { unit: timeUnit, displayFormats: { day: displayFormat, week: displayFormat, month: displayFormat } }, ticks: { maxTicksLimit: 8, font: { size: 11 }, color: "#8fb6d8" }, grid: { display: false } }, y: { ticks: { maxTicksLimit: 6, font: { size: 11 }, color: "#8fb6d8", callback: v => v.toFixed(4) }, grid: { color: "rgba(125,211,252,.12)" } } },
             interaction: { mode: "nearest", axis: "x" },
             onHover(event, elements, chart) { const { x, y } = event.native ? { x: event.native.offsetX, y: event.native.offsetY } : { x: 0, y: 0 }; chart._crosshair = { x, y }; chart.draw(); },
         }

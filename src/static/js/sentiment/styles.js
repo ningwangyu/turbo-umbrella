@@ -1,3 +1,4 @@
+/** 情绪页样式模块 — 随情绪功能懒加载，隔离仪表盘和列表组件样式。 */
 export const SENTIMENT_CSS = `
 .sentiment-page { display: flex; flex-direction: column; gap: 10px; padding: 4px 0; }
 

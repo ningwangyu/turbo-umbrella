@@ -1,3 +1,4 @@
+/** 回测图表模块 — 将收益曲线、投入曲线和策略对比统一封装为 Chart.js 配置。 */
 import { fmtMoney } from '../utils.js';
 import { STRATEGIES } from './config.js';
 
@@ -85,18 +86,19 @@ export function drawLineChart(data, activeKeys) {
                 x: {
                     type: "time",
                     time: { unit: "month", displayFormats: { month: "M月" } },
-                    ticks: { maxTicksLimit: 8, font: { size: 10 } },
+                    ticks: { maxTicksLimit: 8, font: { size: 10 }, color: "#8fb6d8" },
                     grid: { display: false },
-                    title: { display: true, text: "日期", font: { size: 11 }, color: "#888" },
+                    title: { display: true, text: "日期", font: { size: 11 }, color: "#8fb6d8" },
                 },
                 y: {
                     ticks: {
                         maxTicksLimit: 6,
                         font: { size: 10 },
+                        color: "#8fb6d8",
                         callback: v => v >= 10000 ? (v / 10000).toFixed(1) + "万" : v,
                     },
-                    grid: { color: "#f0f0f0" },
-                    title: { display: true, text: "资产价值（元）", font: { size: 11 }, color: "#888" },
+                    grid: { color: "rgba(125,211,252,.12)" },
+                    title: { display: true, text: "资产价值（元）", font: { size: 11 }, color: "#8fb6d8" },
                 },
             },
             interaction: { mode: "nearest", axis: "x" },
@@ -165,11 +167,11 @@ export function drawBarChart(data, activeKeys) {
             scales: {
                 y: {
                     beginAtZero: true,
-                    ticks: { callback: v => v + "%", font: { size: 10 } },
-                    grid: { color: "#f0f0f0" },
+                    ticks: { callback: v => v + "%", font: { size: 10 }, color: "#8fb6d8" },
+                    grid: { color: "rgba(125,211,252,.12)" },
                 },
                 x: {
-                    ticks: { font: { size: 11 } },
+                    ticks: { font: { size: 11 }, color: "#8fb6d8" },
                     grid: { display: false },
                 },
             },
@@ -202,3 +204,4 @@ export function drawBarChart(data, activeKeys) {
     };
     chartBarInstance.draw();
 }
+

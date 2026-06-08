@@ -11,11 +11,25 @@ report_bp = Blueprint("report", __name__)
 
 @report_bp.route("/api/report/morning", methods=["POST"])
 def morning_report():
-    """
-    生成AI晨报。
-
-    参数（POST JSON）：
-    - holdings: 持仓列表 [{code, value, profit}]
+    """生成AI晨报
+    ---
+    tags:
+      - 晨报
+    summary: 生成AI晨报
+    description: 基于持仓数据和市场行情，调用AI生成每日投资晨报
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 晨报内容
+      500:
+        description: 生成失败
+        schema:
+          $ref: '#/definitions/Error'
     """
     data = request.get_json(force=True)
     holdings = data.get("holdings", [])

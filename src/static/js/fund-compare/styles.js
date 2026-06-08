@@ -1,3 +1,4 @@
+/** 基金对比样式模块 — 随对比功能按需注入，保持主样式文件聚焦基础布局。 */
 export const COMPARE_CSS = `
 .fund-compare { display: flex; flex-direction: column; gap: 12px; }
 

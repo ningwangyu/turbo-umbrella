@@ -31,6 +31,103 @@ limiter.configure("sina", _sina_cfg.get("rate_limit_per_second", 3))
 app = Flask(__name__)
 CORS(app)
 
+# Swagger/OpenAPI文档配置
+from flasgger import Swagger
+
+swagger_template = {
+    "info": {
+        "title": "基金收益预测助手 API",
+        "description": "基金收益预测助手 V2 后端API文档。包含基金查询、行情数据、AI对话、价格提醒、组合分析、定投回测、市场情绪、数据导出、AI晨报、持仓管理、仪表盘、风险分析等模块。",
+        "version": "2.0.0",
+        "contact": {
+            "name": "基金助手开发团队",
+        },
+    },
+    "basePath": "/",
+    "schemes": ["http", "https"],
+    "tags": [
+        {"name": "基金", "description": "基金查询、信号计算、推荐、智能导入"},
+        {"name": "行情", "description": "市场指数、板块行情、贵金属价格"},
+        {"name": "AI", "description": "AI对话与图片识别"},
+        {"name": "提醒", "description": "价格提醒管理"},
+        {"name": "组合", "description": "持仓组合统计与深度分析"},
+        {"name": "回测", "description": "定投回测模拟"},
+        {"name": "情绪", "description": "市场情绪监控"},
+        {"name": "导出", "description": "数据导出"},
+        {"name": "晨报", "description": "AI晨报"},
+        {"name": "持仓", "description": "MySQL持仓持久化"},
+        {"name": "仪表盘", "description": "驾驶舱聚合数据"},
+        {"name": "风险分析", "description": "风险分析与预测"},
+    ],
+    "definitions": {
+        "Error": {
+            "type": "object",
+            "properties": {
+                "error": {
+                    "type": "string",
+                    "description": "错误信息",
+                }
+            },
+            "required": ["error"],
+        },
+        "Holding": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "6位基金代码",
+                    "example": "000001",
+                },
+                "value": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "持有金额（元）",
+                    "example": 10000,
+                },
+                "profit": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "持有收益（元）",
+                    "example": 500,
+                },
+                "name": {
+                    "type": "string",
+                    "description": "基金名称（可选）",
+                },
+            },
+            "required": ["code", "value"],
+        },
+        "HoldingsRequest": {
+            "type": "object",
+            "properties": {
+                "holdings": {
+                    "type": "array",
+                    "description": "持仓列表",
+                    "items": {"$ref": "#/definitions/Holding"},
+                }
+            },
+            "required": ["holdings"],
+        },
+    },
+}
+
+swagger_config = {
+    "headers": [],
+    "specs": [
+        {
+            "endpoint": "apispec",
+            "route": "/apispec.json",
+            "rule_filter": lambda rule: True,
+            "model_filter": lambda tag: True,
+        }
+    ],
+    "static_url_path": "/flasgger_static",
+    "swagger_ui": True,
+    "specs_route": "/api/docs/",
+}
+
+swagger = Swagger(app, template=swagger_template, config=swagger_config)
+
 # 注册5个功能模块的Blueprint
 from routes.fund_routes import fund_bp          # 基金相关API（估值、信号、推荐、导入）
 from routes.market_routes import market_bp      # 行情API（指数、板块、贵金属）

@@ -6,3 +6,4 @@
  */
 export { renderDashboard } from './dashboard/render.js';
 export { DASHBOARD_CSS } from './dashboard/styles.js';
+export { TIMELINE_CSS } from './dashboard/timeline.js';

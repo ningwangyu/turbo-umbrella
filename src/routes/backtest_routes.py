@@ -11,14 +11,53 @@ backtest_bp = Blueprint("backtest", __name__)
 
 @backtest_bp.route("/api/backtest", methods=["POST"])
 def backtest():
-    """
-    定投回测接口。
-
-    参数：
-    - code: 基金代码（必填）
-    - amount: 每期定投金额（默认1000）
-    - frequency: 定投频率 weekly/biweekly/monthly（默认monthly）
-    - strategies: 策略列表 ["fixed","smart","value"]（默认全部）
+    """定投回测接口
+    ---
+    tags:
+      - 回测
+    summary: 定投回测模拟
+    description: 智能定投模拟器，支持多种策略（定额/智慧定投/价值平均）的回测对比
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - code
+          properties:
+            code:
+              type: string
+              description: 6位基金代码
+              example: "000001"
+            amount:
+              type: number
+              description: 每期定投金额（元）
+              default: 1000
+            frequency:
+              type: string
+              description: 定投频率
+              default: monthly
+              enum: [weekly, biweekly, monthly]
+            strategies:
+              type: array
+              description: 策略列表
+              items:
+                type: string
+                enum: [fixed, smart, value]
+              default: [fixed, smart, value]
+            time_range:
+              type: string
+              description: 回测时间范围
+              default: "3m"
+              enum: ["1m", "3m", "6m", "1y", "3y", "5y"]
+    responses:
+      200:
+        description: 回测结果
+      400:
+        description: 参数错误
+        schema:
+          $ref: '#/definitions/Error'
     """
     data = request.get_json(force=True)
     code = str(data.get("code", "")).strip()

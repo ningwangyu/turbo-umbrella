@@ -100,9 +100,13 @@ def get_dashboard_overview(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
                     value = holding.get("value", 0)
                     profit = holding.get("profit", 0)
 
-                    # 今日估算收益
-                    estimated_change_pct = float(est.get("estimated_change_pct", "0"))
-                    today_est_return = value * estimated_change_pct / 100
+                    # 今日收益（盘后优先使用 actual_change_pct）
+                    is_updated = est.get("is_nav_updated") is True
+                    if is_updated:
+                        change_pct = float(est.get("actual_change_pct") or est.get("estimated_change_pct") or "0")
+                    else:
+                        change_pct = float(est.get("estimated_change_pct", "0"))
+                    today_est_return = value * change_pct / 100
 
                     total_value += value + today_est_return
                     total_cost += value
@@ -139,8 +143,12 @@ def get_dashboard_overview(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
 
             value = holding.get("value", 0)
             profit = holding.get("profit", 0)
-            estimated_change_pct = float(est.get("estimated_change_pct", "0"))
-            today_est_return = value * estimated_change_pct / 100
+            is_updated = est.get("is_nav_updated") is True
+            if is_updated:
+                change_pct = float(est.get("actual_change_pct") or est.get("estimated_change_pct") or "0")
+            else:
+                change_pct = float(est.get("estimated_change_pct", "0"))
+            today_est_return = value * change_pct / 100
 
             fund_details.append({
                 "code": code,
@@ -148,7 +156,7 @@ def get_dashboard_overview(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
                 "current_value": value + today_est_return,
                 "weight": 0.0,  # 稍后计算
                 "today": today_est_return,
-                "today_pct": estimated_change_pct,
+                "today_pct": change_pct,
                 "profit": profit + today_est_return,
                 "profit_pct": ((profit + today_est_return) / value * 100) if value > 0 else 0
             })
@@ -271,8 +279,11 @@ def get_holdings_return_detail(holdings: List[Dict[str, Any]]) -> Dict[str, Any]
         perf = fetch_fund_performance(code)
 
         fund_name = est.get("name", holding.get("name", "")) if est else ""
-        estimated_change_pct = float(est.get("estimated_change_pct", "0")) if est else 0
-        today_return = value * estimated_change_pct / 100
+        if est and est.get("is_nav_updated") is True:
+            change_pct = float(est.get("actual_change_pct") or est.get("estimated_change_pct") or "0")
+        else:
+            change_pct = float(est.get("estimated_change_pct", "0")) if est else 0
+        today_return = value * change_pct / 100
         current_value = value + today_return
         total_value += current_value
 
@@ -281,10 +292,10 @@ def get_holdings_return_detail(holdings: List[Dict[str, Any]]) -> Dict[str, Any]
             "name": fund_name,
             "current_value": current_value,
             "weight": 0.0,
-            "today_return": today_return,
-            "today_return_pct": estimated_change_pct,
-            "total_return": profit + today_return,
-            "total_return_pct": ((profit + today_return) / value * 100) if value > 0 else 0,
+            "today": today_return,
+            "today_pct": change_pct,
+            "profit": profit + today_return,
+            "profit_pct": ((profit + today_return) / value * 100) if value > 0 else 0,
             "signal": None,
             "status": "unknown"
         })
@@ -375,15 +386,39 @@ def get_event_timeline(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
     }
 
     # ============================================================
+    # 预加载：并行获取所有基金数据，避免后续重复请求
+    # ============================================================
+    fund_estimations = {}
+    fund_performances = {}
+
+    def _prefetch(holding):
+        code = holding["code"]
+        est = fetch_fund_estimation(code)
+        perf = fetch_fund_performance(code)
+        return code, est, perf
+
+    with ThreadPoolExecutor(max_workers=5, thread_name_prefix="tl_prefetch") as executor:
+        futures = {executor.submit(_prefetch, h): h for h in holdings}
+        for future in as_completed(futures):
+            try:
+                code, est, perf = future.result()
+                if est:
+                    fund_estimations[code] = est
+                if perf:
+                    fund_performances[code] = perf
+            except Exception as e:
+                logger.warning("Timeline prefetch failed: %s", e)
+
+    # ============================================================
     # 事件1：大涨/大跌事件（从历史走势中检测）
     # ============================================================
     for holding in holdings:
         code = holding["code"]
-        perf = fetch_fund_performance(code)
+        perf = fund_performances.get(code)
         if not perf:
             continue
 
-        est = fetch_fund_estimation(code)
+        est = fund_estimations.get(code)
         fund_name = est.get("name", holding.get("name", "")) if est else ""
 
         trend = perf.get("trend", [])
@@ -436,8 +471,8 @@ def get_event_timeline(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
     # ============================================================
     for holding in holdings:
         code = holding["code"]
-        est = fetch_fund_estimation(code)
-        perf = fetch_fund_performance(code)
+        est = fund_estimations.get(code)
+        perf = fund_performances.get(code)
         if not est or not perf:
             continue
 
@@ -535,10 +570,13 @@ def get_event_timeline(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
     for holding in holdings:
         code = holding["code"]
         value = holding.get("value", 0)
-        est = fetch_fund_estimation(code)
+        est = fund_estimations.get(code)
         if est:
-            estimated_change_pct = float(est.get("estimated_change_pct", "0"))
-            current_value = value * (1 + estimated_change_pct / 100)
+            if est.get("is_nav_updated") is True:
+                change_pct = float(est.get("actual_change_pct") or est.get("estimated_change_pct") or "0")
+            else:
+                change_pct = float(est.get("estimated_change_pct", "0"))
+            current_value = value * (1 + change_pct / 100)
         else:
             current_value = value
         fund_values[code] = current_value
@@ -548,7 +586,7 @@ def get_event_timeline(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
         for holding in holdings:
             code = holding["code"]
             current_weight = fund_values.get(code, 0) / total_value * 100
-            est = fetch_fund_estimation(code)
+            est = fund_estimations.get(code)
             fund_name = est.get("name", holding.get("name", "")) if est else ""
 
             # 使用历史平均权重作为参考（简化处理：假设均等权重）

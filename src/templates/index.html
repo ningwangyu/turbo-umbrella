@@ -31,14 +31,14 @@
 
             <!-- 导航标签栏 -->
             <nav class="nav-tabs" id="navTabs">
-                <button class="nav-tab active" data-view="home"><span class="nav-icon">▣</span><span>基金持仓</span></button>
+                <button class="nav-tab active" data-view="dashboard"><span class="nav-icon">◉</span><span>驾驶舱</span></button>
+                <button class="nav-tab" data-view="home"><span class="nav-icon">▣</span><span>基金持仓</span></button>
+                <button class="nav-tab" data-view="risk"><span class="nav-icon">⬡</span><span>风险分析</span></button>
                 <button class="nav-tab" data-view="analysis"><span class="nav-icon">◈</span><span>组合分析</span></button>
                 <button class="nav-tab" data-view="compare"><span class="nav-icon">◇</span><span>收益预测</span></button>
                 <button class="nav-tab" data-view="backtest"><span class="nav-icon">▥</span><span>策略回测</span></button>
                 <button class="nav-tab" data-view="sentiment"><span class="nav-icon">▦</span><span>市场情绪</span></button>
                 <button class="nav-tab" data-view="report"><span class="nav-icon">✦</span><span>数据分析</span></button>
-                <button class="nav-tab" data-view="dashboard"><span class="nav-icon">◉</span><span>驾驶舱</span></button>
-                <button class="nav-tab" data-view="risk"><span class="nav-icon">⬡</span><span>风险分析</span></button>
                 <button class="nav-tab" data-view="export"><span class="nav-icon">⚙</span><span>系统设置</span></button>
             </nav>
         </aside>
@@ -47,7 +47,7 @@
             <header class="header">
                 <div class="header-inner">
                     <div class="page-title-block">
-                        <span class="page-kicker">基金持仓</span>
+                        <span class="page-kicker">驾驶舱</span>
                         <h2 class="page-title">基金收益预测驾驶舱</h2>
                     </div>
                     <div class="header-right">
@@ -60,8 +60,13 @@
             </header>
 
             <main class="main" id="mainContent">
+        <!-- 驾驶舱视图 -->
+        <div class="view-container active" id="view-dashboard">
+            <div id="dashboardContent"></div>
+        </div>
+
         <!-- 首页视图 -->
-        <div class="view-container active" id="view-home">
+        <div class="view-container" id="view-home" style="display:none">
         <!-- 资产总览 -->
         <section class="asset-bar">
             <div class="asset-main">
@@ -180,6 +185,11 @@
         <div class="update-info"><span id="updateTime">--</span><span> · 数据来源：天天基金网/新浪财经/东方财富</span></div>
         </div>
 
+        <!-- 风险分析视图 -->
+        <div class="view-container" id="view-risk" style="display:none">
+            <div id="riskContent"></div>
+        </div>
+
         <!-- 组合分析视图 -->
         <div class="view-container" id="view-analysis" style="display:none">
             <div id="analysisContent"></div>
@@ -208,16 +218,6 @@
         <!-- 数据导出视图 -->
         <div class="view-container" id="view-export" style="display:none">
             <div id="exportContent"></div>
-        </div>
-
-        <!-- 驾驶舱视图 -->
-        <div class="view-container" id="view-dashboard" style="display:none">
-            <div id="dashboardContent"></div>
-        </div>
-
-        <!-- 风险分析视图 -->
-        <div class="view-container" id="view-risk" style="display:none">
-            <div id="riskContent"></div>
         </div>
             </main>
         </div>

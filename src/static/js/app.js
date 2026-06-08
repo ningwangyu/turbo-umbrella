@@ -210,8 +210,9 @@ function initNavTabs() {
                     renderDataExport(container);
                 }
             } else if (view === "dashboard") {
-                const { renderDashboard, DASHBOARD_CSS } = await import('./dashboard.js');
+                const { renderDashboard, DASHBOARD_CSS, TIMELINE_CSS } = await import('./dashboard.js');
                 moduleCSS.add(DASHBOARD_CSS);
+                moduleCSS.add(TIMELINE_CSS);
                 const container = document.getElementById("dashboardContent");
                 if (container && !container.hasChildNodes()) {
                     container.innerHTML = '<div class="panel-loading"><span class="spinner"></span>加载驾驶舱...</div>';
@@ -300,6 +301,9 @@ async function init() {
     await fetchAllFundData();
     fetchAllSignals().catch(e => console.error("Signals:", e));
     setTimeout(startAutoRefresh, Math.floor(Math.random() * 10000));
+
+    // 数据就绪后触发激活标签，完成首屏懒加载（如驾驶舱）
+    document.querySelector(".nav-tab.active")?.click();
 }
 
 init();

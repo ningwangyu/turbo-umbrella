@@ -1,3 +1,4 @@
+/** 情绪图表模块 — 渲染恐慌贪婪仪表盘、成交量趋势和 ETF 资金流图表。 */
 import { sentimentState } from './state.js';
 
 export function drawEtfChart(etfList) {

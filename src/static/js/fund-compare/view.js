@@ -1,3 +1,4 @@
+/** 基金对比视图模块 — 负责列表、空状态、指标卡和信号入口的 DOM 结构。 */
 import { holdings, fundDataCache, signalCache } from '../state.js';
 import { fmtMoney, colorCls } from '../utils.js';
 import { compareState } from './state.js';
@@ -304,3 +305,4 @@ export function renderHoldingsCompare() {
     html += `</tbody></table></div></div>`;
     return html;
 }
+

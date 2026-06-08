@@ -13,6 +13,7 @@
 3. K线周期自适应：根据查询周期自动选择合适的K线级别和数据量
 """
 
+import logging
 import re
 import time
 

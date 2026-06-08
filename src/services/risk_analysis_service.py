@@ -15,8 +15,10 @@
 - get_cash_rebalancing_advisor(): 再平衡建议
 """
 
+import hashlib
 import logging
 import math
+import random
 from datetime import datetime
 from typing import List, Dict, Any
 
@@ -1897,13 +1899,19 @@ def get_cash_rebalancing_advisor(holdings: List[Dict[str, Any]]) -> Dict[str, An
 # 新增功能1: 基准对比分析
 # ================================================================
 
+def _holdings_cache_key(prefix: str, holdings: List[Dict[str, Any]]) -> str:
+    """根据持仓实际内容（代码+金额）生成缓存键，避免仅用数量导致的缓存串扰。"""
+    parts = [f"{h.get('code', '')}:{h.get('value', 0)}" for h in sorted(holdings, key=lambda x: x.get("code", ""))]
+    return f"{prefix}_{hashlib.md5('|'.join(parts).encode()).hexdigest()[:12]}"
+
+
 def get_benchmark_comparison(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
     基准对比分析 — 组合 vs 沪深300
 
     计算指标：Jensen's alpha、beta、跟踪误差、信息比率、上行/下行捕获率、相关系数
     """
-    cache_key = f"benchmark_comparison_{len(holdings)}"
+    cache_key = _holdings_cache_key("benchmark_comparison", holdings)
     cached = risk_analysis_cache.get(cache_key, RISK_ANALYSIS_TTL)
     if cached:
         return cached
@@ -1917,16 +1925,19 @@ def get_benchmark_comparison(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
     }
 
     if not holdings:
+        logger.warning("Benchmark comparison: no holdings provided")
         return default_result
 
     # 获取组合日收益率
     port_returns, total_value, port_dates = _get_portfolio_daily_returns(holdings)
     if len(port_returns) < 30:
+        logger.warning("Benchmark comparison: insufficient portfolio returns (%d < 30)", len(port_returns))
         return default_result
 
     # 获取基准历史数据
     benchmark_trend = fetch_benchmark_history("000300", 500)
     if not benchmark_trend or len(benchmark_trend) < 30:
+        logger.warning("Benchmark comparison: insufficient benchmark data (%d points)", len(benchmark_trend) if benchmark_trend else 0)
         return default_result
 
     # 计算基准日收益率
@@ -1940,6 +1951,7 @@ def get_benchmark_comparison(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
             bench_dates.append(benchmark_trend[i].get("date", ""))
 
     if len(bench_returns) < 30:
+        logger.warning("Benchmark comparison: insufficient benchmark returns (%d < 30)", len(bench_returns))
         return default_result
 
     # 对齐长度（取较短的那个）
@@ -2052,7 +2064,7 @@ def get_stress_test(holdings: List[Dict[str, Any]]) -> Dict[str, Any]:
 
     使用基金波动率与市场波动率的比值作为beta代理，估算组合在历史危机中的回撤。
     """
-    cache_key = f"stress_test_{len(holdings)}"
+    cache_key = _holdings_cache_key("stress_test", holdings)
     cached = risk_analysis_cache.get(cache_key, 600)  # 10分钟缓存
     if cached:
         return cached

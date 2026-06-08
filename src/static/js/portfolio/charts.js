@@ -1,3 +1,4 @@
+/** 组合图表模块 — 负责组合净值、回撤和行业分布图表的实例管理。 */
 import { showSectorDetail, showTypeDetail } from './details.js';
 import { analysisData } from './state.js';
 
@@ -106,3 +107,4 @@ export function renderTypePieChart() {
         }
     });
 }
+

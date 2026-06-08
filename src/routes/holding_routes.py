@@ -41,7 +41,20 @@ def _parse_holding(data: dict[str, Any]) -> dict[str, Any]:
 
 @holding_bp.route("/api/holdings", methods=["GET"])
 def get_holdings():
-    """读取 MySQL 中保存的全部持仓。"""
+    """读取 MySQL 中保存的全部持仓
+    ---
+    tags:
+      - 持仓
+    summary: 获取全部持仓
+    description: 从MySQL数据库读取保存的全部持仓数据
+    responses:
+      200:
+        description: 持仓列表
+      500:
+        description: MySQL连接失败
+        schema:
+          $ref: '#/definitions/Error'
+    """
     try:
         return jsonify(list_holdings())
     except pymysql.MySQLError as exc:
@@ -50,7 +63,56 @@ def get_holdings():
 
 @holding_bp.route("/api/holdings", methods=["POST"])
 def save_holding():
-    """新增或更新单只持仓。"""
+    """新增或更新单只持仓
+    ---
+    tags:
+      - 持仓
+    summary: 保存单只持仓
+    description: 新增或更新MySQL中的单只基金持仓
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - code
+            - value
+          properties:
+            code:
+              type: string
+              description: 6位基金代码
+              example: "000001"
+            value:
+              type: number
+              description: 持有金额（元）
+              example: 10000
+            profit:
+              type: number
+              description: 持有收益（元）
+              example: 500
+            name:
+              type: string
+              description: 基金名称
+            fund_type:
+              type: string
+              description: 基金类型
+            source:
+              type: string
+              description: 数据来源
+              default: manual
+    responses:
+      200:
+        description: 保存结果
+      400:
+        description: 参数错误
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: MySQL连接失败
+        schema:
+          $ref: '#/definitions/Error'
+    """
     data = request.get_json(force=True)
     try:
         item = _parse_holding(data)
@@ -63,7 +125,30 @@ def save_holding():
 
 @holding_bp.route("/api/holdings", methods=["PUT"])
 def replace_all_holdings():
-    """用一组持仓替换数据库内容，用于导入、备份恢复和旧数据迁移。"""
+    """用一组持仓替换数据库内容
+    ---
+    tags:
+      - 持仓
+    summary: 批量替换持仓
+    description: 用一组持仓替换数据库中的全部内容，用于导入、备份恢复和旧数据迁移
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/HoldingsRequest'
+    responses:
+      200:
+        description: 替换结果
+      400:
+        description: 参数错误
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: MySQL连接失败
+        schema:
+          $ref: '#/definitions/Error'
+    """
     data = request.get_json(force=True)
     items = data.get("holdings", [])
     if not isinstance(items, list):
@@ -89,7 +174,31 @@ def replace_all_holdings():
 
 @holding_bp.route("/api/holdings/<code>", methods=["DELETE"])
 def remove_holding(code: str):
-    """删除一只持仓。"""
+    """删除一只持仓
+    ---
+    tags:
+      - 持仓
+    summary: 删除持仓
+    description: 根据基金代码从MySQL中删除一只持仓
+    parameters:
+      - name: code
+        in: path
+        type: string
+        required: true
+        description: 6位基金代码
+        example: "000001"
+    responses:
+      200:
+        description: 删除结果
+      400:
+        description: 代码格式不正确
+        schema:
+          $ref: '#/definitions/Error'
+      500:
+        description: MySQL连接失败
+        schema:
+          $ref: '#/definitions/Error'
+    """
     code = code.strip()
     if not re.match(r"^\d{6}$", code):
         return jsonify({"error": "基金代码格式不正确"}), 400

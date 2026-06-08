@@ -1,3 +1,4 @@
+/** 回测结果模块 — 将策略汇总、交易明细和风险指标转换为可读卡片。 */
 import { fmtMoney, fmtPlain, colorCls } from '../utils.js';
 import { STRATEGIES } from './config.js';
 import { drawLineChart, drawBarChart } from './charts.js';

@@ -1,5 +1,8 @@
 /**
- * 共享状态管理模块 — 所有模块共享的可变状态 + MySQL持仓同步 + DOM缓存
+ * 共享状态管理模块 — 所有前端功能共用的可变状态、MySQL 持仓同步和 DOM 缓存。
+ *
+ * 设计边界：业务数据以服务端 MySQL 为准，localStorage 只作为旧版本迁移来源；
+ * 所有状态修改通过 setter 暴露，避免不同模块直接重建引用导致渲染不同步。
  */
 
 export const STORAGE_KEY = "fund_holdings";
@@ -23,7 +26,7 @@ export let aiChatHistory = [];
 export let aiChatStreaming = false;
 export let aiPendingImage = null;
 
-// ===== State Mutators =====
+// ===== 状态修改器 =====
 export function setHoldings(val) { holdings = val; }
 export function setFundDataCache(code, data) { fundDataCache[code] = data; }
 export function setSignalCache(code, data) { signalCache[code] = data; }
@@ -37,6 +40,7 @@ export function setRecMeta(val) { recMeta = val; }
 export function setPendingImport(val) { pendingImport = val; }
 export function setUploadedImageBase64(val) { uploadedImageBase64 = val; }
 export function setSearchDebounce(val) { searchDebounce = val; }
+export function setRefreshTimer(val) { refreshTimer = val; }
 export function getMetalChart() { return metalChart; }
 export function getDetailChartInstance() { return detailChartInstance; }
 export function getPendingImport() { return pendingImport; }
@@ -176,6 +180,7 @@ export const $addHoldingValue = $("addHoldingValue");
 export const $addHoldingProfit = $("addHoldingProfit");
 export const $btnConfirmAddHolding = $("btnConfirmAddHolding");
 export const $alertCode = $("alertCode");
+export const $alertAutocomplete = $("alertAutocompleteList");
 export const $alertCondition = $("alertCondition");
 export const $alertThreshold = $("alertThreshold");
 export const $btnAddAlert = $("btnAddAlert");

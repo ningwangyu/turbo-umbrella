@@ -1,3 +1,4 @@
+/** 组合事件模块 — 绑定分析页展开、刷新和图表交互事件。 */
 import { analysisData } from './state.js';
 import { showHelpTip, showDrawdownDetail } from './risk.js';
 import { showSectorDetail, showTypeDetail } from './details.js';

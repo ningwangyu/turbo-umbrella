@@ -1,5 +1,8 @@
 /**
- * 基金卡片模块 — 持仓列表渲染、信号仪表盘、标签页、详情弹窗
+ * 基金卡片模块 — 持仓列表渲染、信号仪表盘、标签页、详情弹窗。
+ *
+ * 设计重点：把估值、用户持仓和量化信号合并成单张卡片，用户能同时看到收益、风险提示和操作入口；
+ * 图表实例在卡片销毁时同步释放，避免频繁刷新后 Canvas 实例泄漏。
  */
 import {
     holdings, fundDataCache, signalCache, chartInstances, $fundList, $emptyState,
@@ -28,15 +31,25 @@ export async function fetchAllFundData() {
 }
 
 export async function fetchAllSignals() {
-    for (const h of holdings) {
-        if (signalCache[h.code]) continue;
-        try { const r = await fetch(`/api/fund/signal/${h.code}`); const data = await r.json(); if (!data.error) signalCache[h.code] = data; } catch (e) { console.error(`Signal ${h.code}:`, e); }
-    }
+    const missing = holdings.filter(h => !signalCache[h.code]);
+    if (!missing.length) return;
+    await Promise.all(missing.map(async h => {
+        try {
+            const r = await fetch(`/api/fund/signal/${h.code}`);
+            const data = await r.json();
+            if (!data.error) signalCache[h.code] = data;
+        } catch (e) {
+            console.error(`Signal ${h.code}:`, e);
+        }
+    }));
+    renderFundList();
+    renderSummary();
 }
 
 // ===== 收益计算 =====
 function calc(h, fd) {
     const hv = +h.value || 0, hp = +h.profit || 0;
+    // 盘后实际净值更新后优先展示 actual_change_pct，否则继续使用盘中估值涨跌幅。
     const isUpdated = fd?.is_nav_updated === true;
     const pct = isUpdated ? (+(fd?.actual_change_pct ?? fd?.estimated_change_pct) || 0) : (+(fd?.estimated_change_pct) || 0);
     const today = hv * pct / 100;

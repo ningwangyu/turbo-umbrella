@@ -138,3 +138,38 @@ textarea:focus { border-color: var(--primary); }
     line-height: 1.6;
 }
 .conclusion-summary strong { color: var(--primary); }
+
+/* ===== Dark dashboard overrides ===== */
+.modal-mask { background: rgba(1, 8, 20, .76); backdrop-filter: blur(10px); }
+.modal {
+    background: var(--card-strong);
+    color: var(--text);
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow), 0 0 40px rgba(56,189,248,.12);
+}
+.modal-close { color: var(--text3); }
+.modal-close:hover { color: var(--text); }
+.mtab { background: rgba(56,189,248,.1); color: var(--text2); }
+.mtab.active { background: linear-gradient(135deg, var(--primary), #2563eb); color: #fff; }
+.hint { color: var(--text3); }
+textarea { background: rgba(2, 12, 28, .58); color: var(--text); }
+.upload-zone,
+.import-item,
+.example-content,
+.metal-advice,
+.detail-summary,
+.detail-signal,
+.signal-conclusion,
+.compare-conclusion {
+    background: rgba(3, 18, 37, .48);
+    border-color: var(--border);
+}
+.example-content pre {
+    background: rgba(2, 12, 28, .62);
+    border-color: var(--border);
+    color: var(--text2);
+}
+.detail-header,
+.detail-holdings-section,
+.conclusion-summary { border-color: var(--border); }
+.signal-conclusion { border-left-color: var(--primary); }

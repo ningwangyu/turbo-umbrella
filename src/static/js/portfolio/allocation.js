@@ -1,3 +1,4 @@
+/** 组合配置模块 — 展示资产大类、行业分布和多样化评分，辅助识别集中风险。 */
 import { analysisData } from './state.js';
 import { colorCls } from '../utils.js';
 
@@ -181,3 +182,4 @@ export function renderOverlapSection() {
     html += `</div></div>`;
     return html;
 }
+

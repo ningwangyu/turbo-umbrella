@@ -77,8 +77,14 @@ export function renderMarketBar(container, data, onRefresh) {
     // 清理旧定时器
     if (clockTimer) { clearInterval(clockTimer); clockTimer = null; }
 
-    const indices = data?.market_indices || [];
-    const turnover = data?.turnover;
+    const market = data?.market || {};
+    const indicesRaw = market.indices || {};
+    const indices = Object.values(indicesRaw).map(idx => ({
+        name: idx.name,
+        value: idx.price,
+        change: idx.change_pct,
+    }));
+    const turnover = market.volume?.today;
     const now = new Date();
 
     // 构建 HTML

@@ -1,3 +1,4 @@
+/** 基金对比图表模块 — 负责多基金净值曲线归一化展示和图表实例生命周期。 */
 import { fundDataCache } from '../state.js';
 import { compareState } from './state.js';
 
@@ -130,7 +131,7 @@ export function renderCompareChart(period) {
                     min: sortedDates[0],
                     max: sortedDates[sortedDates.length - 1],
                 },
-                y: { beginAtZero: false, grid: { color: "rgba(0,0,0,0.05)" }, ticks: { font: { size: 9 } } },
+                y: { beginAtZero: false, grid: { color: "rgba(125,211,252,.12)" }, ticks: { font: { size: 9 }, color: "#8fb6d8" } },
             },
             interaction: { mode: "nearest", axis: "x", intersect: false },
             onHover(event, elements, chart) {
@@ -192,3 +193,4 @@ function round(n, d) { const f = Math.pow(10, d); return Math.round(n * f) / f; 
 // ============================================================
 // CSS
 // ============================================================
+
